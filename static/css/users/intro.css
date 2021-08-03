@@ -76,3 +76,25 @@
   height: 80vh;
   background-color: aqua;
 }
+.index_six {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+}
+.index_seven {
+  width: 100%;
+  height: 80vh;
+  background-color: aqua;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_info {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
