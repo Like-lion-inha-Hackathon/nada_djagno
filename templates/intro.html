@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/users/intro.css' %}">
@@ -7,15 +9,11 @@
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<h1>@This is intro.html</h1>
-<h2><a href="{% url 'users:main' %}">Go to Main</a></h2>
 <div class="status-bar">
     <span class="main_logo">N A D A</span>
     <div></div>
     <div></div>
-    <a href="#">
-        <button class="login_button">Log-in</button>
-    </a>
+    <button class="login_button"><a href="{% url 'users:main' %}">Log-in</a></button>
 </div>
 <div class="video-title">
     <div></div>
