@@ -1,5 +1,21 @@
 {% extends "base.html" %}
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/challenge.css' %}">
+        <span>나의 챌린지</span>
+    {% endblock css %}
+</head>
 {% block page_title %}Challenge{% endblock page_title %}
 {% block content%}
-<span>WELCOME TO <strong>CHALLENGE</strong></span>
+<img src="{% static 'image/reading.jpeg' %}" alt="img"/>
+<p>30일동안 매일 20페이지 읽기</p>
+<img src="{% static 'image/flank.jpeg' %}" alt="img"/>
+<p>2주동안 1분 플랭크하기</p>
+<img src="{% static 'image/alarmclock.jpeg' %}" alt="img"/>
+<p>평일 오전 6시 기상</p>
+<div class="round"></div>
+<p>챌린지 작성하기</p>
 {% endblock content%}
