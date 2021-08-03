@@ -16,7 +16,7 @@ class SignUpForm(forms.ModelForm):
         }
         labels = {
             "first_name": "First_name",
-            "last_name": "Lastt_name",
+            "last_name": "Last_name",
             "email": "Email",
         }
         help_texts = {"username": None}
