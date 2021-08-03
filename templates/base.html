@@ -12,7 +12,9 @@
 </head>
 <body>
     <header>
-        {% include "partials/nav.html" %}
+        {% block nav %}
+            {% include "partials/nav.html" %}
+        {% endblock nav %}
     </header>
     {% block left-bar %}
         <div class="left-bar__lists">

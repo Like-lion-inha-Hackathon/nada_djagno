@@ -1,13 +1,15 @@
-{% extends  "base.html" %}
+{% extends "base.html" %}
 {% block page_title %}
 Log In
 {% endblock page_title %}
+{% block nav %} {% endblock nav %}
 {% block left-bar %}{% endblock left-bar %}
 {% block content %}
-<h1>@This is Login.html</h1>
+<h1>Log into NADA</h1>
+<h2>가장 나다운 나를 기록하다</h2>
 <form action="{% url 'users:login' %}" method="POST">
     {% csrf_token %}
     {{form.as_p}}
-    <button>Sign Up</button>
+    <button>LOG IN</button>
 </form>
 {% endblock %}
