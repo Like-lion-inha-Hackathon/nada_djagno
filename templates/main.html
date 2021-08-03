@@ -1,34 +1,46 @@
 {% extends "base.html" %}
 {% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/users/main.css' %}">
     {% endblock css %}
 </head>
-{% block page_title %}Home{% endblock page_title%}
+{% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<span>THIS IS <strong>MAIN!!!</strong></span>
-<div>
-    <h1 class="user_list"> User List - nickname </h1>
-    {% for object in object_list %}
-        <h2>{{object.nickname}}</h2>
-    {% endfor %}
-    <a href=""></a>
-</div>
-<div class="upper"></div>
 <div class="status-bar">
-  <span class="main_logo">N A D A</span>
-  <div></div>
-  <div></div>
-  <button class="login_button">Log-out</button>
+    <span class="main_logo">N A D A</span>
+    <div></div>
+    <div></div>
+    <button class="login_button"><a href="{% url 'users:main' %}">Log-out</a></button>
 </div>
-<div class="main_one">
-  <div class="main_portfolio"></div>
-  <div class="main_record"></div>
-  <div class="main_challenge">
-    <img />
+<div class="circle">
+  <div class="circle_box_one">
+    <div></div>
+    <div class="box">
+      <div class=" circle_one">포트폴리오</div>
+    </div>
+    <div class="box">
+      <div class=" circle_two">CHALLENGE</div>
+    </div>
+    <div></div>
   </div>
-  <div class="main_connect"></div>
-  <div class="main_repo"></div>
+  <div class="circle_box_two">
+    <div class="box">
+      <div class=" circle_three">보관함</div>
+    </div>
+    <div class="box">
+      <div class=" circle_four">기록</div>
+    </div>
+    <div class="box">
+      <div class=" circle_five">CONNECT</div>
+    </div>
+  </div>
 </div>
-{% endblock %}
+
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+{% endblock content %}
