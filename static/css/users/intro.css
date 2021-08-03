@@ -40,7 +40,7 @@
   z-index: -100;
 }
 .video-title {
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: space-between;
   right: 10%;
@@ -49,9 +49,12 @@
   font-size: 80px;
 }
 .video-title-main {
+  position: absolute;
   font-size: 40px;
   font-weight: 800;
   color: white;
+  top: 500px;
+  right: 0%;
 }
 .index_two {
   width: 100%;
