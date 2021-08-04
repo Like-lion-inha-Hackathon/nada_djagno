@@ -1,0 +1,30 @@
+@@@@@@@@@@@ html url 정리입니다 @@@@@@@@@@@
+@@@@@@@@@@@ html이름 이나 경로 변경 시 에러 발생 !! @@@@@@@@@@@
+@@@@@@@@@@@ 변경 시 말해주세요 !! @@@@@@@@@@@
+
+
+< challenge >
+    challenge.html => {% url 'challenges:main' %}
+    challenge_reading.html => {% url 'challenges:reading' %}
+    challenge_study.html => {% url 'challenges:study' %}
+    write_challenge.html =>{% url 'challenges:write' %}
+
+< connect >
+    connect.html => {% url 'connects:main' %}
+    connect_dream.html => {% url 'connects:dream' %}
+    connect_challenge.html => {% url 'connects:challenge' %}
+
+< portfolio >
+    portfolio.html => {% url 'portfolios:main' %}
+    portfolio_dohee.html => {% url 'portfolios:dohee' %}
+
+< records >
+    records.html => {% url 'records:main' %}
+
+< repository >
+    repository.html => {% url 'repositories:main' %}
+
+< users >
+    main.html => {% url 'users:main' %}
+    login.html => {% url 'users:login' %}
+    signup.html => {% url 'users:signup' %}
