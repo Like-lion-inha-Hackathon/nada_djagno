@@ -19,11 +19,11 @@
     {% block left-bar %}
         <div class="left-bar__lists">
             <a href="{% url 'users:main' %}">Main</a>
-            <a href="{% url 'portfolio' %}">Portfolio</a>
-            <a href="{% url 'records' %}">Records</a>
-            <a href="{% url 'challenge' %}">Challenge</a>
-            <a href="{% url 'connect' %}">Connect</a>
-            <a href="{% url 'repository' %}">Repository</a>
+            <a href="{% url 'portfolios:main' %}">Portfolio</a>
+            <a href="{% url 'records:main' %}">Records</a>
+            <a href="{% url 'challenges:main' %}">Challenge</a>
+            <a href="{% url 'connects:main' %}">Connect</a>
+            <a href="{% url 'repositories:main' %}">Repository</a>
         </div>
     {% endblock left-bar %}
     {% block content%}{% endblock %}
