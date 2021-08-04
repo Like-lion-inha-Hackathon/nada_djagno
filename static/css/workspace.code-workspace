@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../멋사/중앙해커톤"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nada_djagno"
+	}
+}

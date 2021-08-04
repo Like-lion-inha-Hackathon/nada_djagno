@@ -2,20 +2,21 @@
 {% load static %}
 {% block nav %}{% endblock nav %}
 {% block left-bar %}{% endblock left-bar %}
+{% block page_title %}나의 챌린지{% endblock page_title %}
+{% block content%}
+
 <head>
     {% block css %}
-        <link rel="stylesheet" href="{% static 'css/challenge.css' %}">
-        <span>나의 챌린지</span>
+        <link rel="stylesheet" href="{% static 'css/challenge/challenge.css' %}">
     {% endblock css %}
+        <div class="head_title">나의 챌린지</div>
+        <div class="line_parent"><div class="line"></div></div>
 </head>
-{% block page_title %}Challenge{% endblock page_title %}
-{% block content%}
-<img src="{% static 'image/reading.jpeg' %}" alt="img"/>
-<p>30일동안 매일 20페이지 읽기</p>
-<img src="{% static 'image/flank.jpeg' %}" alt="img"/>
-<p>2주동안 1분 플랭크하기</p>
-<img src="{% static 'image/alarmclock.jpeg' %}" alt="img"/>
-<p>평일 오전 6시 기상</p>
-<div class="round"></div>
-<p>챌린지 작성하기</p>
+<div class="round-all">
+    <div class="round"><a href="#"><img src="{% static 'image/challenge_reading.jpeg' %}" alt="img"/><p>30일동안 매일 20페이지 읽기</p></a></div>
+    <div class="round"><a href="#"><img src="{% static 'image/challenge_flank.jpeg' %}" alt="img"/><p>2주동안 1분 플랭크하기</p></a></div>
+    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>평일 오전 6시 기상</p></a></div>
+    <div class="round"><a href="#"><div class = "nothing"></div><p>새로운 챌린지</p></a></div>
+    
+</div>
 {% endblock content%}
