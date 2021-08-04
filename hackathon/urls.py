@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from records import views as record_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("records/", record_views.records_view, name="records"),
-    path("portfolio/", record_views.portfolio_view, name="portfolio"),
-    path("challenge/", record_views.challenge_view, name="challenge"),
-    path("connect/", record_views.connect_view, name="connect"),
-    path("repository/", record_views.repository_view, name="repository"),
-    path("", include("users.urls", namespace="users")),
+    path("users/", include("users.urls", namespace="users")),
+    path("records/", include("records.urls", namespace="records")),
+    path("portfolios/", include("portfolios.urls", namespace="portfolios")),
+    path("challenges/", include("challenges.urls", namespace="challenges")),
+    path("connects/", include("connects.urls", namespace="connects")),
+    path("repositories/", include("repositories.urls", namespace="repositories")),
+    path("", include("core.urls", namespace="core")),
 ]
