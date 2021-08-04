@@ -41,11 +41,29 @@
 .box {
   width: 420px;
   height: 420px;
-  background-color: aqua;
+  background-color: hsl(69, 4%, 66%);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
   font-weight: 1000;
+}
+.line {
+  text-decoration: none;
+}
+.box_one:hover {
+  background-color: gray;
+}
+.box_two:hover {
+  background-color: gray;
+}
+.box_three:hover {
+  background-color: gray;
+}
+.box_four:hover {
+  background-color: gray;
+}
+.box_five:hover {
+  background-color: gray;
 }

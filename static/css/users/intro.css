@@ -138,7 +138,7 @@
 .index_four {
   width: 100%;
   height: 110vh;
-  background-color: aqua;
+  background-color: gray;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
