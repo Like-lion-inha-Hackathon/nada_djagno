@@ -9,35 +9,44 @@
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<div class="status-bar">
-    <span class="main_logo">N A D A</span>
-    <div></div>
-    <div></div>
-    <button class="login_button"><a href="{% url 'users:main' %}">Log-out</a></button>
-</div>
+
 <div class="circle">
+  <div class="status-bar">
+    <span class="main_logo">N A D A</span>
+    <button class="login_button"><a href="{% url 'users:main' %}">Log-out</a></button>
+  </div>
   <div class="circle_box_one">
     <div></div>
     <div class="box box_one">
-      <div class=" circle_one"></div><a class="line" href="{% url 'portfolios:main' %}">포트폴리오</a></div>
+      <div class=" circle_one">
+        <a class="line" href="{% url 'portfolios:main' %}">포트폴리오</a>
+      </div>
+    </div>
     <div class="box box_two">
-      <div class=" circle_two"><a class="line" href="{% url 'challenges:main' %}">CHALLENGE</a></div>
+      <div class=" circle_two">
+        <a class="line" href="{% url 'challenges:main' %}">CHALLENGE</a>
+      </div>
     </div>
     <div></div>
   </div>
   <div class="circle_box_two">
     <div class="box box_three">
-      <div class=" circle_three"><a class="line" href="{% url 'repositories:main' %}">보관함</a></div>
+      <div class=" circle_three">
+        <a class="line" href="{% url 'repositories:main' %}">보관함</a>
+      </div>
     </div>
     <div class="box box_four">
-      <div class=" circle_four"><a class="line" href="{% url 'records:main' %}">기록</a></div>
+      <div class=" circle_four">
+        <a class="line" href="{% url 'records:main' %}">기록</a>
+      </div>
     </div>
     <div class="box box_five">
-      <div class=" circle_five"><a class="line" href="{% url 'connects:main' %}">CONNECT</a></div>
+      <div class=" circle_five">
+        <a class="line" href="{% url 'connects:main' %}">CONNECT</a>
+      </div>
     </div>
   </div>
 </div>
-
 <script
     src="https://kit.fontawesome.com/4d118135bb.js"
     crossorigin="anonymous"

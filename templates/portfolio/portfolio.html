@@ -1,4 +1,18 @@
-{% extends "base.html" %} {% block page_title %}Portfolio{% endblock page_title%}
-{% block content%}
-<span>WELCOME TO <strong>PORTFOLIO</strong></span>
-{% endblock content%}
+{% extends "base.html" %}
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/portfolio/portfolio.css' %}">
+    {% endblock css %}
+</head>
+{% block page_title %} 나다 : NADA {% endblock %}
+{% block content %}
+<div class="status-bar">
+    <span class="main_logo">N A D A</span>
+    <button class="login_button">
+        <a href="{% url 'users:main' %}">Log-out</a>
+    </button>
+</div>
+{% endblock content %}
