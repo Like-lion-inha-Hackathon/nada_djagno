@@ -6,4 +6,5 @@ body {
   background-color: white;
   margin: 0;
   height: auto;
+  border: 1px solid white;
 }
