@@ -8,6 +8,7 @@
   padding: 20px;
   z-index: 5;
   background-color: rgb(232, 234, 237);
+  opacity: 0.9;
 }
 
 .main_logo {
@@ -66,12 +67,12 @@
   justify-content: space-between;
 }
 .index_two_title {
-  padding-left: 10%;
-  font-size: 110px;
+  padding-left: 8%;
+  font-size: 90px;
   font-weight: 800;
 }
 .index_two_sub_title {
-  padding-right: 10%;
+  padding-right: 8%;
   font-size: 25px;
 }
 .index_three {
