@@ -7,5 +7,4 @@ urlpatterns = [
     path("study/", views.challenge_study_view, name="study"),
     path("write/", views.write_challenge_view, name="write"),
 ]
-
 app_name = "challenges"
