@@ -10,13 +10,17 @@
         <link rel="stylesheet" href="{% static 'css/challenge/challenge.css' %}">
     {% endblock css %}
         <div class="head_title">나의 챌린지</div>
+        <div class="logo">
+            <img src="{% static 'image/facebook.svg' %}" alt="facebook">
+            <img src="{% static 'image/instagram.svg' %}" alt="instagram">
+            <img src="{% static 'image/share.svg' %}" alt="shareIcon">
+        </div>
         <div class="line_parent"><div class="line"></div></div>
 </head>
 <div class="round-all">
     <div class="round"><a href="#"><img src="{% static 'image/challenge_reading.jpeg' %}" alt="img"/><p>30일동안 매일 20페이지 읽기</p></a></div>
     <div class="round"><a href="#"><img src="{% static 'image/challenge_flank.jpeg' %}" alt="img"/><p>2주동안 1분 플랭크하기</p></a></div>
     <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>평일 오전 6시 기상</p></a></div>
-    <div class="round"><a href="#"><div class = "nothing"></div><p>새로운 챌린지</p></a></div>
-    
+    <div class="round"><a href="#"><div class = "nothing"></div><p>새로운 챌린지</p></a></div>   
 </div>
 {% endblock content%}

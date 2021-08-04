@@ -14,6 +14,19 @@
     font-style: normal;
 }
 
+.logo {
+    height:30px;
+    margin:5px 68px;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.logo>img{
+    margin:3px;
+    background-color:ghostwhite;
+}
+
 .line_parent{
     display:flex;
     justify-content:center;
@@ -22,7 +35,7 @@
 .line{
     width:90%;
     height:5px;
-    background-color:yellowgreen;
+    background-color:gray;
     margin-bottom:30px;
 }
 
@@ -50,10 +63,10 @@
     height: 100%;
 }
 
-img {
+.round > a > img {
     height:100%;
     width:100%;
-    border-radius: 100%;
+    border-radius: 100%;  
 }
 
 .nothing {
