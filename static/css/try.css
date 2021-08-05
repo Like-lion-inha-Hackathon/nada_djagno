@@ -1,7 +1,7 @@
 body {
   margin: 0;
   margin-top: 100px;
-  height:100px;
+  height: 100px;
   width: 1200px;
   max-width: 100%;
   text-align: center;
@@ -15,7 +15,7 @@ body {
   width: 120px;
   height: 120px;
   margin: 15px 15px 40px;
-  background: #FFDA6A;
+  background: #ffda6a;
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   width: 60px;
   left: calc(50% - 30px);
-  color: #8A8A8A;
+  color: #8a8a8a;
 }
 
 .emoji__face,
@@ -56,7 +56,7 @@ body {
 .emoji__thumb:before,
 .emoji__thumb:after {
   position: absolute;
-  content: '';
+  content: "";
 }
 
 .emoji__face {
@@ -65,11 +65,11 @@ body {
 }
 
 .emoji--like {
-  background: #548DFF;
+  background: #548dff;
 }
 
 .emoji--like:after {
-  content: 'Like';
+  content: "Like";
 }
 
 .emoji--like .emoji__hand {
@@ -77,7 +77,7 @@ body {
   bottom: 30px;
   width: 20px;
   height: 40px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   z-index: 0;
   animation: hands-up 2s linear infinite;
@@ -90,38 +90,39 @@ body {
   background: inherit;
   height: 10px;
   border-radius: 2px 10px 10px 2px;
-  box-shadow: 1px -9px 0 1px #FFFFFF, 2px -19px 0 2px #FFFFFF, 3px -29px 0 3px #FFFFFF;
+  box-shadow: 1px -9px 0 1px #ffffff, 2px -19px 0 2px #ffffff,
+    3px -29px 0 3px #ffffff;
 }
 
 .emoji--like .emoji__thumb {
-  border-bottom: 20px solid #FFFFFF;
+  border-bottom: 20px solid #ffffff;
   border-left: 20px solid transparent;
   top: -25px;
   right: -25px;
   z-index: 2;
   transform: rotate(5deg);
-  transform-origin: 0% 100%; 
+  transform-origin: 0% 100%;
   animation: thumbs-up 2s linear infinite;
 }
 
 .emoji--like .emoji__thumb:before {
   border-radius: 50% 50% 0 0;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 10px;
   height: 12px;
   left: -10px;
   top: -8px;
   transform: rotate(-15deg);
   transform-origin: 100% 100%;
-  box-shadow: -1px 4px 0 -1px #FFFFFF;
+  box-shadow: -1px 4px 0 -1px #ffffff;
 }
 
 .emoji--love {
-  background: #F55064;
+  background: #f55064;
 }
 
 .emoji--love:after {
-  content: 'Love';
+  content: "Love";
 }
 
 .emoji--love .emoji__heart {
@@ -138,7 +139,7 @@ body {
   top: calc(50% - 32px);
   width: 40px;
   height: 64px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px 20px 0 0;
 }
 
@@ -153,7 +154,7 @@ body {
 }
 
 .emoji--wow:after {
-  content: 'Wow';
+  content: "Wow";
 }
 
 .emoji--wow .emoji__face {
@@ -166,7 +167,8 @@ body {
   width: 6px;
   border-radius: 50%;
   background: transparent;
-  box-shadow: -18px 0 0 0 #000000, -33px 0 0 0 #000000, 18px 0 0 0 #000000, 33px 0 0 0 #000000;
+  box-shadow: -18px 0 0 0 #000000, -33px 0 0 0 #000000, 18px 0 0 0 #000000,
+    33px 0 0 0 #000000;
   animation: wow-brow 3s linear infinite;
 }
 
@@ -212,95 +214,129 @@ body {
   animation: wow-mouth 3s linear infinite;
 }
 
-
-
 @keyframes heart-beat {
   25% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   75% {
-      transform: scale(0.6);
+    transform: scale(0.6);
   }
 }
 
 @keyframes wow-face {
-
   15%,
   25% {
-      transform: rotate(20deg) translateX(-25px);
+    transform: rotate(20deg) translateX(-25px);
   }
 
   45%,
   65% {
-      transform: rotate(-20deg) translateX(25px);
+    transform: rotate(-20deg) translateX(25px);
   }
 
   75%,
   100% {
-      transform: rotate(0deg) translateX(0);
+    transform: rotate(0deg) translateX(0);
   }
 }
 
 @keyframes wow-brow {
-
   15%,
   65% {
-      top: 25px;
+    top: 25px;
   }
 
   75%,
   100%,
   0% {
-      top: 15px;
+    top: 15px;
   }
 }
 
 @keyframes wow-mouth {
-
   10%,
   30% {
-      width: 20px;
-      height: 20px;
-      left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
   }
 
   50%,
   70% {
-      width: 30px;
-      height: 40px;
-      left: calc(50% - 15px);
+    width: 30px;
+    height: 40px;
+    left: calc(50% - 15px);
   }
 
   75%,
   100% {
-      height: 50px;
+    height: 50px;
   }
 }
 
 @keyframes hands-up {
   25% {
-      transform: rotate(15deg);
+    transform: rotate(15deg);
   }
 
   50% {
-      transform: rotate(-15deg) translateY(-10px);
+    transform: rotate(-15deg) translateY(-10px);
   }
 
   75%,
   100% {
-
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes thumbs-up {
   25% {
-      transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 
   50%,
   100% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
+}
+.emo-box {
+  width: 300px;
+  height: 300px;
+}
+.plus {
+  color: black;
+}
+
+.red {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.green {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.blue {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.menu {
+  display: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+ul {
+  width: 100vw;
+}
+li {
+  float: left;
 }
