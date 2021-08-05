@@ -12,7 +12,7 @@ plus.addEventListener("click",function(e){
         icon.classList.remove("fa-times")
     }
 })
-new Chart(document.getElementById("line-chart"), {
+var chart = new Chart(document.getElementById("line-chart"), {
     type: 'line',
     data: {
         labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
@@ -51,3 +51,5 @@ new Chart(document.getElementById("line-chart"), {
         }
     }
 });
+chart.chart.canvas.style.width="800px"
+chart.chart.canvas.style.height="500px"
