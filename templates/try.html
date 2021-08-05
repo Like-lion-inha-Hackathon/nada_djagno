@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/try.css' %}">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div class="emo-box" >
+        <div ><i class="fas fa-plus plus icon fa-2x"></i></div>
+        <ul class="menu">
+            <li>
+                <div class="emoji emoji--like">
+                    <div class="emoji__hand">
+                        <div class="emoji__thumb">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="emoji emoji--love">
+                    <div class="emoji__heart">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="emoji emoji--wow">
+                    <div class="emoji__face">
+                        <div
+                            class="emoji__eyebrows">
+                        </div>
+                        <div class="emoji__eyes">
+                        </div>
+                        <div class="emoji__mouth">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <canvas id="line-chart" width="300" height="250"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/4d118135bb.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/try.js' %}" ></script>
+</body>
+</html>

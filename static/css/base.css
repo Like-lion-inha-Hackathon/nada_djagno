@@ -3,5 +3,16 @@
   flex-direction: column;
 }
 body {
-  background-color: ivory;
+  background-color: white;
+  margin: 0;
+  height: auto;
+  border: 1px solid white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style: none;
 }

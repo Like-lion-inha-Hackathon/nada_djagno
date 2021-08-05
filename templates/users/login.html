@@ -1,18 +1,3 @@
-<<<<<<< Updated upstream
-{% extends  "base.html" %}
-{% block page_title %}
-Log In
-{% endblock page_title %}
-{% block left-bar %}{% endblock left-bar %}
-{% block content %}
-<h1>@This is Login.html</h1>
-<form action="{% url 'users:login' %}" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button>Sign Up</button>
-</form>
-{% endblock %}
-=======
 {% extends "base.html" %}
 {% load static%}
 {% block page_title %}
@@ -43,7 +28,4 @@ Log In
 </div>
 
 
-{% endblock %}123
-
-
->>>>>>> Stashed changes
+{% endblock %}

@@ -1,19 +1,64 @@
 {% extends "base.html" %}
 {% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/users/main.css' %}">
     {% endblock css %}
 </head>
-{% block page_title %}Home{% endblock page_title%}
+{% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<span>THIS IS <strong>MAIN!!!</strong></span>
-<div>
-    <h1 class="user_list"> User List - nickname </h1>
-    {% for object in object_list %}
-        <h2>{{object.nickname}}</h2>
-    {% endfor %}
-    <a href=""></a>
-</div>
 
-{% endblock %}
+<div class="circle">
+  <div class="status-bar">
+    <span class="main_logo">N A D A</span>
+    <button class="login_button"><a href="{% url 'users:main' %}">Log-out</a></button>
+  </div>
+  <div class="circle_box_one">
+    <div></div>
+    <a class="line" href="{% url 'portfolios:main' %}">
+      <div class="box box_one">
+        <div class=" circle_one">
+          포트폴리오
+        </div>
+      </div>
+    </a>
+    <a class="line" href="{% url 'challenges:main' %}">
+      <div class="box box_two">
+        <div class=" circle_two">
+          CHALLENGE
+        </div>
+      </div>
+    </a>
+    <div></div>
+  </div>
+  <div class="circle_box_two">
+    <a class="line" href="{% url 'repositories:main' %}">
+      <div class="box box_three">
+        <div class=" circle_three">
+          보관함
+        </div>
+      </div>
+    </a>
+    <a class="line" href="{% url 'records:main' %}">
+      <div class="box box_four">
+        <div class=" circle_four">
+          기록
+        </div>
+      </div>
+    </a>
+    <a class="line" href="{% url 'connects:main' %}">
+      <div class="box box_five">
+        <div class=" circle_five">
+          CONNECT
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+{% endblock content %}

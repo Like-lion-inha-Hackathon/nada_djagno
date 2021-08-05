@@ -1,0 +1,83 @@
+.circe {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 5fr;
+}
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%; /*위에 줄은 status-bar를 위에 고정시키기 위한 것이다.*/
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 5;
+}
+.main_logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  margin-left: 15%;
+}
+
+.login_button {
+  margin-right: 30px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-family: unset;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 10px;
+  border: thin;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.circle_box_one {
+  margin-top: 86.8px;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circle_box_two {
+  display: flex;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  width: 40vh;
+  height: 40vh;
+  background-color: hsl(69, 4%, 66%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 1000;
+  color: white;
+}
+.line {
+  text-decoration: none;
+  color: white;
+}
+.box_one:hover {
+  background-color: hsl(69, 4%, 35%);
+}
+.box_two:hover {
+  background-color: hsl(69, 4%, 35%);
+}
+.box_three:hover {
+  background-color: hsl(69, 4%, 35%);
+}
+.box_four:hover {
+  background-color: hsl(69, 4%, 35%);
+}
+.box_five:hover {
+  background-color: hsl(69, 4%, 35%);
+}

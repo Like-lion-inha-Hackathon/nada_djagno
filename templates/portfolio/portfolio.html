@@ -1,5 +1,149 @@
 {% extends "base.html" %}
-{% block page_title %}Portfolio{% endblock page_title %}
-{% block content%}
-<span>WELCOME TO <strong>PORTFOLIO</strong></span>
-{% endblock content%}
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/portfolio/portfolio.css' %}">
+    {% endblock css %}
+</head>
+{% block page_title %} 나다 : NADA {% endblock %}
+{% block content %}
+<div class="status-bar">
+    <span class="main_logo">N A D A</span>
+    <button class="login_button">
+        <a href="{% url 'users:main' %}">Log-out</a>
+    </button>
+</div>
+<div class="left_right_all_page">
+    <div class="normal_nav">
+        <div class="navigation_bar">
+            <div class="empty"></div>
+            <i class="fas fa-bars fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="fas fa-home fa-2x"></i>
+        </div>
+    </div>
+    <div class="portfolio_main">
+        <div class="index_three">
+            <div class="index_three_one_window">
+                <div class="index_three_one_window_flex">
+                    <span class="name_doohee">이두희</span>
+                    <div class="index_three_real_one_window">
+                        <img class="image" src="{% static 'image/doohee.jpeg'%}"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="index_three_window">
+                <div class="index_three_real_window"></div>
+                <div class="profile_first_page_right_nav">
+                    <div class="profile_first_page_right_nav_one">
+
+
+                        <i class="fas fa-heart fa-2x heartclick"></i>
+
+                    </div>
+                    <div class="empty"></div>
+                    <div class="profile_first_page_right_nav_two">
+                        <i class="fas fa-sign-in-alt fa-2x"></i>
+                    </div>
+                    <div class="empty"></div>
+                    <div class="profile_first_page_right_nav_three">
+                        <i class="far fa-folder fa-2x">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index_four">
+            <div class="index_four_one_window">
+                <div class="index_four_real_one_window">
+                    <div class="index_four_real_one_window_flex">
+                        <div class="index_four_real_one_window_one">학점 : 4.4</div>
+                    </div>
+                    <div class="index_four_real_one_window_flex">    
+                        <div class="index_four_real_one_window_two">토익 : 990</div>
+                    </div>
+                    <div class="index_four_real_one_window_flex">
+                        <div class="index_four_real_one_window_three">자격증 : 정보처리기사, 컴퓨터활용능력 1급</div>
+                    </div>
+                    <div class="index_four_real_one_window_flex">
+                        <div class="index_four_real_one_window_four">곤니찌와</div>
+                    </div>
+                    <div class="index_four_real_one_window_flex">
+                        <div class="index_four_real_one_window_five">경력 : 올림픽 금메달 2개, 25대 대통령</div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_four_window">
+                <div class="compare">compare</div>
+                <div class="index_four_real_window">
+                    <img class="image" src="{% static 'image/life_graph.png'%}"></img>
+                </div>
+            </div>
+        </div>
+        <div class="index_five">
+            <div class="index_five_title">
+                <div class="index_five_title_one">02. ACTIVITY&ensp;&ensp;</div>
+                <div class="index_five_title_two">그래프를 클릭하면 더 자세한 기록을 볼 수 있습니다.</div>
+            </div>
+            <div class="index_five_window"></div>
+        </div>
+        <div class="index_six">
+            <div class="index_six_title">
+                <div class="index_six_title_text">03. REFERENCE</div>
+            </div>
+            <div class="index_six_window">
+                <div class="index_six_real_window">
+                    <div class="index_six_real_window_grid_one">
+                        <div class="index_six_real_window_grid_one_up">
+                            <div class="index_six_real_window_grid_one_up_image">
+                                <img class="image" src="{% static 'image/info.gif'%}"></img>
+                            </div>
+                        </div>
+                        <div class="index_six_real_window_grid_one_down">
+                            <div class="index_six_real_window_grid_one_down_text">정보처리기사 자격증</div>
+                        </div>
+                    </div>
+                    <div class="index_six_real_window_grid_two">
+                        <div class="index_six_real_window_grid_two_up">
+                            <div class="index_six_real_window_grid_two_up_image">
+                                <img class="image" src="{% static 'image/computer.jpeg'%}"></img>
+                            </div>
+                        </div>
+                        <div class="index_six_real_window_grid_two_down">
+                            <div class="index_six_real_window_grid_two_down_text">컴퓨터활용능력 2급 자격증</div>
+                        </div>
+                    </div>
+                    <div class="index_six_real_window_grid_three">
+                        <div class="index_six_real_window_grid_three_up">
+                            <div class="index_six_real_window_grid_three_up_image">+</div>
+                        </div>
+                        <div class="index_six_real_window_grid_three_down">
+                            <div class="index_six_real_window_grid_two_down_text">추가하기</div>
+                        </div>
+                    </div>
+                    <div class="index_six_real_window_grid_four"></div>
+                    <div class="index_six_real_window_grid_five"></div>
+                    <div class="index_six_real_window_grid_six"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+<script src="{% static 'js/portfolio.js' %}" ></script>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+{% block page_title %}Connect ppl{% endblock page_title %}
+{% block content%}
+
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/challenge/challenge.css' %}">
+    {% endblock css %}
+        <div class="head_title">나의 챌린지</div>
+        <div class="logo">
+            <img src="{% static 'image/facebook.svg' %}" alt="facebook">
+            <img src="{% static 'image/instagram.svg' %}" alt="instagram">
+            <img src="{% static 'image/share.svg' %}" alt="shareIcon">
+        </div>
+        <div class="line_parent"><div class="line"></div></div>
+</head>
+<div class="round-all">
+    <div class="round"><a href="{% url 'challenges:reading' %}"><img src="{% static 'image/challenge_reading.jpeg' %}" alt="img"/><p>매일 20페이지 읽기</p></a></div>
+    <div class="round"><a href="{% url 'challenges:study' %}"><img src="{% static 'image/challenge_study.png' %}" alt="img"/><p>매일 1시간 공부</p></a></div>
+    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>평일 오전 6시 기상</p></a></div>
+    <div class="round"><a href="{% url 'challenges:write' %}"><div class = "nothing"><div class="plus">+</div></div>
+        <p>새로운 챌린지</p>
+    </a></div>   
+</div>
+{% endblock content%}
