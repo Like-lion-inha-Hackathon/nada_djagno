@@ -283,6 +283,7 @@
   width: 90%;
   height: 90%;
   background-color: tomato;
+  border-radius: 10px;
 }
 .index_six_real_window_grid_one_down {
   display: flex;
@@ -310,6 +311,7 @@
   width: 90%;
   height: 90%;
   background-color: tomato;
+  border-radius: 10px;
 }
 .index_six_real_window_grid_two_down {
   display: flex;
