@@ -1,5 +1,45 @@
 {% extends "base.html" %}
-{% block page_title %}Record{% endblock page_title %}
-{% block content%}
-<span>WELCOME TO <strong>RECORD</strong></span>
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/records/records.css' %}">
+    {% endblock css %}
+</head>
+{% block page_title %} 나다 : NADA {% endblock %}
+{% block content %}
+<div class="status-bar">
+    <span class="main_logo">N A D A</span>
+    <button class="login_button">
+        <a href="{% url 'users:main' %}">Log-out</a>
+    </button>
+</div>
+<div class="left_right_all_page">
+    <div class="normal_nav">
+        <div class="navigation_bar">
+            <div class="empty"></div>
+            <i class="fas fa-bars fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="far fa-heart fa-2x"></i>
+            <div class="empty"></div>
+            <i class="fas fa-home fa-2x"></i>
+        </div>
+    </div>
+    <div class="portfolio_main">
+    </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+<script src="{% static 'js/portfolio.js' %}" ></script>
 {% endblock content%}
