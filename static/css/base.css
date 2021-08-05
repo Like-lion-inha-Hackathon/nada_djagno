@@ -8,3 +8,7 @@ body {
   height: auto;
   border: 1px solid white;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}

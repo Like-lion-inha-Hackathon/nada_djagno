@@ -51,6 +51,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 6;
+}
+.navigation_bar:hover {
+  width: 15%;
+  transition: 1s ease;
 }
 .empty {
   height: 30px;
