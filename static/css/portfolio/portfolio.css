@@ -127,7 +127,6 @@
   opacity: 0.5;
 }
 .profile_first_page_right_nav_one:hover {
-  background-color: #fccacf;
 }
 .profile_first_page_right_nav_two {
   width: 40px;
@@ -142,7 +141,6 @@
   opacity: 0.5;
 }
 .profile_first_page_right_nav_two:hover {
-  background-color: red;
 }
 .profile_first_page_right_nav_three {
   width: 40px;
@@ -157,7 +155,6 @@
   opacity: 0.5;
 }
 .profile_first_page_right_nav_three:hover {
-  background-color: red;
 }
 .index_four {
   width: 100%;
@@ -190,4 +187,18 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+}
+.fa-heart {
+  color: rgba(0, 0, 0, 0.1);
+}
+.fa-heart:hover {
+  color: red;
+}
+.fa-heart:active {
+  color: red;
+}
+.heartclick {
+}
+.hearttored {
+  color: red;
 }
