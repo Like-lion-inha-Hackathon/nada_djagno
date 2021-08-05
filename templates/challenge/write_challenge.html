@@ -13,12 +13,12 @@
     
     <form id="write-challenge"action="" method="POST">
         {% csrf_token %}
-        <label class="title" for="title">제목</label>
+        <label class="title" for="title">제목 : </label>
         <input class="title_box" name="title" type="text" placeholder="제목을 입력하세오"/>
-        <label class="period" for="period">기간</label>
+        <label class="period" for="period">기간 : </label>
         <input class="period_box" name="period" type="text" placeholder="기간을 입력하세오"/>
-        <label class="method" for="method">방법</label>
+        <label class="method" for="method">방법 : </label>
         <input class="method_box" name="method" type="text" placeholder="방법을 입력하세요"/>
-        <button type="button">등록하기</button>
+        <button type="submit">등록하기</button>
     </form>
 {% endblock content%}
