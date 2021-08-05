@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {% extends  "base.html" %}
 {% block page_title %}
 Log In
@@ -11,3 +12,38 @@ Log In
     <button>Sign Up</button>
 </form>
 {% endblock %}
+=======
+{% extends "base.html" %}
+{% load static%}
+{% block page_title %}
+Log In
+{% endblock page_title %}
+{% block css %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/users/login.css' %}">
+</head>
+{% endblock css %}
+{% block left-bar %}
+{% endblock left-bar %}
+{% block nav %} {% endblock nav %}
+{% block content %}
+
+<div><button class=register>회원가입</button></div>
+<div class="all">
+    <h1>NADA</h1>
+    <form action="{% url 'users:login' %}" method="POST">
+    {% csrf_token %}
+    </form>
+        <div class="input-box" >
+            <input class=input-bar1 type="stext" class="form-control" placeholder=" 이메일" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input class=input-bar2 id="password" type="password" name="password" placeholder=" 비밀번호"> 
+            <button class=login-box>로그인</button>
+            <box class=forgot-box>아이디/비밀번호를 잊으셨나요?</box>
+        </div>
+</div>
+
+
+{% endblock %}123
+
+
+>>>>>>> Stashed changes
