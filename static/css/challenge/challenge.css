@@ -58,6 +58,9 @@
 
 }
 
+p{
+    text-align:center;
+}
 .round > a {
     width: 100%;
     height: 100%;
