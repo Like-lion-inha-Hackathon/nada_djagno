@@ -162,15 +162,38 @@
 .index_four {
   width: 100%;
   height: 110vh;
-  background-color: gray;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  border-top-style: dotted;
+  border-top-width: 2px;
+  border-top-color: black;
+}
+.index_four_one_window {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.index_four_real_one_window {
+  height: 75%;
+  width: 80%;
+  background-color: rgb(211, 211, 211);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.index_four_real_one_window_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: black;
 }
 .index_five {
   width: 100%;
   height: 110vh;
-  background-color: white;
+  background-color: yellowgreen;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
