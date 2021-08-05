@@ -71,9 +71,19 @@
 
 
 .nothing {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     height:100%;
     width:100%;
+    border:2px solid magenta;
     border-radius: 100%;
+    /* text-align:center;  */
+}
+
+.plus{
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size: 30px;
 }
 
 .nothin_round{

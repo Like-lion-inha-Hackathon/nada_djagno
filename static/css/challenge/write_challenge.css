@@ -7,6 +7,28 @@
     font-size: 50px;
 }
 
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.title_div{
+    width:70%;
+    height:30%;
+}
+
+.period_div{
+    width:70%;
+    height:30%;
+}
+
+.method_div{
+    width:70%;
+    height:30%;
+}
+
 @font-face {
     font-family: 'EliceDigitalBaeum_Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
@@ -29,7 +51,7 @@
 .title_box{
     border: 2px solid gray;
     margin-bottom:10px;
-    margin-right:100px;
+    margin-right:auto;
     width:70%;
     height:50px;
     font-family: 'EliceDigitalBaeum_Bold';
@@ -45,7 +67,7 @@
 .period_box{
     border: 2px solid gray;
     margin-bottom:10px;
-    margin-right:120px;
+    margin-right:auto;
     width:70%;
     height:50px;
     font-family: 'EliceDigitalBaeum_Bold';
@@ -61,7 +83,7 @@
 .method_box{
     border: 2px solid gray;
     margin-bottom:10px;
-    margin-right:120px;
+    margin-right:auto;
     width:70%;
     height:70px;
     font-family: 'EliceDigitalBaeum_Bold';
