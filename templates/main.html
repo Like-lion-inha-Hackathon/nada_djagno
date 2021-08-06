@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% block nav %}{% endblock nav %}
-{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/users/main.css' %}">
@@ -11,10 +9,7 @@
 {% block content %}
 
 <div class="circle">
-  <div class="status-bar">
-    <span class="main_logo">N A D A</span>
-    <button class="login_button"><a href="{% url 'users:main' %}">Log-out</a></button>
-  </div>
+
   <div class="circle_box_one">
     <div></div>
     <a class="line" href="{% url 'portfolios:main' %}">

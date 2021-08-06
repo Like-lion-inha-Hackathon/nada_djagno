@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% block nav %}{% endblock nav %}
-{% block left-bar %}{% endblock left-bar %}
 {% block page_title %}커넥트{% endblock page_title %}
 {% block content%}
 
@@ -11,12 +9,6 @@
     {% endblock css %}
 </head>
 <div class="outer">
-    <div class="status-bar">
-        <span class="main_logo">N A D A</span>
-        <button class="login_button">
-            <a href="{% url 'users:main' %}">Log-out</a>
-        </button>
-    </div>
     <div class="search">
         <div class="title">CONNECT;</div>
         <div class="search_bar">

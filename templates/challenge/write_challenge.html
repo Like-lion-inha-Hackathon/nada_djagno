@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_title %}나의 챌린지{% endblock page_title %}
-{% block nav %}{% endblock nav %}
-{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/challenge/write_challenge.css' %}">
@@ -24,7 +22,7 @@
             <label class="method" for="method">방법 : </label>
             <input class="method_box" name="method" type="text" placeholder="방법을 입력하세요"/>
         </div>
-            <button type="submit">등록하기</button>
+            <button class="button__submit" type="submit">등록하기</button>
     </form>
 </body>
 {% endblock content%}

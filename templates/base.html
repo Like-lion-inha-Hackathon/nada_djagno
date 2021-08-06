@@ -38,18 +38,15 @@
                     <i class="fas fa-home fa-2x"></i>
                 </div>
             </div>
+            <div class="status-bar">
+                <span class="main_logo">N A D A</span>
+                <button class="login_button">
+                    <a href="{% url 'users:main' %}">Log-out</a>
+                </button>
+            </div>
         {% endblock nav %}
     </header>
-    {% block left-bar %}
-        <div class="left-bar__lists">
-            <a href="{% url 'users:main' %}">Main</a>
-            <a href="{% url 'portfolios:main' %}">Portfolio</a>
-            <a href="{% url 'records:main' %}">Records</a>
-            <a href="{% url 'challenges:main' %}">Challenge</a>
-            <a href="{% url 'connects:main' %}">Connect</a>
-            <a href="{% url 'repositories:main' %}">Repository</a>
-        </div>
-    {% endblock left-bar %}
+
     {% block content%}{% endblock %}
 
     <script

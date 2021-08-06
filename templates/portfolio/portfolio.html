@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% block left-bar %}{% endblock left-bar %}
 <head>
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/portfolio/portfolio.css' %}">
@@ -8,12 +7,7 @@
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<div class="status-bar">
-    <span class="main_logo">N A D A</span>
-    <button class="login_button">
-        <a href="{% url 'users:main' %}">Log-out</a>
-    </button>
-</div>
+
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
