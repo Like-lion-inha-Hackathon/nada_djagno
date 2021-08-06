@@ -13,7 +13,24 @@
 <body>
     <header>
         {% block nav %}
-            {% include "partials/nav.html" %}
+            <div class="normal_nav">
+                <div class="navigation_bar">
+                    <div class="empty"></div>
+                    <i class="fas fa-bars fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="far fa-heart fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="far fa-heart fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="far fa-heart fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="far fa-heart fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="far fa-heart fa-2x"></i>
+                    <div class="empty"></div>
+                    <i class="fas fa-home fa-2x"></i>
+                </div>
+            </div>
         {% endblock nav %}
     </header>
     {% block left-bar %}
@@ -28,6 +45,9 @@
     {% endblock left-bar %}
     {% block content%}{% endblock %}
 
-    
+    <script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
 </body>
 </html>
