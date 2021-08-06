@@ -1,14 +1,31 @@
 {% extends "base.html" %}
+{% load static%}
 {% block page_title %}
 Log In
 {% endblock page_title %}
+{% block css %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/users/login.css' %}">
+</head>
+{% endblock css %}
+{% block left-bar %}
+{% endblock left-bar %}
 {% block nav %} {% endblock nav %}
 {% block content %}
-<h1>Log into NADA</h1>
-<h2>가장 나다운 나를 기록하다</h2>
-<form action="{% url 'users:login' %}" method="POST">
+
+<div><button class=register>회원가입</button></div>
+<div class="all">
+    <h1>NADA</h1>
+    <form action="{% url 'users:login' %}" method="POST">
     {% csrf_token %}
-    {{form.as_p}}
-    <button>LOG IN</button>
-</form>
-{% endblock %}123
+    </form>
+        <div class="input-box" >
+            <input class=input-bar1 type="email" class="form-control" name = "email" placeholder=" 이메일" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input class=input-bar2 id="password" type="password" name="password" placeholder=" 비밀번호"> 
+            <button class=login-box type="submit">로그인</button>
+            <box class=forgot-box>아이디/비밀번호를 잊으셨나요?</box>
+        </div>
+</div>
+
+
+{% endblock %}

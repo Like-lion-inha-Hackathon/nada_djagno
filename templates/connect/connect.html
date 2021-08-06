@@ -1,5 +1,45 @@
 {% extends "base.html" %}
-{% block page_title %}Connect{% endblock page_title %}
+{% load static %}
+{% block nav %}{% endblock nav %}
+{% block left-bar %}{% endblock left-bar %}
+{% block page_title %}커넥트{% endblock page_title %}
 {% block content%}
-<span>WELCOME TO <strong>CONNECT</strong></span>
+
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/connect/connect.css' %}">
+    {% endblock css %}
+</head>
+<div class="outer">
+    <div class="status-bar">
+        <span class="main_logo">N A D A</span>
+        <button class="login_button">
+            <a href="{% url 'users:main' %}">Log-out</a>
+        </button>
+    </div>
+    <div class="search">
+        <div class="title">CONNECT;</div>
+        <div class="search_bar">
+            <form id="write-challenge" action="" method="POST">
+                <input class="search_box" name="search_box" type="text" placeholder="| 검색어를 입력하세오"/>
+            </form>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio_title">포트폴리오</div>
+        <div class="tag">
+            <div class="d_tag1">IT</div>
+            <div class="d_tag2">서비스기획</div>
+            <div class="d_tag3">디자이너</div>
+            <div class="d_tag4">교육</div>
+        </div>
+        <div class="detail_box"></div>
+    </div>
+    <div class="challenge">
+
+    </div>
+    <div class="contest_exhibit">
+
+    </div>
+</div>
 {% endblock content%}
