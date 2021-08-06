@@ -23,12 +23,14 @@ ul {
 .navigation_bar {
   position: fixed;
   width: 4.7%;
-  height: 90vh;
-  background-color: rgba(128, 128, 128, 0.1);
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 6;
+  opacity: 0.9;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
 }
 .navigation_bar:hover {
   width: 15%;
@@ -36,4 +38,38 @@ ul {
 }
 .empty {
   height: 30px;
+}
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 95.3%; /*위에 줄은 status-bar를 위에 고정시키기 위한 것이다.*/
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 5;
+  background-color: rgb(232, 234, 237);
+  opacity: 0.9;
+  margin-left: 4.7%;
+}
+.main_logo {
+  margin-left: 50px;
+  font-size: 35px;
+  font-weight: 800;
+  color: yellowgreen;
+}
+
+.login_button {
+  margin-right: 50px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-family: unset;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 10px;
+  border: thin;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

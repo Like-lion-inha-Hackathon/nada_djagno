@@ -1,10 +1,10 @@
-.outer{  
-    z-index:3;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    width:100vw;
-    height:400vh;
+.outer {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 400vh;
 }
 
 .search{
@@ -44,28 +44,30 @@
     width:100%;
     height:25%;
     display:flex;
+
 }
 
-.challenge{
-    background-color:mintcream;
-    width:100%;
-    height:25%;
-    display:flex;
+.challenge {
+  background-color: mintcream;
+  width: 100%;
+  height: 25%;
+  display: flex;
 }
 
-.contest_exhibit{
-    background-color:olive;
-    width:100%;
-    height:25%;
-    display:flex;
+.contest_exhibit {
+  background-color: olive;
+  width: 100%;
+  height: 25%;
+  display: flex;
 }
 
-.portfolio{
-    opacity:0.5;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
+.portfolio {
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .portfolio_title_box{
     display:flex;
@@ -88,7 +90,6 @@
 }
 
 
-
-.detail_box{
-    height:60%;
+.detail_box {
+  height: 60%;
 }
