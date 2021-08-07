@@ -201,6 +201,9 @@
   width: 90%;
   height: 70%;
   background-color: tomato;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(181, 181, 181);
 }
 .index_four_real_window_grid_two_down {
   width: 90%;
@@ -230,6 +233,9 @@
   height: 70%;
   background-color: tomato;
   display: flex;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(181, 181, 181);
 }
 .index_four_real_window_grid_three_down {
   width: 90%;
@@ -243,6 +249,9 @@
   border-style: solid;
   border-width: 1px;
   border-color: rgb(181, 181, 181);
+}
+.index_four_button {
+  margin-top: 10vh;
 }
 .index_four_real_window_grid_six {
   display: flex;
@@ -262,7 +271,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 6vh;
+  font-size: 50px;
   font-weight: bold;
   color: rgb(112, 112, 112);
   border-style: solid;
@@ -317,7 +326,7 @@
 }
 .index_five_window_flex {
   width: 100%;
-  height: 100%;
+  height: 7vh;
   display: grid;
   grid-template-columns: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr;
   grid-template-rows: 1fr;
@@ -352,7 +361,7 @@
 }
 .under_bar {
   width: 85%;
-  height: 5px;
+  height: 10px;
   background-color: black;
   margin-top: 10px;
 }
@@ -402,6 +411,7 @@
   align-items: flex-end;
 }
 .index_six {
+  margin-top: 30vh;
   width: 100%;
   height: 80vh;
   background-color: white;
