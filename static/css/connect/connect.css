@@ -54,6 +54,7 @@
   display: flex;
   flex-direction:column;
   justify-content:center;
+
 }
 
 .challenge_title{
@@ -88,6 +89,7 @@
   margin-left:15vw;
   margin-right:15vw;
   margin-top:10vh;
+
 }
 
 .contest_exhibit {
@@ -97,6 +99,7 @@
   flex-direction:column;
   justify-content:center;
 }
+
 
 .contest_exhibit_title{
   margin-top:10vh;
@@ -133,6 +136,27 @@
   /* padding:2vh; */
   /* padding:5rem; */
 }
+
+
+
+.portfolio_title{
+    text-align:center;
+    margin-top:5vh; 
+    margin-bottom:2vh;
+    height:15%;
+    font-size:60px;
+}
+
+.border_categories{
+  border-left:30vw;
+  border-top:-5vh;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  /* padding:2vh; */
+  /* padding:5rem; */
+}
+
 
 ul{
   text-align:center;

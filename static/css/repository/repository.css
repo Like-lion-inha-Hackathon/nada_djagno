@@ -1,0 +1,27 @@
+.allrepo{
+    display:flex;
+    justify-content:flex-start;
+    margin-left: 15vh;
+    margin-top: 20vh;
+}
+.repofile1{
+    width: 25vh;
+    height: 25vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+.repofile2{
+    width: 25vh;
+    height: 25vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+.repofile3{
+    width: 25vh;
+    height: 25vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+figcaption{
+    text-align: center;
+}
