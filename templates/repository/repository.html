@@ -1,5 +1,26 @@
 {% extends "base.html" %}
+{% load static %}
 {% block page_title %}Repository{% endblock page_title %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/repository/repository.css' %}">
+    {% endblock css %}
+</head>
 {% block content%}
-<span>WELCOME TO <strong>REPOSITORY</strong></span>
+<div class="allrepo">
+<figure>
+<img class="repofile1" src = "{% static 'image/repositoryfile.png'%}">
+<figcaption>모두 보기</figcaption>
+</figure>
+<figure>
+    <a href="{% url 'reository: ' %}">
+        <img class="repofile2" src = "{% static 'image/repositoryfile.png'%}">
+    </a>
+<figcaption>PORTFOLIO</figcaption>
+</figure>
+<figure>
+<img class="repofile3" src = "{% static 'image/repositoryfile.png'%}">
+<figcaption></figcaption>
+</figure>
+</div>
 {% endblock content%}
