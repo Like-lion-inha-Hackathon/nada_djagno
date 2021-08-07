@@ -8,7 +8,12 @@
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block nav %}{% endblock nav %}
 {% block content %}
-
+<div class="status-bar">
+  <span class="main_logo">N A D A</span>
+  <div></div>
+  <div></div>
+  <button class="login_button"><a href="{% url 'users:login' %}">Log-out</a></button>
+</div>
 <div class="circle">
 
   <div class="circle_box_one">
