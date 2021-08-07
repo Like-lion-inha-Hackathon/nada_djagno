@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}활동을 커넥트하다;{% endblock page_title %}
+{% block content%}
+
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/connect/connect_dream.css' %}">
+    {% endblock css %}
+</head>
+
+<div class="box_all">
+<div class="space_all">
+    <div class="title">
+    코딩 잘 몰라도 아이디어 넘치시는 분!성실하신 분!함께해요~:)</div>
+    <div class="box">
+        <div class="poster">
+        </div>
+        <div class="others">
+            <div class="contents"></div>
+            <button class="others_portfolio" type="button">팀장의 포트폴리오</button>
+            <button class="my_portfolio" type="button">나의 포트폴리오 팀장에게만 공유하기</button>
+            <button class="other_team" type="button">이 공모전의 다른 팀 확인하기</button>
+        </div>
+    </div>
+</div>
+{% endblock content%}
