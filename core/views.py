@@ -8,7 +8,7 @@ from django.http import JsonResponse
 
 
 def intro_view(request):
-    return render(request, "try.html")
+    return render(request, "intro.html")
 
 
 def try_view(request):
