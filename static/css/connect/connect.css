@@ -7,32 +7,44 @@
   height: 400vh;
 }
 
-.search {
-  background-color: lightsteelblue;
-  width: 100%;
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.search{
+    /* margin:0 auto; */
+    background-color:lightsteelblue;
+    width:100%;
+    height:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
-.title {
-  text-align: center;
-  font-family: unset;
-  font-size: 50px;
+.title{
+    margin-top:10%;
+    height:25vh;
+    text-align:center;
+    font-family:unset;
+    font-size:100px;
 }
 
-.search_bar {
-  /* width:80%;
-    height:20%; */
-  text-align: center;
+.search_bar{
+    width:100%;
+    height:15vh;
+    text-align:center;
 }
 
-.portfolio {
-  background-color: mediumseagreen;
-  width: 100%;
-  height: 25%;
-  display: flex;
+.search_box{
+    padding:10px 40px;
+    height:50px;
+    width:60%;
+    border-radius:30px;
+    font-size: 20px;
+}
+
+.portfolio{
+    display:flex;
+    flex-direction:column;
+    background-color: mediumseagreen;
+    width:100%;
+    height:25%;
 }
 
 .challenge {
@@ -56,26 +68,27 @@
   justify-content: center;
 }
 
-.portfolio_title {
-  height: 20%;
-  margin-left: 20vw;
-  text-decoration-color: maroon;
-  font-size: unset;
+
+.portfolio_title_box{
+    display:flex;
+    justify-content:center;
 }
 
-.tag {
-  height: 20%;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10vw;
+.portfolio_title{
+    padding-left:40vw;
+    margin-top:10vh; 
+    height:20%;
+    text-decoration-color: maroon ;
+    font-size:70px;
 }
 
-.tag :nth-child() {
-  width: 10%;
-  height: 80%;
-  border: 2px solid gray;
-  border-radius: 80%;
+.tag{
+    height:20%;
+    display:flex;
+    justify-content:flex-start;
+    margin-left:10vw;
 }
+
 
 .detail_box {
   height: 60%;
