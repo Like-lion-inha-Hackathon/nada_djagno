@@ -20,9 +20,12 @@
 
 < records >
     records.html => {% url 'records:main' %}
+    records_write.html => {% url 'records:write' %}
+    records_calender.html => {% url 'records:calender' %}
 
 < repository >
     repository.html => {% url 'repositories:main' %}
+    repositoryportfolio.html => {% url'repositories:portfolio' %}
 
 < users >
     main.html => {% url 'users:main' %}
