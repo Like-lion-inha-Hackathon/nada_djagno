@@ -23,6 +23,7 @@
 
 < repository >
     repository.html => {% url 'repositories:main' %}
+    repositoryportfolio.html => {% url'repositories:portfolio' %}
 
 < users >
     main.html => {% url 'users:main' %}
