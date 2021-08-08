@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 400vh;
+  height: 500vh;
 }
 
 .search{
@@ -94,7 +94,7 @@
 
 .contest_exhibit {
   width: 100%;
-  height: 25%;
+  height: 200vh;
   display: flex;
   flex-direction:column;
   justify-content:center;
@@ -102,23 +102,63 @@
 
 
 .contest_exhibit_title{
-  margin-top:10vh;
+  margin-top:5vh; 
   width:100%;
-  height:20vh;
+  height:15vh;
   font-size:60px;
   text-align:center;
 }
 
 .contest_exhibit_search{
   width:100%;
-  height:20vh;
+  height:10vh;
+  margin-bottom:2vh;
   text-align:center;
 }
 
 .contest_exhibit_categories{
   width:100%;
-  height:20vh;
+  height:10vh;
+  margin-left:10vw;
+  margin-right:10vw;
+  background-color:gray;
 }
+
+.profiles{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:58vh;
+}
+
+.contest_exhibit_subtitle{
+ width:100%;
+ height:8vh;
+ font-size:30px;
+ margin-top:20px;
+}
+
+.contest_exhibit_boxes{
+  display:flex;
+  border:2px solid gray;
+  width:100%;
+  height:50vh;
+}
+
+.study_title{
+  display:flex;
+  width:100%;
+  height:8vh;
+  font-size:30px;
+  margin-top:20px;
+}
+
+.study_boxes{
+  border:2px solid gray;
+  width:100%;
+  height:50vh;
+}
+
 .portfolio_title{
     text-align:center;
     margin-top:5vh; 
@@ -176,7 +216,6 @@ ul{
 .detail_box{
   display:flex;
   flex-direction:column;
-  margin-top:-30px;
   width:25vw;
   height:40vh;
   margin:5px 10px;
