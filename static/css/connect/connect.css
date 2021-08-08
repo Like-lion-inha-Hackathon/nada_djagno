@@ -97,7 +97,7 @@
   height: 200vh;
   display: flex;
   flex-direction:column;
-  justify-content:center;
+  /* justify-content:center; */
 }
 
 
@@ -116,47 +116,55 @@
   text-align:center;
 }
 
-.contest_exhibit_categories{
-  width:100%;
-  height:10vh;
-  margin-left:10vw;
-  margin-right:10vw;
-  background-color:gray;
-}
-
 .profiles{
   display:flex;
   flex-direction:column;
   width:100%;
-  height:58vh;
+  height:100vh;
 }
 
+
+.contest_exhibit_categories{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  height:10vh;
+  margin-right:10vw;
+  padding:1rem;
+  background-color:lightgray;
+}
+
+ul{
+  font-size:20px;
+  border:unset;
+}
 .contest_exhibit_subtitle{
  width:100%;
  height:8vh;
- font-size:30px;
+ font-size:50px;
  margin-top:20px;
 }
 
 .contest_exhibit_boxes{
   display:flex;
-  border:2px solid gray;
   width:100%;
   height:50vh;
+  padding:2rem;
 }
 
 .study_title{
   display:flex;
   width:100%;
   height:8vh;
-  font-size:30px;
+  font-size:50px;
   margin-top:20px;
 }
 
 .study_boxes{
-  border:2px solid gray;
   width:100%;
   height:50vh;
+  display:flex;
+  padding:2rem;
 }
 
 .portfolio_title{
@@ -223,6 +231,13 @@ ul{
   border-radius:20px;
 }
 
+.detail_box_study{
+  width:25vw;
+  height:40vh;
+  margin:5px 10px;
+  border:2px solid gray;
+  border-radius:20px;
+}
 img{
   width:100%;
   height:80%;
