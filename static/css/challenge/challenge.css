@@ -1,6 +1,6 @@
 .head_title {
-    padding-top:50px;
-    height:100px;
+    padding-top:10vh;
+    height:10vh;
     display:flex;
     justify-content: center;
     font-family: 'EliceDigitalBaeum_Bold';
@@ -15,15 +15,15 @@
 }
 
 .logo {
-    height:30px;
-    margin:5px 68px;
+    height:5vh;
+    margin-right:5vw;
     display:flex;
     flex-direction: row;
     justify-content:flex-end;
 }
 
 .logo>img{
-    margin:3px;
+    margin:5px;
     background-color:ghostwhite;
 }
 
@@ -36,7 +36,7 @@
     width:90%;
     height:5px;
     background-color:gray;
-    margin-bottom:30px;
+    margin-bottom:5vh;
 }
 
 .round-all{
@@ -45,14 +45,17 @@
     display:flex;
     flex-wrap:wrap; 
     flex-direction: row; 
-    justify-content: space-between;
-    margin: 0 60px;
+    justify-content: flex-start;
+    padding:3em;
+    margin-left:5vw;
+    margin-right:5vw;
 }
 
 
 .round {
     display:flex;
     flex-direction:column;
+    margin-right:3em;
     width: 300px;
     height: 300px;    
 
@@ -80,22 +83,13 @@ p{
     align-items:center;
     height:100%;
     width:100%;
-    border:2px solid magenta;
     border-radius: 100%;
+    background-color: lightgray;
     /* text-align:center;  */
 }
 
 .plus{
     font-family: 'EliceDigitalBaeum_Bold';
-    font-size: 30px;
-}
-
-.nothin_round{
-    margin-left:50px;
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-    overflow: hidden;
-    border:20px;
-    background-color:gray;
+    font-size: 80px;
+    color:white;
 }
