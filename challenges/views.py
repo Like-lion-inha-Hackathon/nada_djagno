@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from . import models as challenge_models
 
 # Create your views here.
 
@@ -16,4 +17,20 @@ def challenge_reading_view(request):
 
 
 def write_challenge_view(request):
-    return render(request, "challenge/write_challenge.html")
+    content = {}
+    if request.POST:
+        print("post")
+        title = request.POST.get("title")
+        period = int(request.POST.get("period"))
+        method = request.POST.get("method")
+        challenge = challenge_models.Challenge.objects.create(
+            title=title, period=period, method=method
+        )
+        challenges = challenge_models.Challenge.objects.all()
+        content = {
+            "title": title,
+            "period": period,
+            "method": method,
+            "challenges": challenges,
+        }
+    return render(request, "challenge/write_challenge.html", content)

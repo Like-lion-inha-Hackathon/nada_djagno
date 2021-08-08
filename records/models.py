@@ -8,4 +8,4 @@ from users import models as user_models
 class Record(core_models.TimeStampedModel):
     title = models.CharField(max_length=50)
     detail = models.TextField()
-    author = models.ForeignKey(user_models.User, on_delete=models.CASCADE)
+    author = models.ForeignKey(user_models.User, on_delete=models.CASCADE, null=True)
