@@ -1,6 +1,5 @@
-.left-bar__lists {
-  display: flex;
-  flex-direction: column;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: white;
