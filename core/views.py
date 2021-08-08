@@ -12,8 +12,17 @@ def intro_view(request):
 
 
 def try_view(request):
-    if request.GET:
-        return render(request, "try.html")
+    data = {}
+    if request.POST:
+        data["username"] = request.POST.get("username")
+        for i in range(1, len(request.POST) - 1):
+            data[f"num{i}"] = request.POST.get(f"number{i}", "0")
+        print(data)
+        data = json.dumps({"user": [data]})
+    return render(request, "try.html", {"user": data})
+
+
+def json_data_view(request):
 
     users = user_models.User.objects.all()
     user_list = []
