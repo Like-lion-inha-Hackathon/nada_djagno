@@ -4,14 +4,13 @@
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 400vh;
+  height: 500vh;
 }
 
 .search{
-    /* margin:0 auto; */
-    
+    margin-left:6vw;
     opacity:0.8;
-    width:100%;
+    width:94vw;
     height:20%;
     display:flex;
     flex-direction:column;
@@ -40,11 +39,13 @@
     font-size: 20px;
 }
 
+
 .portfolio{
+    margin-left:6vw;
     display:flex;
     justify-content:center;
     flex-direction:column;
-    width:100%;
+    width:94vw;
     height:35%;
 }
 
@@ -93,32 +94,88 @@
 }
 
 .contest_exhibit {
-  width: 100%;
-  height: 25%;
+  width: 94vw;
+  height: 200vh;
   display: flex;
   flex-direction:column;
-  justify-content:center;
+  margin-left:6vw;
+  margin-top:10vh;
+  /* justify-content:center; */
 }
 
+a{
+  width:100%;
+  height:100%;
+}
 
 .contest_exhibit_title{
-  margin-top:10vh;
+  margin-top:5vh; 
   width:100%;
-  height:20vh;
+  height:15vh;
   font-size:60px;
   text-align:center;
+  margin-left:-6vw;
 }
 
 .contest_exhibit_search{
   width:100%;
-  height:20vh;
+  height:10vh;
+  margin-bottom:2vh;
   text-align:center;
 }
 
-.contest_exhibit_categories{
+.profiles{
+  display:flex;
+  flex-direction:column;
   width:100%;
-  height:20vh;
+  height:100vh;
 }
+
+
+.contest_exhibit_categories{
+  display:flex;
+  justify-content:space-between;
+  width:90vw;
+  height:10vh;
+  margin-right:10vw;
+  padding:1rem;
+  background-color:lightgray;
+}
+
+.contest_exhibit_categories>ul{
+  padding:1rem;
+  font-size:20px;
+  border:unset;
+}
+.contest_exhibit_subtitle{
+ width:100%;
+ height:8vh;
+ font-size:50px;
+ margin-top:20px;
+}
+
+.contest_exhibit_boxes{
+  display:flex;
+  width:100%;
+  height:50vh;
+  padding:2rem;
+}
+
+.study_title{
+  display:flex;
+  width:100%;
+  height:8vh;
+  font-size:50px;
+  margin-top:20px;
+}
+
+.study_boxes{
+  width:100%;
+  height:50vh;
+  display:flex;
+  padding:2rem;
+}
+
 .portfolio_title{
     text-align:center;
     margin-top:5vh; 
@@ -166,17 +223,27 @@ ul{
 }
 
 .profiles{
-  padding:0 10vw;
+  /* padding:0 10vw; */
   display:flex;
   justify-content:flex-start;
   flex-direction:row;
+  align-items:center;
   flex-wrap:wrap;
+  padding-left:3vw;
+  padding-top:3vh;
 }
 
 .detail_box{
   display:flex;
   flex-direction:column;
-  margin-top:-30px;
+  width:20vw;
+  height:50vh;
+  margin:5px 10px;
+  border:2px solid gray;
+  border-radius:20px;
+}
+
+.detail_box_study{
   width:25vw;
   height:40vh;
   margin:5px 10px;

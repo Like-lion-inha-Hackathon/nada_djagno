@@ -357,3 +357,6 @@ ul {
 .qmain-chat .qchat__timestamp:hover {
   animation: rolling 1.5s linear infinite;
 }
+
+input{ outline-style:none;}
+textarea{ outline-style:none;}

@@ -30,22 +30,23 @@
 
 .bar{
     width: 5px;
-    margin-top:100px;
+    margin-top:15vh;
     margin-left:30px;
     background-color: mediumpurple;
-    height:500px;
+    height:80vh;
 }
 
 img{
-    padding:2px;
-    width:15px;
-    height:15px;
+    /* padding:2px; */
+    width:3vw;
+    height:3vh;
+    padding:0.2rem;
     border:2px solid gray;
-    border-radius:20%;
+    border-radius:10px;
 }
 
 .box-type{
-    margin-left:50px;
+    margin-left:10vw;
     width:80%;
     height:100%;
     display:flex;
