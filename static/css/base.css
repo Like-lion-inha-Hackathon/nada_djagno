@@ -126,6 +126,7 @@ ul {
   background-color: #abc1d1;
   height: 60vh;
   margin-top: 86.84px;
+  width: 450px;
 }
 #qchat-screen .qalt-header,
 #qchat-screen .qstatus-bar {
@@ -160,7 +161,7 @@ ul {
 }
 
 .qmain-chat {
-  margin-top: 150px;
+  margin-top: -2px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,9 +176,10 @@ ul {
   margin-bottom: 25px;
 }
 .qmessage-row {
-  width: 100%;
+  width: 440px;
   display: flex;
   margin-bottom: 25px;
+  padding-left: 10px;
 }
 .qmessage-row img {
   width: 50px;
@@ -201,6 +203,14 @@ ul {
   border-top-left-radius: 0px;
   margin-right: 5px;
 }
+.qqmessage__bubble {
+  background-color: yellow;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-right: 5px;
+}
 .qmessage__time,
 .qmessage__author {
   opacity: 0.8;
@@ -208,27 +218,27 @@ ul {
 }
 .qmessage-row--own {
   justify-content: flex-end;
+  margin-right: 10px;
 }
-.qmessage-row--own .qmessage__bubble {
+.qmessage-row--own {
   background-color: var(--yellow);
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
-  margin-right: 0px;
-  margin-left: 5px;
+  padding-right: 10px;
 }
-/*.message-row--own .message__bubble {
-  order: 1; /*순서를 정해줄 수 있다. flex children에만 적용이 된다.
+.message-row--own .message__bubble {
+  order: 1;
 }
 .message-row--own .message__time {
   order: 0;
-}*/
+}
 .qmessage-row--own .qmessage__info {
-  flex-direction: row-reverse; /*위에 주석으로 처리한 것과 같은 뜻이다. 순서를 바꾼다는 뜻이다.*/
+  flex-direction: row-reverse;
 }
 .qreply {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  width: 450px;
+  bottom: 19.5vh;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -236,6 +246,7 @@ ul {
   box-sizing: border-box;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  border: solid 1px gray;
 }
 .qreply .qreply__column:first-child {
   width: 10%;
@@ -266,7 +277,7 @@ ul {
   top: 12px;
 }
 .qreply__column button {
-  background-color: var(--yellow);
+  background-color: yellow;
   border: none;
   width: 30px;
   height: 30px;
@@ -290,17 +301,8 @@ ul {
   /*reply 내부에 어떤 요소가 focus되어 있다면 이라는 뜻이다.*/
 .qreply:focus-within .fa-smile-wink,
 .qreply:focus-within button {
-  opacity: 0;
+  opacity: 0.3;
 }
-
-.qreply:focus-within input {
-  width: 95vw;
-  transform: translateX(-13%) translateY(-80px);
-}
-.qreply:focus-within {
-  transform: translateY(80px);
-}
-
 @keyframes moveout {
   from {
     opacity: 0;
@@ -327,6 +329,8 @@ ul {
 
 .qsecond-chat {
   animation: movein 1s ease-in-out;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 @keyframes rolling {
