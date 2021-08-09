@@ -25,24 +25,48 @@
                         </div>
                     </div>
                     <div class="empty"></div>
-                    <i class="far fa-heart fa-2x"></i>
+                    <a href="{% url 'portfolios:main' %}">
+                        <i class="port_icon far fa-user-circle fa-2x"></i>
+                    </a>
                     <div class="empty"></div>
-                    <i class="far fa-heart fa-2x"></i>
+                    <a href="{% url 'challenges:main' %}">
+                        <i class="chal_icon fas fa-running fa-2x"></i>
+                    </a>
                     <div class="empty"></div>
-                    <i class="far fa-heart fa-2x"></i>
+                    <a href="{% url 'repositories:main' %}">
+                        <i class="repo_icon far fa-folder-open fa-2x"></i>
+                    </a>
                     <div class="empty"></div>
-                    <i class="far fa-heart fa-2x"></i>
+                    <a href="{% url 'records:main' %}">
+                        <i class="writ_icon fas fa-pencil-alt fa-2x"></i>
+                    </a>
                     <div class="empty"></div>
-                    <i class="far fa-heart fa-2x"></i>
+                    <a href="{% url 'connects:main' %}">
+                        <i class="conn_icon fas fa-link fa-2x"></i>
+                    </a>
                     <div class="empty"></div>
-                    <i class="fas fa-home fa-2x"></i>
+                    <a href="{% url 'users:main' %}">
+                        <i class="home_icon fas fa-home fa-2x"></i>
+                    </a>
+                    <div class="nav_under">
+                        <span>NADA</span>
+                    </div>
+                    <div class="nav_underq">
+                        <span>가장 NADA운 생활</span>
+                    </div>
+                    <div class="nav_underq">
+                        <span>08. 2021</span>
+                    </div>
                 </div>
             </div>
             <div class="status-bar">
-                <span class="main_logo">N A D A</span>
+                <a href="{% url 'users:main' %}"><span class="main_logo">N A D A</span></a>
                     <div class="status-bar_sub">
                         <button class="text_button">
                             <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
+                            <div class="green_small_boxs">
+                                <div class="green_smalls"></div>
+                            </div>
                         </button>
                         <button class="login_button">
                             <a href="{% url 'users:main' %}">Log_out</a>

@@ -86,6 +86,18 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: notificationAnimation 10s ease-in-out infinite;
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 .nav_profile {
   width: 5vh;
@@ -115,6 +127,24 @@ ul {
   height: 100%;
   border-radius: 100%;
 }
+.port_icon:hover {
+  color: #92a4b2;
+}
+.chal_icon:hover {
+  color: #92a4b2;
+}
+.repo_icon:hover {
+  color: #92a4b2;
+}
+.writ_icon:hover {
+  color: #92a4b2;
+}
+.conn_icon:hover {
+  color: #92a4b2;
+}
+.home_icon:hover {
+  color: #92a4b2;
+}
 .message_big {
   z-index:-1;
   position: fixed;
@@ -129,6 +159,29 @@ ul {
   height: 60vh;
   width: 450px;
   margin-right: 10vh;
+}
+.green_small_boxs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.green_smalls {
+  margin-top: -2vh;
+  width: 1.2vh;
+  height: 1.2vh;
+  border-radius: 100%;
+  background-color: rgb(0, 89, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.nav_under {
+  margin-top: 35vh;
+  bottom: 0;
+}
+.nav_underq {
+  margin-top: 1vh;
+  font-size: 10px;
 }
 /*=================================================================*/
 #qchat-screen {

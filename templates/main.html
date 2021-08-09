@@ -9,7 +9,7 @@
 {% block nav %}{% endblock nav %}
 {% block content %}
 <div class="status-bar">
-  <span class="main_logo">N A D A</span>
+  <a href="{% url 'core:intro' %}"><span class="main_logo">N A D A</span></a>
   <div></div>
   <div></div>
   <button class="login_button"><a href="{% url 'users:login' %}">Log-out</a></button>
