@@ -38,7 +38,7 @@
 <div class="round-all">
 
     {% for challenge in challenges %}
-        <div class="round"><a href="{% url 'challenges:reading' challenge.id %}"><img src="media/{{challenge.thumbnail}}" alt="img"/><p>{{challenge.title}}</p></a></div>
+        <div class="round"><a href="{% url 'challenges:reading' challenge.id %}"><img src="{% get_media_prefix %}/{{challenge.thumbnail}}" alt="img"/><p>{{challenge.title}}</p></a></div>
     {% endfor %} 
     <div class="round"><a href="{% url 'challenges:write' %}"><div class = "nothing"><div class="plus">+</div></div><p>새로운 챌린지</p></a></div>  
  </div>
