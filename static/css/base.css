@@ -121,7 +121,7 @@ ul {
   height: 60vh;
   width: 95.3%;
   display: flex;
-  margin-top: 86.84px;
+  margin-top: 5vh;
   margin-left: 4.7%;
   justify-content: flex-end;
   z-index: 5;
@@ -135,12 +135,14 @@ ul {
 #qchat-screen {
   background-color: #abc1d1;
   height: 60vh;
-  margin-top: 86.84px;
+  margin-top: 12vh;
   width: 450px;
+  z-index: 20;
 }
 #qchat-screen .qalt-header,
 #qchat-screen .qstatus-bar {
   margin-top: 8.3vh;
+  height: 8vh;
   position: fixed;
   width: 450px;
   box-sizing: border-box;
@@ -186,6 +188,7 @@ ul {
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  margin-top: 1vh;
 }
 .qmessage-row {
   width: 440px;
@@ -366,15 +369,9 @@ ul {
 .qmain-chat .qchat__timestamp:hover {
   animation: rolling 1.5s linear infinite;
 }
-
-<<<<<<< HEAD
 input {
   outline-style: none;
 }
 textarea {
   outline-style: none;
 }
-=======
-input{ outline-style:none;}
-textarea{ outline-style:none;}
->>>>>>> 4df07059dc19f91d063000e5d523c7dd9ab360b9
