@@ -110,21 +110,30 @@ ul {
 .message_big {
   position: fixed;
   height: 60vh;
+  width: 95.3%;
+  display: flex;
+  margin-top: 86.84px;
+  margin-left: 4.7%;
+  justify-content: flex-end;
+}
+.message {
+  height: 60vh;
   width: 450px;
-  margin-top: 86.8px;
+  margin-right: 10vh;
 }
 /*=================================================================*/
 #qchat-screen {
   background-color: #abc1d1;
   height: 60vh;
+  margin-top: 86.84px;
 }
 #qchat-screen .qalt-header,
 #qchat-screen .qstatus-bar {
-  top: 0;
+  margin-top: 8.3vh;
   position: fixed;
-  width: 100%;
-  background-color: #abc1d1;
+  width: 450px;
   box-sizing: border-box;
+  background-color: #abc1d1;
 }
 #qchat-screen .qstatus-bar {
   z-index: 2;
@@ -133,7 +142,12 @@ ul {
   z-index: 1; /*몇번째 위치에 있게 만들 수 있는지 할 수 있다.*/
   top: 10px;
 }
-
+.qalt-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 @keyframes fadeIn {
   from {
     transform: translateY(30px);
