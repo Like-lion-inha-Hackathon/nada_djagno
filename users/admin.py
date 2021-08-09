@@ -28,10 +28,3 @@ class CustomUserAdmin(UserAdmin):
         "birthdate",
         "superhost",
     ]
-
-
-@admin.register(models.Guest)
-class GuestAdmin(admin.ModelAdmin):
-    list_display = [
-        "username",
-    ]

@@ -19,7 +19,3 @@ class User(AbstractUser):
     nickname = models.CharField(max_length=30)
     birthdate = models.DateField(blank=True, null=True)
     superhost = models.BooleanField(default=False)
-
-
-class Guest(core_models.TimeStampedModel):
-    username = models.CharField(max_length=50)
