@@ -21,9 +21,17 @@ class CustomUserAdmin(UserAdmin):
         ),
     )
     list_display = [
+        "username",
         "nickname",
         "email",
         "gender",
         "birthdate",
         "superhost",
+    ]
+
+
+@admin.register(models.Guest)
+class GuestAdmin(admin.ModelAdmin):
+    list_display = [
+        "username",
     ]

@@ -69,8 +69,12 @@
                             </div>
                         </button>
                         <button class="login_button">
-                            <a href="{% url 'users:main' %}">Log_out</a>
+                            {% block islogin %}
+                            <a href="{% url 'users:login' %}">Log In</a>
+                            {% endblock islogin %}
                         </button>
+                        {% block profile %}
+                        {% endblock profile %}
                     </div>
                 </div>
             </div>

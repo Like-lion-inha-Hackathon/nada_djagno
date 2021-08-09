@@ -146,7 +146,7 @@ ul {
   color: #92a4b2;
 }
 .message_big {
-  z-index:-1;
+  z-index: -1;
   position: fixed;
   height: 60vh;
   width: 95.3%;
