@@ -34,16 +34,11 @@
         <div class="emptyq"></div>
 </div>
 <div class="round-all">
-    <div class="round"><a href="{% url 'challenges:reading' %}"><img src="{% static 'image/challenge_reading.jpeg' %}" alt="img"/><p>매일 20페이지 읽기</p></a></div>
-    <div class="round"><a href="{% url 'challenges:study' %}"><img src="{% static 'image/challenge_study.png' %}" alt="img"/><p>매일 1시간 공부</p></a></div>
-    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>평일 오전 6시 기상</p></a></div>
-    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>주 5일 1분 플랭크</p></a></div>
-    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>아침 챙겨 먹기</p></a></div>
-    <div class="round"><a href="#"><img src="{% static 'image/challenge_alarmclock.jpeg' %}" alt="img"/><p>TED 강연보기</p></a></div>
-    <div class="round"><a href="{% url 'challenges:write' %}"><div class = "nothing"><div class="plus">+</div></div>
-        <p>새로운 챌린지</p>
-    </a></div>   
-</div>
 
-</dody>
-{% endblock content%}
+    {% for challenge in challenges %}
+        <div class="round"><a href="{% url 'challenges:reading' challenge.id %}"><img src="media/{{challenge.thumbnail}}" alt="img"/><p>{{challenge.title}}</p></a></div>
+    {% endfor %} 
+    <div class="round"><a href="{% url 'challenges:write' %}"><div class = "nothing"><div class="plus">+</div></div><p>새로운 챌린지</p></a></div>  
+ </div>
+    {% endblock content%}
+

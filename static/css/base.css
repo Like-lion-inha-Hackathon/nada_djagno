@@ -1,6 +1,5 @@
-.left-bar__lists {
-  display: flex;
-  flex-direction: column;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: white;
@@ -59,7 +58,16 @@ ul {
   font-weight: 800;
   color: yellowgreen;
 }
-
+.status-bar_sub {
+  width: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text_button {
+  border: none;
+  background-color: rgb(234, 236, 239);
+}
 .login_button {
   margin-right: 50px;
   width: 100px;
@@ -107,6 +115,262 @@ ul {
   height: 100%;
   border-radius: 100%;
 }
+.message_big {
+  position: fixed;
+  height: 60vh;
+  width: 95.3%;
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 4.7%;
+  justify-content: flex-end;
+  z-index: 5;
+}
+.message {
+  height: 60vh;
+  width: 450px;
+  margin-right: 10vh;
+}
+/*=================================================================*/
+#qchat-screen {
+  background-color: #abc1d1;
+  height: 60vh;
+  margin-top: 12vh;
+  width: 450px;
+  z-index: 20;
+}
+#qchat-screen .qalt-header,
+#qchat-screen .qstatus-bar {
+  margin-top: 8.3vh;
+  height: 8vh;
+  position: fixed;
+  width: 450px;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#qchat-screen .qstatus-bar {
+  z-index: 2;
+}
+#qchat-screen .qalt-header {
+  z-index: 1; /*몇번째 위치에 있게 만들 수 있는지 할 수 있다.*/
+  top: 10px;
+}
+.qalt-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 
-input{ outline-style:none;}
-textarea{ outline-style:none;}
+.qmain-chat {
+  margin-top: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s linear forwards;
+}
+.qchat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-top: 1vh;
+}
+.qmessage-row {
+  width: 440px;
+  display: flex;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+.qmessage-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.qmessage__author {
+  margin-bottom: 5px;
+  display: block;
+}
+.qmessage__info {
+  display: flex;
+  align-items: flex-end;
+}
+.qmessage__bubble {
+  background-color: white;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+.qqmessage__bubble {
+  background-color: yellow;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-right: 5px;
+}
+.qmessage__time,
+.qmessage__author {
+  opacity: 0.8;
+  font-size: 14px;
+}
+.qmessage-row--own {
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.qmessage-row--own {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  padding-right: 10px;
+}
+.message-row--own .message__bubble {
+  order: 1;
+}
+.message-row--own .message__time {
+  order: 0;
+}
+.qmessage-row--own .qmessage__info {
+  flex-direction: row-reverse;
+}
+.qreply {
+  position: fixed;
+  width: 450px;
+  bottom: 19.5vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border: solid 1px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .qreply .qreply__column:first-child {
+  width: 2%;
+}
+.qreply .qreply__column:last-child {
+  width: 98%;
+  position: relative;
+} */
+.qreply i {
+  opacity: 0.5;
+}
+.airplane {
+  color: blue;
+  margin-top: 5px;
+}
+.qreply input {
+  padding: 12px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.qreply__column {
+  display: flex;
+}
+.qreply__column:last-child > i,
+.qreply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 5px;
+}
+.qreply__column:last-child > i {
+  right: 40px;
+  top: 12px;
+}
+.qreply__column button {
+  background-color: yellow;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.qreply__column button i {
+  opacity: 1;
+}
+.qreply__column button:focus,
+.qreply__column button:active {
+  outline: none;
+}
+
+.qreply .qreply__column:first-child,
+.qreply .fa-smile-wink,
+.qreply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.qreply:focus-within .qreply__column:first-child,
+  /*reply 내부에 어떤 요소가 focus되어 있다면 이라는 뜻이다.*/
+.qreply:focus-within .fa-smile-wink,
+.qreply:focus-within button {
+  opacity: 0.3;
+}
+@keyframes moveout {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.qfirst-chat {
+  animation: moveout 1s ease-in-out;
+}
+
+@keyframes movein {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.qsecond-chat {
+  animation: movein 1s ease-in-out;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@keyframes rolling {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.qmain-chat .qchat__timestamp:hover {
+  animation: rolling 1.5s linear infinite;
+}
+input {
+  outline-style: none;
+}
+textarea {
+  outline-style: none;
+}
