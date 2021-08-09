@@ -7,7 +7,7 @@
 
 .top{
     display:flex;
-    width:80%;
+    width:80vw;
     height:20vh;
     margin-top:14vh;
     margin-left:10vw;
@@ -37,7 +37,7 @@
     align-items: center;
     height:3vh;
     width:3vw;
-    margin-left:1vw;
+    margin-left:0.2vw;
     margin-bottom:1vh;
     padding:0.5em;
     border:2px solid gray;
@@ -49,7 +49,7 @@
     margin-left:10vw;
     margin-right:10vw;
     width:100%;
-    height:100vh;
+    height:76vh;
 }
 
 .poster{

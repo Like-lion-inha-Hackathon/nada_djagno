@@ -56,6 +56,7 @@ form {
 
 .title_box {
   background-color: lightgray;
+  border-radius:20px;
   margin-bottom: 5vh;
   width: 80%;
   height: 50px;
@@ -70,6 +71,7 @@ form {
 
 .period_box {
   background-color: lightgray;
+  border-radius:20px;
   margin-bottom: 5vh;
   width: 80%;
   height: 50px;
@@ -84,6 +86,7 @@ form {
 
 .method_box {
   background-color: lightgray;
+  border-radius:20px;
   margin-bottom: 5vh;
   width: 80%;
   height: 150px;
@@ -98,7 +101,7 @@ form {
 
 .button__submit {
   margin-left:10vw;
-  margin-top:-10vh;
+  margin-top:-5vh;
   transform: translateX(-50%);
   padding: 1rem;
   border: 2px solid lightgray;
