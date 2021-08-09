@@ -59,7 +59,16 @@ ul {
   font-weight: 800;
   color: yellowgreen;
 }
-
+.status-bar_sub {
+  width: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text_button {
+  border: none;
+  background-color: rgb(234, 236, 239);
+}
 .login_button {
   margin-right: 50px;
   width: 100px;
