@@ -21,15 +21,18 @@ def challenge_reading_view(request, id):
 
 
 def write_challenge_view(request):
+
     content = {}
     if request.POST:
         print("post")
         title = request.POST.get("title")
         period = int(request.POST.get("period"))
         method = request.POST.get("method")
+        category = request.POST.get("category")
         challenge = challenge_models.Challenge.objects.create(
-            title=title, period=period, method=method
+            title=title, period=period, method=method, category=category
         )
+        print(challenge)
 
         return redirect("challenges:main")
     return render(request, "challenge/write_challenge.html", content)
