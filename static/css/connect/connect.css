@@ -143,8 +143,12 @@ a{
 }
 
 .contest_exhibit_categories>ul{
+<<<<<<< Updated upstream
   padding:1rem;
   font-size:20px;
+=======
+  font-size:25px;
+>>>>>>> Stashed changes
   border:unset;
 }
 .contest_exhibit_subtitle{

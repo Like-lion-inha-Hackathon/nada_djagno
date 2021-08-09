@@ -7,14 +7,32 @@
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/challenge/challenge.css' %}">
     {% endblock css %}
-        <div class="head_title">나의 챌린지</div>
-        <div class="logo">
-            <img src="{% static 'image/facebook.svg' %}" alt="facebook">
-            <img src="{% static 'image/instagram.svg' %}" alt="instagram">
-            <img src="{% static 'image/share.svg' %}" alt="shareIcon">
-        </div>
-        <div class="line_parent"><div class="line"></div></div>
 </head>
+
+<body>
+<div class="head_title_all">
+    <div class="head_title">나의 챌린지</div>
+    <div class="logo">
+        <img src="{% static 'image/facebook.svg' %}" alt="facebook"></img>
+        <img src="{% static 'image/instagram.svg' %}" alt="instagram"></img>
+        <img src="{% static 'image/share.svg' %}" alt="shareIcon"></img>
+    </div>
+</div>
+<div class="line_parent"><div class="line"></div></div>
+<div class="index_five_window">
+        <div class="index_five_window_boxa"># 공부</div>
+        <div class="emptyq"></div>
+        <div class="index_five_window_box"># 건강</div>
+        <div class="emptyq"></div>
+        <div class="index_five_window_box"># 습관</div>
+        <div class="emptyq"></div>
+        <div class="index_five_window_box"># 독서</div>
+        <div class="emptyq"></div>
+        <div class="index_five_window_box"># 취미</div>
+        <div class="emptyq"></div>
+        <div class="index_five_window_box"># 업무</div>
+        <div class="emptyq"></div>
+</div>
 <div class="round-all">
     <div class="round"><a href="{% url 'challenges:reading' %}"><img src="{% static 'image/challenge_reading.jpeg' %}" alt="img"/><p>매일 20페이지 읽기</p></a></div>
     <div class="round"><a href="{% url 'challenges:study' %}"><img src="{% static 'image/challenge_study.png' %}" alt="img"/><p>매일 1시간 공부</p></a></div>
@@ -26,4 +44,6 @@
         <p>새로운 챌린지</p>
     </a></div>   
 </div>
+
+</dody>
 {% endblock content%}
