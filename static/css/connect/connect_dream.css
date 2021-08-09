@@ -1,0 +1,115 @@
+.space_all{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.top{
+    display:flex;
+    width:80%;
+    height:20vh;
+    margin-top:14vh;
+    margin-left:10vw;
+    margin-right:10vw;
+}
+
+.title{
+    background-color: lightgray;
+    opacity:0.9;
+    width:70%;
+    height:15vh;
+    font-size:50px;
+}
+
+.emoji{
+    margin-top:10vh;
+    width:30%;
+    height:20vh;
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+.emoji_box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:3vh;
+    width:3vw;
+    margin-left:1vw;
+    margin-bottom:1vh;
+    padding:0.5em;
+    border:2px solid gray;
+    border-radius: 20px;
+}
+
+.box{
+    display:flex;
+    margin-left:10vw;
+    margin-right:10vw;
+    width:100%;
+    height:100vh;
+}
+
+.poster{
+    height:100%;
+    width:40%;
+}
+
+img{
+    height:100%;
+    width:100%;
+}
+
+.others{
+    margin-left:3vw;
+    height:100%;
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.contents{
+    height:70vh;
+    width:80%;
+    background-color: lightgray;
+}
+
+.others_portfolio{
+    margin-top:1vh;
+    height:9vh;
+    width:80%;
+    font-size:30px;
+}
+
+.my_portfolio {
+    margin-top:1vh;
+    height:9vh;
+    width:80%;
+    font-size:30px;
+}
+
+.other_team{
+    margin-top:1vh;
+    height:9vh;
+    width:80%;
+    font-size:30px;
+}
+
+.fa-heart {
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .fa-heart:hover {
+    color: red;
+  }
+  .fa-heart:active {
+    color: red;
+  }
+  .hearttored {
+    color: red;
+  }
+i {
+    margin:auto;
+}

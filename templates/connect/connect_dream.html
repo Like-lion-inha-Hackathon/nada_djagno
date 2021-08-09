@@ -9,19 +9,33 @@
     {% endblock css %}
 </head>
 
-<div class="box_all">
 <div class="space_all">
-    <div class="title">
-    코딩 잘 몰라도 아이디어 넘치시는 분!성실하신 분!함께해요~:)</div>
+    <div class="top">
+        <div class="title">코딩 잘 몰라도 아이디어 넘치시는 분!<br>성실하신 분!함께해요~:)</div>
+        <div class="emoji">
+            <f class="emoji_box">
+                <i class="fas fa-heart fa-lg heartclick"></i>
+            </f>
+            <f class="emoji_box"><img src="{% static 'image/facebook.svg' %}" alt="facebook"></f>
+            <f class="emoji_box"><img src="{% static 'image/instagram.svg' %}" alt="instagram"></f>
+            <f class="emoji_box"><img src="{% static 'image/share.svg' %}" alt="share"></f>
+        </div>
+    </div>
     <div class="box">
-        <div class="poster">
+        <div class="poster"><img src="{% static 'image/poster.jpeg' %}"></img>
         </div>
         <div class="others">
             <div class="contents"></div>
-            <button class="others_portfolio" type="button">팀장의 포트폴리오</button>
-            <button class="my_portfolio" type="button">나의 포트폴리오 팀장에게만 공유하기</button>
+            <button class="others_portfolio" type="button">팀장의 포트폴리오 참고하기</button>
+            <button class="my_portfolio" type="button">나의 포트폴리오 팀장에게 공유하기</button>
             <button class="other_team" type="button">이 공모전의 다른 팀 확인하기</button>
         </div>
     </div>
 </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+<script src="{% static 'js/portfolio.js' %}" ></script>
 {% endblock content%}
