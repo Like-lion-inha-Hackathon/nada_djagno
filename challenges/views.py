@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from . import models as challenge_models
+import random
 
 # Create your views here.
 
@@ -29,8 +30,14 @@ def write_challenge_view(request):
         period = int(request.POST.get("period"))
         method = request.POST.get("method")
         category = request.POST.get("category")
+        random_number = random.randint(1, 5)
+        thumbnail = f"static/challenge/{category}/{category}_{random_number}.jpeg"
         challenge = challenge_models.Challenge.objects.create(
-            title=title, period=period, method=method, category=category
+            title=title,
+            period=period,
+            method=method,
+            category=category,
+            thumbnail=thumbnail,
         )
         print(challenge)
 

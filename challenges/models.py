@@ -15,3 +15,4 @@ class Challenge(core_models.TimeStampedModel):
     period = models.IntegerField(null=True, default=0)
     method = models.TextField(null=True)
     category = models.CharField(max_length=30, choices=CATEGORY_CHOICES, null=True)
+    thumbnail = models.ImageField(default=True)
