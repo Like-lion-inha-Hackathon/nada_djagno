@@ -86,9 +86,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.nav_profile_box:hover {
-  animation: notificationAnimation 2s ease-in-out infinite;
+  animation: notificationAnimation 10s ease-in-out infinite;
 }
 @keyframes notificationAnimation {
   0% {
