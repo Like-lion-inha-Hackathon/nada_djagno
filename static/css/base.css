@@ -367,9 +367,14 @@ ul {
   animation: rolling 1.5s linear infinite;
 }
 
+<<<<<<< HEAD
 input {
   outline-style: none;
 }
 textarea {
   outline-style: none;
 }
+=======
+input{ outline-style:none;}
+textarea{ outline-style:none;}
+>>>>>>> 4df07059dc19f91d063000e5d523c7dd9ab360b9
