@@ -1,5 +1,5 @@
-{% extends "base.html" %} {% load static %} {% block page_title %}나의 챌린지{%
-endblock page_title %}
+{% extends "base.html" %} {% load static %} {% block page_title %}나의 챌린지 
+{% endblock page_title %}
 <head>
   {% block css %}
   <link
@@ -42,14 +42,14 @@ endblock page_title %}
           placeholder="방법을 입력하세요"
         />
       </div>
+      <div class="method_div">
+        <label class="method" for="category">카테고리 : </label>
+        <select name="category" id="category">
+          <option value="">hi</option>
+        </select>
+      </div>
 
       <button class="button__submit" type="submit">등록하기</button>
-
-      {% if challenges %} {% for challenge in challenges %}
-      <span>{{challenge.title}}</span>
-      <span>{{challenge.period}}</span>
-      <span>{{challenge.period}}</span>
-      {% endfor %} {% endif %}
     </form>
   </body>
   {% endblock content%}
