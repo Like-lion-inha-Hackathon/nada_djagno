@@ -40,9 +40,60 @@
             </div>
             <div class="status-bar">
                 <span class="main_logo">N A D A</span>
-                <button class="login_button">
-                    <a href="{% url 'users:main' %}">Log-out</a>
-                </button>
+                    <div class="status-bar_sub"></div>
+                    <button class="text_button">
+                        <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
+                    </button>
+                    <button class="login_button">
+                        <a href="{% url 'users:main' %}">Log-out</a>
+                    </button>
+                </div>
+            </div>
+            <div class="message_big">
+                <div class="message">
+                    <div id="qchat-screen">
+                        <div class="qalt-header">
+                            <div class="qalt-header__column">
+                                <i class="aaa fas fa-angle-left fa-2x"></i>
+                            </div>
+                            <div class="qalt-header__column">
+                                <h1 class="qalt-header__title">이두희</h1>
+                            </div>
+                            <div class="qalt-header__column">
+                                <span><i class="bbb fas fa-search fa-lg"></i></span>
+                            </div>
+                        </div>
+                        <main class="qmain-screen qmain-chat">
+                            <div class="qchat__timestamp">Tuesday, june 30, 2020</div>
+                        </main>
+                        <div class="qmessage-row">
+                            <img class="images" src="{% static 'image/nav_profile.jpeg'%}"></img>
+                            <div class="qmessage-row__content">
+                                <span class="qmessage__author">이두희</span>
+                                <div class="qmessage__info">
+                                <span class="qmessage__bubble qfirst-chat">Hi!</span>
+                                <span class="qmessage__time">21:27</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qmessage-row qmessage-row--own">
+                            <div class="qmessage-row__content">
+                            <div class="qmessage__info">
+                                <span class="qqmessage__bubble qsecond-chat">Hi! nice to meet you!</span>
+                                <span class="qmessage__time">21:27</span>
+                            </div>
+                            </div>
+                        </div>
+                        </main>
+                    
+                        <from class="qreply">
+                            <div class="qreply__column">
+                                <input type="qtext" placeholder="Write a message..." />
+                                <i class="airplane far fa-paper-plane fa-lg"></i>
+                            </div>
+                        </from>
+                    </div>
+                </div>
             </div>
         {% endblock nav %}
     </header>
