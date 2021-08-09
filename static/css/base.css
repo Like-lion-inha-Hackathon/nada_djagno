@@ -135,6 +135,8 @@ ul {
   width: 450px;
   box-sizing: border-box;
   background-color: #abc1d1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 #qchat-screen .qstatus-bar {
   z-index: 2;
@@ -241,22 +243,29 @@ ul {
   bottom: 19.5vh;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
   transition: all 0.3s ease-in-out;
   border: solid 1px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.qreply .qreply__column:first-child {
-  width: 10%;
+/* .qreply .qreply__column:first-child {
+  width: 2%;
 }
 .qreply .qreply__column:last-child {
-  width: 90%;
+  width: 98%;
   position: relative;
-}
+} */
 .qreply i {
   opacity: 0.5;
+}
+.airplane {
+  color: blue;
+  margin-top: 5px;
 }
 .qreply input {
   padding: 12px;
@@ -265,6 +274,9 @@ ul {
   border-radius: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+}
+.qreply__column {
+  display: flex;
 }
 .qreply__column:last-child > i,
 .qreply__column:last-child button {
