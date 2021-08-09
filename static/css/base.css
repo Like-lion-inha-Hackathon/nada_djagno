@@ -126,6 +126,7 @@ ul {
   z-index: 5;
 }
 .message {
+  display: none;
   height: 60vh;
   width: 450px;
   margin-right: 10vh;
