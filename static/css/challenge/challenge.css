@@ -7,20 +7,22 @@ body{
 
 .head_title_all{
     margin-top:5vh;
+    margin-bottom:5vh;
     margin-left:10vw;
-    width:100%;
+    width:90vw;
     padding-top:10vh;
     height:10vh;
     display:flex;
 }
 
 .head_title {
+    margin-left:10vw;
     width:80%;
     height:10vh;
     display:flex;
     justify-content: center;
     font-family: 'EliceDigitalBaeum_Bold';
-    font-size: 50px;
+    font-size: 70px;
 }
 
 @font-face {
@@ -32,7 +34,8 @@ body{
 
 .logo {
     width:20%;
-    height:10vh;
+    height:5vh;
+    margin-top:4vh;
     margin-right:5vw;
     display:flex;
     flex-direction: row;
@@ -68,7 +71,7 @@ body{
     margin-left:10vw;
     margin-top: 5vh;
     width: 80%;
-    height: 15vh;
+    height: 10vh;
     background-color: white;
     display: flex;
     justify-content: space-between;

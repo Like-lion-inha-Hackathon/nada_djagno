@@ -116,6 +116,7 @@ ul {
   border-radius: 100%;
 }
 .message_big {
+  z-index:-1;
   position: fixed;
   height: 60vh;
   width: 95.3%;
@@ -123,10 +124,8 @@ ul {
   margin-top: 5vh;
   margin-left: 4.7%;
   justify-content: flex-end;
-  z-index: 5;
 }
 .message {
-  display: none;
   height: 60vh;
   width: 450px;
   margin-right: 10vh;
