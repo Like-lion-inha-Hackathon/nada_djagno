@@ -340,7 +340,9 @@ canvas {
 }
 .graphbox {
   background-color: white;
-  width: 700px;
+
+  width: 1200px;
+
   height: 300px;
   border: 1px solid black;
   display: flex;
@@ -348,7 +350,27 @@ canvas {
   align-items: center;
 }
 .gradation_box {
-  width: 500px;
+  width: 1000px;
   height: 200px;
   background-color: ivory;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gradation_box__top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.gradation_box__bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.gradations {
+  width: 10%;
+  height: 50%;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+
 }

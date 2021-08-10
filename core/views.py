@@ -25,7 +25,6 @@ def try_view(request):
         "스물 여덟",
         "스물 아홉",
     ]
-    print(text)
     if request.POST:
         text = []
         data["username"] = request.POST.get("username")
