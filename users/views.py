@@ -19,34 +19,40 @@ class IntroView(ListView):
     template_name = "intro.html"
 
 
-def signup_view(request):
-    res_data = {}
-    if request.method == "POST":
-        if request.POST["password1"] == request.POST["password2"]:
-            user = models.User.objects.create_user(
-                username=request.POST["username"],
-                email=request.POST["email"],
-                password=request.POST["password1"],
-            )
-            login(request, user)
-            return redirect("/")
-        else:
-            res_data["error"] = "비밀번호가 다릅니다."
-    return render(request, "users/signup.html", res_data)
-
-
 def login_view(request):
     res_data = {}
     if request.method == "POST":
-        email = request.POST["email"]
-        password = request.POST["password"]
-        user = authenticate(request, email=email, password=password)
+        # if request.POST["password1"] == request.POST["password2"]:
+        username = request.POST["username"]
+        email = "guest@gamil.com"
+        password = "123"
+        user = authenticate(request, username=username, email=email, password=password)
         if user:
-            login(request, user)
-            return redirect("/")
+            res_data["error"] = "다른 이름을 사용하세요!"
         else:
-            res_data["error"] = "아이디나 비밀번호가 틀렸어요~"
+            user = models.User.objects.create_user(
+                username=request.POST["username"],
+                email="guest@gamil.com",
+                password="123",
+            )
+            login(request, user)
+            return redirect("portfolios:main")
+
     return render(request, "users/login.html", res_data)
+
+
+# def login_view(request):
+#     res_data = {}
+#     if request.method == "POST":
+#         email = request.POST["email"]
+#         password = request.POST["password"]
+#         user = authenticate(request, email=email, password=password)
+#         if user:
+#             login(request, user)
+#             return redirect("/")
+#         else:
+#             res_data["error"] = "아이디나 비밀번호가 틀렸어요~"
+#     return render(request, "users/login.html", res_data)
 
 
 class SignUpView(FormView):
@@ -75,5 +81,7 @@ class LoginView(FormView):
 
 
 def log_out(request):
+    user = request.user
+    user.delete()
     logout(request)
     return redirect(reverse(("users:main")))

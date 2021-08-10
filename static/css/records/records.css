@@ -1,7 +1,7 @@
 .status-bar {
   position: fixed;
   top: 0;
-  width: 95.3%; /*위에 줄은 status-bar를 위에 고정시키기 위한 것이다.*/
+  width: 95.3%;
   display: flex;
   height: 5vh;
   justify-content: space-between;
@@ -69,11 +69,11 @@
   font-size: 32px;
 }
 .index_three_window {
-  width: 70%;
+  width: 90%;
   height: 80%;
   background-color: white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: black;
   display: flex;
   flex-direction: column;
@@ -252,21 +252,23 @@
 }
 .index_four_button {
   margin-top: 10vh;
+  height: auto;
+  width: auto;
 }
 .index_four_real_window_grid_six {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 .index_four_real_window_grid_six_plus_box_plus_a {
   width: 8vh;
   height: 8vh;
 }
+
 .index_four_real_window_grid_six_plus_box_plus {
   width: 8vh;
   height: 8vh;
-  background-color: rgb(246, 234, 235);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -275,8 +277,13 @@
   font-weight: bold;
   color: rgb(112, 112, 112);
   border-style: solid;
-  border-width: 1px;
-  border-color: rgb(181, 181, 181);
+  border-width: 4px;
+  border-color: gray;
+  background-color: white;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
+}
+.index_four_real_window_grid_six_plus_box_plus:hover {
+  background-color: beige;
 }
 .empty {
   width: 2vh;
