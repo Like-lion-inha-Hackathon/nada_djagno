@@ -335,6 +335,6 @@ li {
   float: left;
 }
 canvas {
-  width: 500px;
+  width: 500px i !important;
   height: 300px;
 }
