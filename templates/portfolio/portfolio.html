@@ -8,14 +8,14 @@
 {% block page_title %} 나다 : NADA {% endblock %}
 
 <!--User Profile-->
-{% if user.is_authenticated %}
+<!-- {% if request.user.is_authenticated %}
 {% block islogin %}
 <a href="{% url 'users:logout' %}">Log out</a>
 {% endblock islogin %}
 {% block profile %}
-<div>{{user.username}}님<br> 안녕하세요</div>
+<div class="hello">{{user.username}}님 안녕하세요</div>
 {% endblock profile %}
-{% endif %}
+{% endif %} -->
 
 {% block content %}
 <div class="left_right_all_page">
