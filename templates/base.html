@@ -61,20 +61,26 @@
             </div>
             <div class="status-bar">
                 <a href="{% url 'users:main' %}"><span class="main_logo">N A D A</span></a>
-                    <div class="status-bar_sub">
-                        <button class="text_button">
-                            <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
-                            <div class="green_small_boxs">
-                                <div class="green_smalls"></div>
-                            </div>
-                        </button>
-                        <button class="login_button">
-                            {% block islogin %}
-                            <a href="{% url 'users:login' %}">Log In</a>
-                            {% endblock islogin %}
-                        </button>
+                <div class="status-bar_sub">
+                    <button class="text_button">
+                        <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
+                        <div class="green_small_boxs">
+                            <div class="green_smalls"></div>
+                        </div>
+                    </button>
+                    <button class="login_button">
+                        {% block islogin %}
+                        <a href="{% url 'users:login' %}">Log In</a>
+                        {% endblock islogin %}
+                    </button>
+                    <div>
+                        {% if request.user.is_authenticated %}
                         {% block profile %}
+                        <div class="hello">
+                            <span>{{user.username}}님 안녕하세요</span>
+                        </div>
                         {% endblock profile %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
