@@ -69,11 +69,11 @@
   font-size: 32px;
 }
 .index_three_window {
-  width: 70%;
+  width: 90%;
   height: 80%;
   background-color: white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: black;
   display: flex;
   flex-direction: column;
@@ -269,7 +269,6 @@
 .index_four_real_window_grid_six_plus_box_plus {
   width: 8vh;
   height: 8vh;
-  background-color: rgb(246, 234, 235);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -278,23 +277,13 @@
   font-weight: bold;
   color: rgb(112, 112, 112);
   border-style: solid;
-  border-width: 1px;
-  border-color: rgb(181, 181, 181);
-  animation: buttonanimation 2s ease-in infinite;
-}
-@keyframes buttonanimation {
-  0% {
-    background-color: hotpink;
-  }
-  50% {
-    background-color: rgb(255, 200, 256);
-  }
-  100% {
-    background-color: hotpink;
-  }
+  border-width: 4px;
+  border-color: gray;
+  background-color: white;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
 }
 .index_four_real_window_grid_six_plus_box_plus:hover {
-  background-color: rgb(255, 200, 256);
+  background-color: beige;
 }
 .empty {
   width: 2vh;
