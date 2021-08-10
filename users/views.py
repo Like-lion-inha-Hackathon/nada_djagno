@@ -81,5 +81,7 @@ class LoginView(FormView):
 
 
 def log_out(request):
+    user = request.user
+    user.delete()
     logout(request)
     return redirect(reverse(("users:main")))
