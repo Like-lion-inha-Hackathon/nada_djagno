@@ -31,7 +31,7 @@ def write_challenge_view(request):
         method = request.POST.get("method")
         category = request.POST.get("category")
         random_number = random.randint(1, 3)
-        thumbnail = f"challenge/{category}/{category}_{random_number}.jpeg"
+        thumbnail = f"challenge/{category}/{category}_{random_number}.png"
         challenge = challenge_models.Challenge.objects.create(
             title=title,
             period=period,
@@ -39,7 +39,6 @@ def write_challenge_view(request):
             category=category,
             thumbnail=thumbnail,
         )
-        print(challenge)
 
         return redirect("challenges:main")
     return render(request, "challenge/write_challenge.html", content)
