@@ -39,6 +39,10 @@ ul {
 .empty {
   height: 30px;
 }
+.nav_boxbox {
+  width: 3vh;
+  height: 3vh;
+}
 .status-bar {
   position: fixed;
   top: 0;
@@ -158,19 +162,21 @@ ul {
   color: #92a4b2;
 }
 .message_big {
-  z-index: -1;
+  z-index: 3;
   position: fixed;
-  height: 60vh;
-  width: 95.3%;
+  height: 80vh;
+  width: 45.3%;
   display: flex;
   margin-top: 5vh;
-  margin-left: 4.7%;
+  margin-left: 54.7%;
   justify-content: flex-end;
+  display: none;
 }
 .message {
-  height: 60vh;
+  height: 40vh;
   width: 450px;
   margin-right: 10vh;
+  background-color: white;
 }
 .green_small_boxs {
   display: flex;
@@ -194,6 +200,10 @@ ul {
 .nav_underq {
   margin-top: 1vh;
   font-size: 10px;
+}
+.imageaz {
+  width: 100%;
+  height: 100%;
 }
 /*=================================================================*/
 #qchat-screen {
@@ -318,7 +328,7 @@ ul {
   position: fixed;
   width: 450px;
   bottom: 19.5vh;
-  background-color: white;
+  background-color: beige;
   display: flex;
   justify-content: center;
   padding: 5px 25px;
