@@ -1,9 +1,9 @@
 body {
 }
-canvas {
+/* canvas {
   width: 1000px;
   height: 299px;
-}
+} */
 
 .emoji {
   width: 120px;
@@ -62,9 +62,9 @@ canvas {
   background: #548dff;
 }
 
-.emoji--like:after {
-  content: "Like";
-}
+/* .emoji--like:after {
+  content: "오늘은 성공!_!";
+} */
 
 .emoji--like .emoji__hand {
   left: 25px;
@@ -74,7 +74,7 @@ canvas {
   background: #ffffff;
   border-radius: 5px;
   z-index: 0;
-  animation: hands-up 2s linear infinite;
+  animation: hands-up 3s linear infinite;
 }
 
 .emoji--like .emoji__hand:before {
@@ -104,27 +104,81 @@ canvas {
   background: #ffffff;
   width: 10px;
   height: 12px;
-  left: -10px;
-  top: -8px;
+  left: -8px; /*-10*/
+  top: -6px;
   transform: rotate(-15deg);
   transform-origin: 100% 100%;
   box-shadow: -1px 4px 0 -1px #ffffff;
 }
 
+/*여기는 실험용*/
+.emoji--love {
+  background: #f55064;
+}
+.emoji--love .emoji__hand {
+  left: 25px;
+  bottom: 30px;
+  width: 20px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 0;
+  animation: hands-up 3s linear infinite;
+}
+
+.emoji--love .emoji__hand:before {
+  left: 25px;
+  bottom: 5px;
+  width: 40px;
+  background: inherit;
+  height: 10px;
+  border-radius: 2px 10px 10px 2px;
+  box-shadow: 1px -9px 0 1px #ffffff, 2px -19px 0 2px #ffffff,
+    3px -29px 0 3px #ffffff;
+}
+
+.emoji--love .emoji__thumb {
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid transparent;
+  top: -25px;
+  right: -25px;
+  z-index: 2;
+  transform: rotate(5deg);
+  transform-origin: 0% 100%;
+  animation: thumbs-up 2s linear infinite;
+}
+
+.emoji--love .emoji__thumb:before {
+  border-radius: 50% 50% 0 0;
+  background: #ffffff;
+  width: 10px;
+  height: 12px;
+  left: -8px; /*-10*/
+  top: -6px;
+  transform: rotate(-15deg);
+  transform-origin: 100% 100%;
+  box-shadow: -1px 4px 0 -1px #ffffff;
+}
+
+
+
+/*여기까지 실험용*/
+
+
 .emoji--love {
   background: #f55064;
 }
 
-.emoji--love:after {
+/* .emoji--love:after {
   content: "Love";
-}
+} */
 
 .emoji--love .emoji__heart {
   left: calc(50% - 40px);
   top: calc(50% - 40px);
   width: 80px;
   height: 80px;
-  animation: heart-beat 1s linear infinite alternate;
+  animation: heart-beat 3s linear infinite alternate;
 }
 
 .emoji--love .emoji__heart:before,
@@ -147,9 +201,9 @@ canvas {
   transform-origin: 100% 100%;
 }
 
-.emoji--wow:after {
+/* .emoji--wow:after {
   content: "Wow";
-}
+} */
 
 .emoji--wow .emoji__face {
   animation: wow-face 3s linear infinite;
@@ -202,7 +256,7 @@ canvas {
   width: 30px;
   height: 45px;
   left: calc(50% - 15px);
-  top: 50%;
+  top: 70%;
   border-radius: 50%;
   background: #000000;
   animation: wow-mouth 3s linear infinite;
@@ -221,12 +275,12 @@ canvas {
 @keyframes wow-face {
   15%,
   25% {
-    transform: rotate(20deg) translateX(-25px);
+    transform: rotate(5deg) translateX(-5px);
   }
 
   45%,
   65% {
-    transform: rotate(-20deg) translateX(25px);
+    transform: rotate(-5deg) translateX(5px);
   }
 
   75%,

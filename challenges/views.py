@@ -17,8 +17,8 @@ def challenge_study_view(request):
 def challenge_reading_view(request, id):
     challenge = challenge_models.Challenge.objects.get(pk=id)
     challenges = challenge_models.Challenge.objects.all()
-    print(len(challenges))
-    return render(request, "challenge/challenge_reading.html", {"challenge": challenge})
+    period = range(challenge.period)
+    return render(request, "challenge/challenge_reading.html", {"challenge": challenge,"period":period})
 
 
 def write_challenge_view(request):
