@@ -136,32 +136,5 @@
         console.log(chart)
         ;
     </script>
-    <button onclick="getResponse()">Click Me!</button>
-    <div id="user_div">
-    </div>
-    <script>
-        function getResponse(){
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", '/json_data/', true);
-            xhr.responseType = 'json';
-
-
-//Send the proper header information along with the request
-
-            xhr.onreadystatechange = function() { 
-            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-                res = this.response
-                user_list = res.user_list
-                user_html = ""
-                for (k in user_list){
-                    user_html += `<span>${user_list[k].name}</span><br>`
-                }
-                document.getElementById('user_div').innerHTML = user_html
-            }
-        }
-        xhr.send();
-        }
-
-    </script>
 </body>
 </html>

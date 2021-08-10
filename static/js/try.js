@@ -12,6 +12,7 @@ plus.addEventListener("click",function(e){
         icon.classList.remove("fa-times")
     }
 })
+/*
 var chart = new Chart(document.getElementById("line-chart"), {
     type: 'line',
     data: {
@@ -86,3 +87,4 @@ new Chart(document.getElementById("radar-chart"), {
 
 chart.chart.canvas.style.width="800px"
 chart.chart.canvas.style.height="500px"
+*/
