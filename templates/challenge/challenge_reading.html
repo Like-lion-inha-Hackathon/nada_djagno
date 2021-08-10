@@ -20,7 +20,53 @@
             <div class="bar"></div>
         </div>
     </div>
-    <div class="emoji">
+    <div class="emoji-outer">
+        {% for _ in period  %}
+            <div class="emojy"><i class="far fa-smile icon fa-3x"></i></div>
+            <ul class="menu">
+                <li>
+                    <div class="emoji emoji--like">
+                        <div class="emoji__hand">
+                            <div class="emoji__thumb">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="emoji emoji--love">
+                        <div class="emoji__heart">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="emoji emoji--wow">
+                        <div class="emoji__face">
+                            <div
+                                class="emoji__eyebrows">
+                            </div>
+                            <div class="emoji__eyes">
+                            </div>
+                            <div class="emoji__mouth">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        {% endfor %}
     </div>
 </div>
+<div class="surprise">
+    <div class="emoji emoji--like">
+        <div class="emoji__hand">
+            <div class="emoji__thumb">
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+<!-- <script src="{% static 'js/portfolio.js' %}" ></script> -->
+<script src="{% static 'js/emoji.js' %}" ></script>
 {% endblock content%}
