@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/records/records.css' %}">
+    {% endblock css %}
+</head>
+{% block page_title %} 나다 : NADA {% endblock %}
+{% block content %}
+<div class="left_right_all_page">
+    <div></div>
+    <div class="portfolio_main">
+        <div class="index_three">
+            <div class="index_three_title">
+                <div class="index_three_title_one">사진들어가는 곳</div>
+            </div>
+            <div class="index_three_window">
+                <span class="index_three_window_sixmother_title">2021년 8월</span>
+                <div class="index_three_window_sixmother">
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one">
+                            <img class="images" src="{% static 'image/like_lion.png'%}"></img>
+                        </div>
+                    </div>
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one"></div>
+                    </div>
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one"></div>
+                    </div>
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one"></div>
+                    </div>
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one"></div>
+                    </div>
+                    <div class="index_three_window_box">
+                        <div class="index_three_window_one"></div>
+                    </div>
+                </div>
+                <div class="index_three_window_under">
+                    <i class="fas fa-arrow-circle-left fa-2x"></i>
+                    <span>&ensp;&ensp;1&ensp;&ensp;</span>
+                    <i class="fas fa-arrow-circle-right fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://kit.fontawesome.com/4d118135bb.js"
+    crossorigin="anonymous"
+    ></script>
+<script src="{% static 'js/portfolio.js' %}" ></script>
+{% endblock content%}

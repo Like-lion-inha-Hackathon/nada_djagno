@@ -7,212 +7,44 @@
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<div class="status-bar">
-    <span class="main_logo">N A D A</span>
-    <button class="login_button">
-        <a href="{% url 'users:main' %}">Log-out</a>
-    </button>
-</div>
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
-        <div class="index_three">
-            <div class="index_three_title">
-                <div class="index_three_title_one">으악</div>
-            </div>
+        <form class="index_three">
             <div class="index_three_window">
-                <span class="index_three_window_sixmother_title">2021년 8월</span>
-                <div class="index_three_window_sixmother">
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one">
-                            <img class="images" src="{% static 'image/like_lion.png'%}"></img>
-                        </div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
+                <label class="grid_one">
+                    <span>카테고리:&nbsp;</span>
+                </label>
+                <div class="grid_two">
+                    <input class="grid_two_box" placeholder="Portfolio" />
                 </div>
-                <div class="index_three_window_under">
-                    <i class="fas fa-arrow-circle-left fa-2x"></i>
-                    <span>&ensp;&ensp;1&ensp;&ensp;</span>
-                    <i class="fas fa-arrow-circle-right fa-2x"></i>
+                <label class="grid_three">
+                    <span>기간:&nbsp;</span>
+                </label>
+                <div class="grid_four">
+                    <input class="grid_four_box" type="date">
                 </div>
-            </div>
-        </div>
-        <div class="index_four">
-            <div class="index_four_title">
-                <div class="index_four_title_text">PORTFOLIO</div>
-                <div class="index_four_title_date">2021년 8월</div>
-            </div>
-            <div class="index_four_window">
-                <div class="index_four_real_window">
-                    <div class="index_four_real_window_grid_one">
-                        <div class="index_four_real_window_grid_one_up">
-                            <div class="index_four_real_window_grid_one_up_image">
-                                <img class="images" src="{% static 'image/like_lion.png'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_one_down">
-                                <span>&ensp;-&ensp;멋쟁이사자처럼 9기</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index_four_real_window_grid_two">
-                        <div class="index_four_real_window_grid_two_up">
-                            <div class="index_four_real_window_grid_two_up_image">
-                                <img class="images" src="{% static 'image/bongsa.jpg'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_two_down">
-                                <span>&ensp;-&ensp;대외활동</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index_four_real_window_grid_three">
-                        <div class="index_four_real_window_grid_three_up">
-                            <div class="index_four_real_window_grid_three_up_image">
-                                <img class="images" src="{% static 'image/hack.jpeg'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_three_down">  
-                                <span>&ensp;-&ensp;공모전</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index_four_real_window_grid_four"></div>
-                    <div class="index_four_real_window_grid_five"></div>
-                    <div class="index_four_real_window_grid_six">
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <div class="index_four_real_window_grid_six_plus_box_plus">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
+                <label class="grid_five">
+                    <span>제목:&nbsp;</span>
+                </label>
+                <div class="grid_six">
+                    <input class="grid_six_box" type="text">
+                </div>
+                <label class="grid_seven">
+                    <span>글:&nbsp;</span>
+                </label>
+                <div class="grid_eight">
+                    <input class="grid_eight_box" type="text">
+                </div>
+                <div class="grid_nine">                
+                    <button class="grid_nine_box">
+                        <a class="grid_nine_button" href="{% url 'records:main' %}">
+                            <span>등록하기</span>
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="index_five">
-            <div class="index_five_title">
-                <div class="index_five_title_text">CHALLENGE</div>
-                <div class="index_five_title_date">2021년 8월</div>
-            </div>
-            <div class="index_five_window">
-                <div class="index_five_window_flex">
-                <div class="index_five_window_boxa"># 공부</div>
-                <div class="emptyq"></div>
-                <div class="index_five_window_box"># 건강</div>
-                <div class="emptyq"></div>
-                <div class="index_five_window_box"># 습관</div>
-                <div class="emptyq"></div>
-                <div class="index_five_window_box"># 독서</div>
-                <div class="emptyq"></div>
-                <div class="index_five_window_box"># 취미</div>
-                <div class="emptyq"></div>
-                <div class="index_five_window_box"># 업무</div>
-                <div class="emptyq"></div>
-                </div>
-            </div>
-            <div class="under_bar"></div>
-            <div class="under_box">
-                <div class="under_box_one">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
-                    </div>
-                </div>
-                <div class="under_box_two">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
-                    </div>
-                </div>
-                <div class="under_box_three">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
-                    </div>
-                </div>
-                <div class="under_box_four"></div>
-                <div class="under_box_five">
-                    <span>30일 독서</span>
-                </div>
-                <div class="under_box_six">
-                    <span>30일 독서</span>
-                </div>
-                <div class="under_box_seven">
-                    <span>30일 독서</span>
-                </div>
-                <div class="under_box_eight"></div>
-            </div>
-            <div class="index_five_button">
-                <div class="index_four_real_window_grid_six_plus_box_plus">
-                    <i class="fas fa-plus"></i>
-                </div>
-            </div>
-        </div>
-        <div class="index_six">
-            <div class="index_six_title">
-                <div class="index_six_title_text">SCRAP</div>
-                <div class="index_six_title_date">2021년 8월</div>
-            </div>
-            <div class="index_six_window">
-                <div class="index_six_real_window">
-                    <div class="index_six_real_window_grid_one">
-                        <div class="index_six_real_window_grid_one_up">
-                            <div class="index_six_real_window_grid_one_up_image">
-                                <img class="image" src="{% static 'image/news_one.png'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_six_real_window_grid_one_down">
-                            <div class="index_six_real_window_grid_one_down_text">7월 29일 매일경제 빅데이터</div>
-                        </div>
-                    </div>
-                    <div class="index_six_real_window_grid_two">
-                        <div class="index_six_real_window_grid_two_up">
-                            <div class="index_six_real_window_grid_two_up_image">
-                                <img class="image" src="{% static 'image/news_two.png'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_six_real_window_grid_two_down">
-                            <div class="index_six_real_window_grid_two_down_text">7월 29일 동아경제 살균</div>
-                        </div>
-                    </div>
-                    <div class="index_six_real_window_grid_three">
-                        <div class="index_six_real_window_grid_three_up">
-                            <div class="index_six_real_window_grid_three_up_image"></div>
-                        </div>
-                        <div class="index_six_real_window_grid_three_down">
-                            <div class="index_six_real_window_grid_two_down_text">n월 n일 OO일보 OO</div>
-                        </div>
-                    </div>
-                    <div class="index_six_real_window_grid_four"></div>
-                    <div class="index_six_real_window_grid_five"></div>
-                    <div class="index_four_real_window_grid_six">
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <div class="index_four_real_window_grid_six_plus_box_plus">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 <script

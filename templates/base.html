@@ -25,28 +25,28 @@
                         </div>
                     </div>
                     <div class="empty"></div>
-                    <a href="{% url 'portfolios:main' %}">
-                        <i class="port_icon far fa-user-circle fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'portfolios:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_one.png'%}"></img>
                     </a>
                     <div class="empty"></div>
-                    <a href="{% url 'challenges:main' %}">
-                        <i class="chal_icon fas fa-running fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'challenges:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_eight.png'%}"></img>
                     </a>
                     <div class="empty"></div>
-                    <a href="{% url 'repositories:main' %}">
-                        <i class="repo_icon far fa-folder-open fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'repositories:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_seven.png'%}"></img>
                     </a>
                     <div class="empty"></div>
-                    <a href="{% url 'records:main' %}">
-                        <i class="writ_icon fas fa-pencil-alt fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'records:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_six.png'%}"></img>
                     </a>
                     <div class="empty"></div>
-                    <a href="{% url 'connects:main' %}">
-                        <i class="conn_icon fas fa-link fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'connects:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_two.png'%}"></img>
                     </a>
                     <div class="empty"></div>
-                    <a href="{% url 'users:main' %}">
-                        <i class="home_icon fas fa-home fa-2x"></i>
+                    <a class="nav_boxbox" href="{% url 'users:main' %}">
+                        <img class="imageaz" src="{% static 'image/logo_four.png'%}"></img>
                     </a>
                     <div class="nav_under">
                         <span>NADA</span>
@@ -61,20 +61,26 @@
             </div>
             <div class="status-bar">
                 <a href="{% url 'users:main' %}"><span class="main_logo">N A D A</span></a>
-                    <div class="status-bar_sub">
-                        <button class="text_button">
-                            <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
-                            <div class="green_small_boxs">
-                                <div class="green_smalls"></div>
-                            </div>
-                        </button>
-                        <button class="login_button">
-                            {% block islogin %}
-                            <a href="{% url 'users:login' %}">Log In</a>
-                            {% endblock islogin %}
-                        </button>
+                <div class="status-bar_sub">
+                    <button class="text_button">
+                        <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
+                        <div class="green_small_boxs">
+                            <div class="green_smalls"></div>
+                        </div>
+                    </button>
+                    <button class="login_button">
+                        {% block islogin %}
+                        <a href="{% url 'users:login' %}">Log In</a>
+                        {% endblock islogin %}
+                    </button>
+                    <div>
+                        {% if request.user.is_authenticated %}
                         {% block profile %}
+                        <div class="hello">
+                            <span>{{user.username}}님 안녕하세요</span>
+                        </div>
                         {% endblock profile %}
+                        {% endif %}
                     </div>
                 </div>
             </div>

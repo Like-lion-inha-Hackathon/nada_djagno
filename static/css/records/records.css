@@ -1,7 +1,7 @@
 .status-bar {
   position: fixed;
   top: 0;
-  width: 95.3%; /*위에 줄은 status-bar를 위에 고정시키기 위한 것이다.*/
+  width: 95.3%;
   display: flex;
   height: 5vh;
   justify-content: space-between;
