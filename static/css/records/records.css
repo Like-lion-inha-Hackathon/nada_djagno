@@ -252,17 +252,20 @@
 }
 .index_four_button {
   margin-top: 10vh;
+  height: auto;
+  width: auto;
 }
 .index_four_real_window_grid_six {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 .index_four_real_window_grid_six_plus_box_plus_a {
   width: 8vh;
   height: 8vh;
 }
+
 .index_four_real_window_grid_six_plus_box_plus {
   width: 8vh;
   height: 8vh;
@@ -277,6 +280,21 @@
   border-style: solid;
   border-width: 1px;
   border-color: rgb(181, 181, 181);
+  animation: buttonanimation 2s ease-in infinite;
+}
+@keyframes buttonanimation {
+  0% {
+    background-color: hotpink;
+  }
+  50% {
+    background-color: rgb(255, 200, 256);
+  }
+  100% {
+    background-color: hotpink;
+  }
+}
+.index_four_real_window_grid_six_plus_box_plus:hover {
+  background-color: rgb(255, 200, 256);
 }
 .empty {
   width: 2vh;
