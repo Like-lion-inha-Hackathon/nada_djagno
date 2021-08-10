@@ -2,7 +2,7 @@
 {% load static %}
 <head>
     {% block css %}
-        <link rel="stylesheet" href="{% static 'css/records/records.css' %}">
+        <link rel="stylesheet" href="{% static 'css/records/records_write.css' %}">
     {% endblock css %}
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
@@ -10,41 +10,40 @@
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
-        <div class="index_three">
-            <div class="index_three_title">
-                <div class="index_three_title_one">사진들어가는 곳</div>
-            </div>
+        <form class="index_three">
             <div class="index_three_window">
-                <span class="index_three_window_sixmother_title">2021년 8월</span>
-                <div class="index_three_window_sixmother">
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one">
-                            <img class="images" src="{% static 'image/like_lion.png'%}"></img>
-                        </div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
-                    <div class="index_three_window_box">
-                        <div class="index_three_window_one"></div>
-                    </div>
+                <label class="grid_one">
+                    <span>카테고리:&nbsp;</span>
+                </label>
+                <div class="grid_two">
+                    <input class="grid_two_box" placeholder="SCRAP" />
                 </div>
-                <div class="index_three_window_under">
-                    <i class="fas fa-arrow-circle-left fa-2x"></i>
-                    <span>&ensp;&ensp;1&ensp;&ensp;</span>
-                    <i class="fas fa-arrow-circle-right fa-2x"></i>
+                <label class="grid_three">
+                    <span></span>
+                </label>
+                <div class="grid_four">
+                </div>
+                <label class="grid_five">
+                    <span>제목:&nbsp;</span>
+                </label>
+                <div class="grid_six">
+                    <input class="grid_six_box" type="text">
+                </div>
+                <label class="grid_seven">
+                    <span>글:&nbsp;</span>
+                </label>
+                <div class="grid_eight">
+                    <input class="grid_eight_box" type="text">
+                </div>
+                <div class="grid_nine">                
+                    <button class="grid_nine_box">
+                        <a class="grid_nine_button" href="{% url 'records:main' %}">
+                            <span>등록하기</span>
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 <script
