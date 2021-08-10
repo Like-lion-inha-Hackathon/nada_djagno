@@ -13,13 +13,31 @@ def intro_view(request):
 
 def try_view(request):
     data = {}
+    text = [
+        "스물",
+        "스물 하나",
+        "스물 둘",
+        "스물 셋",
+        "스물 넷",
+        "스물 다섯",
+        "스물 여섯",
+        "스물 일곱",
+        "스물 여덟",
+        "스물 아홉",
+    ]
+    print(text)
     if request.POST:
+        text = []
         data["username"] = request.POST.get("username")
-        for i in range(1, len(request.POST) - 1):
+        for i in range(1, 11):
             data[f"num{i}"] = request.POST.get(f"number{i}", "0")
-        print(data)
-        data = json.dumps({"user": [data]})
-    return render(request, "try.html", {"user": data})
+            text.append(request.POST.get(f"text{i}", ""))
+    else:
+        for i in range(1, 10):
+            data[f"{i}"] = "0"
+    data = json.dumps({"user": [data]})
+    text = json.dumps({"text": text})
+    return render(request, "try.html", {"user": data, "text": text})
 
 
 def json_data_view(request):
