@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
+
+
 def records_view(request):
     return render(request, "records/records.html")
 
@@ -11,3 +13,7 @@ def records_write_view(request):
 
 def records_calender_view(request):
     return render(request, "records/records_calender.html")
+
+
+def records_write_scrap_view(request):
+    return render(request, "records/records_write_scrap.html")
