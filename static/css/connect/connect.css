@@ -58,10 +58,18 @@
 
 .challenge_title {
   margin-top: 15vh;
-  margin-left: 3vw;
+  margin-left: 6vw;
   width: 90vw;
   height: 14vh;
   font-size: 60px;
+  text-align: center;
+}
+
+.challenge_smalltitle{
+  margin-left: 6vw;
+  width: 90vw;
+  height: 14vh;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -80,17 +88,25 @@
   height: 2.5vh;
   text-align: center;
   padding: 1rem;
-  margin: 2vh 1vw;
+  margin: 2vh 2vw;
+  margin-left:2vw;
 }
 
 .cloud {
+  display:flex;
+  justify-content:center;
   background-color: rgba(236, 106, 59, 0.2);
   border-radius: 40px;
-  width: 80vw;
+  width: 84vw;
   height: 50vh;
   margin-left: 10vw;
-  margin-right: 10vw;
+  margin-right:10vw;
   margin-top: 2vh;
+}
+
+img{
+  width:100%;
+  height:100%;
 }
 
 .contest_exhibit {
@@ -114,7 +130,7 @@ a {
   height: 15vh;
   font-size: 60px;
   text-align: center;
-  /* margin-left:-6vw; */
+  margin-left:-3vw
 }
 
 .contest_exhibit_search {
@@ -134,17 +150,19 @@ a {
 .contest_exhibit_categories {
   display: flex;
   justify-content: space-between;
-  width: 90vw;
+  width: 94vw;
   height: 10vh;
-  margin-right: 10vw;
+  margin-right:6vw;
   margin-bottom: 1vh;
-  padding: 1rem;
+  margin-top:2vh;
+  padding-bottom: 1rem;
   background-color: lightgray;
 }
 
 .contest_exhibit_categories > ul {
   padding: 1rem;
-  font-size: 20px;
+  margin:1rem;
+  font-size: 22px;
   border: unset;
 }
 
@@ -156,10 +174,12 @@ a {
 }
 
 .contest_exhibit_boxes {
+  margin-left:-2vw;
+  margin-bottom:5vh;
   display: flex;
   width: 100%;
   height: 50vh;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .study_title {
@@ -173,7 +193,7 @@ a {
 .study_boxes {
   width: 100%;
   height: 50vh;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -229,6 +249,7 @@ ul {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom:5vh;
   /* padding-left:3vw;
   padding-top:3vh; */
 }
@@ -243,7 +264,7 @@ p {
   flex-direction: column;
   width: 21vw;
   height: 50vh;
-  margin: 5px 10px;
+  margin: 10px 10px;
   border: 2px solid gray;
   border-radius: 20px;
 }
@@ -251,8 +272,9 @@ p {
 .detail_box_study {
   width: 20vw;
   height: 22vh;
+  margin-left:-1vw;
   margin-right: 2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 41h;
   border: 2px solid gray;
   border-radius: 20px;
 }
@@ -267,7 +289,7 @@ img {
 .detail_box_text {
   width: 100%;
   height: 20%;
-  padding: 1rem;
+  /* padding: 2rem; */
 }
 
 .tag {
