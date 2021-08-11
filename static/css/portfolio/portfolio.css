@@ -135,12 +135,12 @@
 }
 .index_four_one_window {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .index_four_real_one_window {
   height: 75%;
-  width: 80%;
+  width: 70%;
   background-color: rgb(211, 211, 211);
   display: grid;
   grid-template-columns: 1fr;
@@ -159,7 +159,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 15vh;
+  margin-left: 5vh;
 }
 .compare {
   width: 20%;
@@ -174,7 +174,7 @@
 .index_four_real_window {
   width: 80%;
   height: 50%;
-  background-color: gray;
+  background-color: ;
 }
 .index_five {
   width: 100%;
@@ -343,4 +343,24 @@
 }
 .hearttored {
   color: red;
+}
+form > input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+form > input:focus {
+  border-bottom: 1px solid black;
+}
+form > button {
+  margin-left: 10px;
+}
+input[type="number"] {
+  width: 50px;
+  margin-right: 10px;
+}
+#username {
+  margin: 15px 0;
+}
+label[for="num2"] {
+  margin-right: 3px;
 }
