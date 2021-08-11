@@ -119,7 +119,7 @@ img{
   /* justify-content:center; */
 }
 
-a {
+.detail_box>a {
   width: 100%;
   height: 100%;
 }
