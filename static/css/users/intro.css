@@ -62,16 +62,21 @@
 .index_two {
   width: 100%;
   height: 80vh;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("/static/image/intro_logo_backgroundss.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 52% 48%;
 }
 .index_two_logo_box {
-  height: 10vh;
-  width: 30vh;
+  height: 12vh;
+  width: 40vh;
   margin-bottom: 2vh;
+  padding-left: 10px;
+  margin: 10px;
 }
 .imagez {
   width: 100%;
@@ -87,14 +92,36 @@
   height: 110vh;
   background-color: hsl(177, 26%, 84%);
   display: grid;
-  grid-template-columns: 4fr 6fr;
+  grid-template-columns: 5fr 6fr;
   grid-template-rows: 1fr;
 }
 .index_three_info {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20vh;
+}
+.intro_portfolio_button {
+  width: 35vh;
+  height: 9vh;
+  border: gray 2px solid;
+  margin-bottom: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vh;
+  font-size: x-large;
+  border-radius: 5px;
+}
+.intro_portfolio_button:hover {
+  opacity: 0.5;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
+}
+.arrowhome {
+  margin-right: 5vh;
+  width: 8vh;
+  height: 3vh;
 }
 .index_three_box {
   flex-direction: column;
@@ -137,20 +164,65 @@
 .imaget {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .image {
   width: 100%;
   height: 100%;
-  border-radius: 100px;
+  border-radius: 50px;
+}
+.imagetq {
+  width: 100%;
+  height: 100%;
 }
 .index_four {
   width: 100%;
   height: 110vh;
-  background-color: gray;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 24fr 17fr;
   grid-template-rows: 1fr;
+}
+.index_four_left_imagebox {
+  width: 100%;
+  height: 70%;
+  margin-top: 15%;
+}
+.index_four_left {
+}
+.index_four_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.index_four_box {
+  margin-top: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index_four_title {
+  font-size: 70px;
+  font-weight: 800;
+  color: black;
+}
+.index_four_sub_two_title {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  margin-top: 3vh;
+}
+.intro_challenge_button {
+  width: 35vh;
+  height: 9vh;
+  border: gray 2px solid;
+  margin-bottom: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vh;
+  font-size: x-large;
+  border-radius: 5px;
 }
 .index_five {
   width: 100%;
