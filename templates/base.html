@@ -26,28 +26,49 @@
                         </div>
                     </div>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'portfolios:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_one.png'%}"></img>
+                    <a class="nav_category"  href="{% url 'portfolios:main' %}">
+                        <div class="nav_boxbox">
+                            <img class="imageaz" src="{% static 'image/logo_one.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">포트폴리오</span>
+                        
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'challenges:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_eight.png'%}"></img>
+                    <a class="nav_category" href="{% url 'challenges:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_eight.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">챌린지</span>
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'repositories:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_seven.png'%}"></img>
+                    <a class="nav_category" href="{% url 'repositories:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_seven.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">보관함</span>
+                        
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'records:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_six.png'%}"></img>
+                    <a class="nav_category" href="{% url 'records:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_six.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">기록</span>
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'connects:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_two.png'%}"></img>
+                    <a class="nav_category" href="{% url 'connects:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_two.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">커넥트</span>
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_boxbox" href="{% url 'users:main' %}">
-                        <img class="imageaz" src="{% static 'image/logo_four.png'%}"></img>
+                    <a class="nav_category" href="{% url 'users:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_four.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">메인</span>
+
                     </a>
                     <div class="nav_under">
                         <span>NADA</span>
@@ -56,7 +77,7 @@
                         <span>가장 NADA운 생활</span>
                     </div>
                     <div class="nav_underq">
-                        <span>{% now 'Y M j일 D' %}</span>
+                        <span>{% now 'Y M j일' %}</span><span>{% now 'D' %}</span>
                     </div>
                 </div>
             </div>
@@ -140,5 +161,25 @@
     src="https://kit.fontawesome.com/4d118135bb.js"
     crossorigin="anonymous"
     ></script>
+    <script>
+        var navbar = document.querySelector(".navigation_bar")
+        var titles = document.querySelectorAll(".nav_boxtitle")
+        navbar.addEventListener("mouseover",function(e){
+            titles.forEach(function(title){
+                title.style.display="block"
+                title.style.animationName = "navtitle-start"
+                title.style.animationPlayState="running"
+
+            })
+        })
+        navbar.addEventListener("mouseleave",function(e){
+            titles.forEach(function(title){
+                title.style.animationName = "navtitle-end"
+                title.style.animationPlayState="running"
+                title.style.display="none"
+            })
+        })
+
+    </script>
 </body>
 </html>

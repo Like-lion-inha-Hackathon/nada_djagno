@@ -39,9 +39,49 @@ ul {
 .empty {
   height: 30px;
 }
-.nav_boxbox {
+.nav_category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_boxbox > img {
   width: 3vh;
   height: 3vh;
+}
+.nav_boxtitle {
+  margin-left: 10px;
+  width: 80px;
+  display: none;
+  animation-name: navtitle-start;
+  animation-direction: normal;
+  animation-duration: 0.2s;
+  animation-play-state: paused;
+}
+@keyframes navtitle-start {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+@keyframes navtitle-end {
+  0% {
+    width: auto;
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
 }
 .status-bar {
   position: fixed;
@@ -200,6 +240,12 @@ ul {
 .nav_underq {
   margin-top: 1vh;
   font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav_underq > span {
+  display: block;
 }
 .imageaz {
   width: 100%;
