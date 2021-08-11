@@ -309,10 +309,48 @@
 .index_six {
   width: 100%;
   height: 110vh;
-  background-color: aqua;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+}
+.index_six_left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.index_six_left_circle {
+  width: 80vh;
+  height: 80vh;
+  border-radius: 100%;
+}
+.index_six_fight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20%;
+}
+.index_six_fight_title {
+  font-size: 70px;
+  margin-bottom: 10vh;
+}
+.index_six_fight_text {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.index_six_fight_img {
+  width: 60vh;
+  height: 20vh;
+  background-color: blue;
+  margin-top: 10vh;
+}
+.imagepp {
+  width: 100%;
+  height: 100%;
+}
+.index_six_left_circle:hover {
+  opacity: 0.5;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
 }
 .index_seven {
   width: 100%;
