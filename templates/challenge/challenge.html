@@ -21,26 +21,44 @@
 </div>
 <div class="line_parent"><div class="line"></div></div>
 <div class="index_five_window">
-        <div class="index_five_window_boxa">전체</div>
+    <a class="index_five_window_boxa" href="{% url 'challenges:tag' 'all'%}">
+        <div >전체</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 공부</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'study'%}">
+        <div ># 공부</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 건강</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'health'%}">
+        <div ># 건강</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 습관</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'habbit'%}">
+        <div ># 습관</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 독서</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'reading'%}">
+        <div ># 독서</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 취미</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'hobby'%}">
+        <div ># 취미</div>
         <div class="emptyq"></div>
-        <div class="index_five_window_box"># 업무</div>
+    </a>
+    <a class="index_five_window_box" href="{% url 'challenges:tag' 'work'%}">
+        <div ># 업무</div>
         <div class="emptyq"></div>
+    </a>
 </div>
 <div class="round-all">
 
     {% for challenge in challenges %}
         <div class="round"><a href="{% url 'challenges:reading' challenge.id %}"><img src="{% get_media_prefix %}/{{challenge.thumbnail}}" alt="img"/><p>{{challenge.title}}</p></a></div>
     {% endfor %} 
+    {% for a in all %}
+        <div class="round"><a href="{% url 'challenges:reading' a.id %}"><img src="{% get_media_prefix %}/{{a.thumbnail}}" alt="img"/><p>{{a.title}}</p></a></div>
+    {% endfor %} 
+    
     <div class="round"><a href="{% url 'challenges:write' %}"><div class = "nothing"><div class="plus">+</div></div><p>새로운 챌린지</p></a></div>
  </div>
     {% endblock content%}

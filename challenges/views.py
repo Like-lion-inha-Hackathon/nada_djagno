@@ -6,8 +6,37 @@ import random
 
 
 def challenge_view(request):
+    if request.GET:
+        print("GET")
     challenges = challenge_models.Challenge.objects.all()
     return render(request, "challenge/challenge.html", {"challenges": challenges})
+
+
+def challenge_tag_view(request, tag):
+    context = {}
+    if tag == "all":
+        all = challenge_models.Challenge.objects.all()
+        context["all"] = all
+    elif tag == "study":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+    elif tag == "habbit":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+    elif tag == "reading":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+    elif tag == "hobby":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+    elif tag == "work":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+    elif tag == "health":
+        all = challenge_models.Challenge.objects.filter(category=tag)
+        context["all"] = all
+
+    return render(request, "challenge/challenge.html", context)
 
 
 def challenge_study_view(request):
@@ -18,7 +47,11 @@ def challenge_reading_view(request, id):
     challenge = challenge_models.Challenge.objects.get(pk=id)
     challenges = challenge_models.Challenge.objects.all()
     period = range(challenge.period)
-    return render(request, "challenge/challenge_reading.html", {"challenge": challenge,"period":period})
+    return render(
+        request,
+        "challenge/challenge_reading.html",
+        {"challenge": challenge, "period": period},
+    )
 
 
 def write_challenge_view(request):
