@@ -8,5 +8,6 @@ urlpatterns = [
     path("reading/<int:id>", views.challenge_reading_view, name="reading"),
     path("study/", views.challenge_study_view, name="study"),
     path("write/", views.write_challenge_view, name="write"),
+    path("write/<tag>", views.challenge_tag_view, name="tag"),
 ]
 app_name = "challenges"

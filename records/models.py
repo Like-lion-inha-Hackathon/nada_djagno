@@ -7,8 +7,6 @@ from users import models as user_models
 
 class Record(core_models.TimeStampedModel):
     title = models.CharField(max_length=50)
+    category = models.CharField(max_length=50, null=True, blank=True)
     period = models.IntegerField(null=True)
     detail = models.TextField()
-    author = models.ForeignKey(
-        user_models.User, on_delete=models.CASCADE, null=True, blank=True
-    )
