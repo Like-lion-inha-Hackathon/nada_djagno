@@ -39,3 +39,4 @@ emojys.forEach(function(emoji){
         console.log(emoji)
     })
 })
+

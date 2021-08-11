@@ -7,11 +7,11 @@
 
 .top{
     display:flex;
-    width:80vw;
+    width:84vw;
     height:20vh;
-    margin-top:14vh;
-    margin-left:10vw;
-    margin-right:10vw;
+    margin-top:13vh;
+    margin-left:8vw;
+    margin-right:8vw;
 }
 
 .title{
