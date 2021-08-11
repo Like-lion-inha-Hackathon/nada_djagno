@@ -239,7 +239,7 @@
 }
 .index_five {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-color: white;
   display: grid;
   grid-template-columns: 5fr 8fr;
@@ -308,7 +308,7 @@
 }
 .index_six {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -354,11 +354,14 @@
 }
 .index_seven {
   width: 100%;
-  height: 110vh;
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  height: 100vh;
+  background-color: aqua;
+}
+.index_seven_title {
+  width: 100%;
+  height: 20vh;
+  background-color: beige;
+  margin-top: 10vh;
 }
 .footer {
   width: 100%;
