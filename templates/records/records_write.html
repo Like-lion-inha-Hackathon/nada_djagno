@@ -10,37 +10,59 @@
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
-        <form class="index_three">
+        <form class="index_three" method="POST" action="{% url 'records:write' %}">
             <div class="index_three_window">
                 <label class="grid_one">
                     <span>카테고리:&nbsp;</span>
                 </label>
                 <div class="grid_two">
-                    <input class="grid_two_box" placeholder="Portfolio" />
+                    <select name="category" id="category">
+                        <optgroup label="포트폴리오">
+                            <option value="licence">자격증</option>
+                            <option value="language">어학</option>
+                            <option value="grade">학점</option>
+                            <option value="internship">인턴</option>
+                            <option value="volunteer">봉사</option>
+                            <option value="work">업무</option>
+                        </optgroup>
+                        <optgroup label="일반">
+                            <option value="general">일반</option>
+                        </optgroup>
+                        <!--
+                            <optgroup label="챌린지">
+                                <option value="study">공부</option>
+                                <option value="health">건강</option>
+                                <option value="habbit">습관</option>
+                                <option value="reading">독서</option>
+                                <option value="hobby">취미</option>
+                                <option value="work">업무</option>
+                            </optgroup>
+                        -->
+                    </select>
                 </div>
                 <label class="grid_three">
                     <span>기간:&nbsp;</span>
                 </label>
                 <div class="grid_four">
-                    <input class="grid_four_box" type="date">
+                    <input class="grid_four_box" type="number" name="period" placeholder="기간을 입력하세요">
                 </div>
                 <label class="grid_five">
                     <span>제목:&nbsp;</span>
                 </label>
                 <div class="grid_six">
-                    <input class="grid_six_box" type="text">
+                    <input class="grid_six_box" name="title" type="text">
                 </div>
                 <label class="grid_seven">
                     <span>글:&nbsp;</span>
                 </label>
                 <div class="grid_eight">
-                    <input class="grid_eight_box" type="text">
+                    <input class="grid_eight_box" name="detail" type="text">
                 </div>
                 <div class="grid_nine">                
-                    <button class="grid_nine_box">
-                        <a class="grid_nine_button" href="{% url 'records:main' %}">
+                    <button class="grid_nine_box" type="submit">
+                        
                             <span>등록하기</span>
-                        </a>
+                        
                     </button>
                 </div>
             </div>
