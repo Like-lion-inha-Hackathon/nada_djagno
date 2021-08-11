@@ -8,6 +8,7 @@ from users import models as user_models
 class Record(core_models.TimeStampedModel):
     title = models.CharField(max_length=50)
     category = models.CharField(max_length=50, null=True, blank=True)
-    period = models.IntegerField(null=True)
+    start_date = models.DateField(null=True)
+    end_date = models.DateField(null=True)
     detail = models.TextField()
-    thumbnail = models.ImageField(null=True)
+    thumbnail = models.ImageField(default=True)

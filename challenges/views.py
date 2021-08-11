@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from . import models as challenge_models
 import random
+import datetime
 
 # Create your views here.
 
@@ -45,8 +46,8 @@ def challenge_study_view(request):
 
 def challenge_reading_view(request, id):
     challenge = challenge_models.Challenge.objects.get(pk=id)
-    challenges = challenge_models.Challenge.objects.all()
-    period = range(challenge.period)
+    period = challenge.end_date - challenge.start_date
+    period = range(period.days)
     return render(
         request,
         "challenge/challenge_reading.html",
@@ -60,15 +61,30 @@ def write_challenge_view(request):
     if request.POST:
         print("post")
         title = request.POST.get("title")
-        period = int(request.POST.get("period"))
-        method = request.POST.get("method")
+        start_date = request.POST.get("start_date")
+        end_date = request.POST.get("end_date")
+        detail = request.POST.get("method")
         category = request.POST.get("category")
         random_number = random.randint(1, 3)
         thumbnail = f"challenge/{category}/{category}_{random_number}.png"
+        startyear, startmonth, startday = (
+            int(start_date[:4]),
+            int(start_date[5:7]),
+            int(start_date[8:10]),
+        )
+        start_date = datetime.date(startyear, startmonth, startday)
+        endyear, endmonth, endday = (
+            int(end_date[:4]),
+            int(end_date[5:7]),
+            int(end_date[8:10]),
+        )
+        end_date = datetime.date(endyear, endmonth, endday)
+        period = end_date - start_date
         challenge = challenge_models.Challenge.objects.create(
             title=title,
-            period=period,
-            method=method,
+            start_date=start_date,
+            end_date=end_date,
+            detail=detail,
             category=category,
             thumbnail=thumbnail,
         )
