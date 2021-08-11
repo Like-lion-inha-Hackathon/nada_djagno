@@ -10,7 +10,7 @@
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
-        <form class="index_three">
+        <form class="index_three" method="POST" action="{% url 'records:write' %}">
             <div class="index_three_window">
                 <label class="grid_one">
                     <span>카테고리:&nbsp;</span>
@@ -44,25 +44,25 @@
                     <span>기간:&nbsp;</span>
                 </label>
                 <div class="grid_four">
-                    <input class="grid_four_box" type="date">
+                    <input class="grid_four_box" type="number" name="period" placeholder="기간을 입력하세요">
                 </div>
                 <label class="grid_five">
                     <span>제목:&nbsp;</span>
                 </label>
                 <div class="grid_six">
-                    <input class="grid_six_box" type="text">
+                    <input class="grid_six_box" name="title" type="text">
                 </div>
                 <label class="grid_seven">
                     <span>글:&nbsp;</span>
                 </label>
                 <div class="grid_eight">
-                    <input class="grid_eight_box" type="text">
+                    <input class="grid_eight_box" name="detail" type="text">
                 </div>
                 <div class="grid_nine">                
-                    <button class="grid_nine_box">
-                        <a class="grid_nine_button" href="{% url 'records:main' %}">
+                    <button class="grid_nine_box" type="submit">
+                        
                             <span>등록하기</span>
-                        </a>
+                        
                     </button>
                 </div>
             </div>
