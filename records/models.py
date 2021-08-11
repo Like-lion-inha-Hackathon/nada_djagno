@@ -10,3 +10,4 @@ class Record(core_models.TimeStampedModel):
     category = models.CharField(max_length=50, null=True, blank=True)
     period = models.IntegerField(null=True)
     detail = models.TextField()
+    thumbnail = models.ImageField(null=True)

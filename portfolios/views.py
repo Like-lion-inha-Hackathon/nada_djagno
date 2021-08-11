@@ -41,7 +41,7 @@ def portfolio_view(request):
         }
         # for i in range(1, 10):
         #     data[f"{i}"] = "0"
-    data = json.dumps({"user": [data]})
+    data = json.dumps({"data": [data]})
     text = json.dumps({"text": text})
     return render(request, "portfolio/portfolio.html", {"data": data, "text": text})
 
