@@ -11,6 +11,7 @@
     <div></div>
     <div class="portfolio_main">
         <form class="index_three" method="POST" action="{% url 'records:write' %}">
+            {% csrf_token %}
             <div class="index_three_window">
                 <label class="grid_one">
                     <span>카테고리:&nbsp;</span>
