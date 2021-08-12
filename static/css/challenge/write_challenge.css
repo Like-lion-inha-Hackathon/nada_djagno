@@ -9,7 +9,7 @@
   font-family: 'SDSamliphopangche_Basic';
   font-size: 80px;
 } */
-
+/* 
 @font-face {
   font-family: 'SLEIGothicTTF';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
@@ -41,8 +41,8 @@ form {
 
 .top{
   width:100vw;
-  /* margin-left:10vw; */
-  height:15vh;
+   margin-left:10vw; 
+  height:10vh;
   display:flex;
   
 }
@@ -57,7 +57,12 @@ form {
   display:flex;
   margin-left:10vw;
   width: 90vw;
-  height:15vh;
+  height:10vh;
+}
+
+.period_box{
+  width:50%;
+  height:100%;
 }
 
 .method_div {
@@ -65,7 +70,7 @@ form {
   display:flex;
   border:none;
   width:90vw;
-  height: 15vh;
+  height: 20vh;
 }
 
 .method_category_div {
@@ -81,15 +86,14 @@ form {
   font-family: 'Pretendard-Regular';
 }
 
-/* .topic_box{
+ .topic_box{
     display:lex
     width:80%;
     height:30px;
-} */
-
+} 
 .title_box {
   background-color: lightgray;
-  border-radius:10px;
+  border-radius:5px;
   border:none;
   margin-bottom: 5vh;
   width: 80%;
@@ -105,7 +109,7 @@ form {
 
 .period_box {
   background-color: lightgray;
-  border-radius:10px;
+  border-radius:5px;
   border:none;
   margin-bottom: 5vh;
   width: 80%;
@@ -121,7 +125,7 @@ form {
 
 .method_box {
   background-color: lightgrey;
-  border-radius:10px;
+  border-radius:5px;
   border:none;
   margin-bottom: 5vh;
   width: 80%;
@@ -133,7 +137,7 @@ form {
     margin-top:30px;
     display:flex;
     justify-content:center;
-} */
+} 
 
 .button__submit {
   margin-left:10vw;
@@ -149,4 +153,170 @@ form {
 .button__submit:hover{
   background-color:BLACK;
   color:WHITE;
+} */
+
+.left_right_all_page {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 20fr;
+  grid-template-rows: 1fr;
+}
+.empty {
+  height: 30px;
+}
+.index_three {
+  width: 100%;
+  height: 95vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.index_three_window {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 3fr 1fr 4fr;
+  grid-template-rows: 1fr 1fr 6fr 1.5fr;
+  margin-left: -10vh;
+}
+.grid_one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.grid_two {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid_two_box {
+  width: 100%;
+  height: 5vh;
+  background-color: white;
+  border-radius: 10px;
+  border: gray 2px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+.grid_three {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.grid_four {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_four_box {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(219, 219, 219);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bolder;
+  border: none;
+}
+.grid_five {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.grid_six {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_six_box {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(219, 219, 219);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bolder;
+  border: none;
+}
+.grid_seven {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 1.5vh;
+}
+.grid_eight {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_eight_box {
+  width: 100%;
+  height: 97%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bolder;
+  border: none;
+}
+.grid_nine {
+  grid-column: 1/5;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: flex-end;
+}
+.grid_nine_button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.grid_nine_box {
+  margin-top: 1vh;
+  width: 10vh;
+  height: 5vh;
+  background-color: rgb(202, 224, 223);
+  border-radius: 10px;
+  border: gray 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border: none;
 }

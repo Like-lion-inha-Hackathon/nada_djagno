@@ -17,13 +17,33 @@ body {
 }
 
 .head_title {
-  margin-left:8vw;
+  margin-left:2vw; 
   width: 100%;
   height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: 'SDSamliphopangche_Basic';
   font-size: 70px;
+}
+
+.head_title>p{
+  margin-top:4vh;
+  font-family: 'Pretendard-Regular';
+  font-size:25px;
+  animation: color 1s;
+  animation-iteration-count: 100;
+}
+
+@keyframes color {
+  0% {
+    color:black;
+  }
+  /* 95% {
+    color:red;
+  } */
+  to {
+    color:#c5cafe;
+  } 
 }
 
 @font-face {
@@ -98,6 +118,8 @@ body {
 .index_five_window {
   margin-left: 14vw;
   margin-right:10vw;
+  min-width:105.3025px;
+  min-height:61.82px;
   /* margin-top: 1vh; */
   width: 76vw;
   height: 10vh;
@@ -172,13 +194,15 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 3em;
-  width: 300px;
-  height: 300px;
+  margin-bottom: 6em;
+  width: 200px;
+  height: 200px;
 }
 
 p {
   text-align: center;
 }
+
 .round > a {
   width: 100%;
   height: 100%;
