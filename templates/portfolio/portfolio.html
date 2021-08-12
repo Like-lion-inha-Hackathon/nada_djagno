@@ -131,7 +131,20 @@
                 <div class="index_five_title_one">02. ACTIVITY&ensp;&ensp;</div>
                 <div class="index_five_title_two">그래프를 클릭하면 더 자세한 기록을 볼 수 있습니다.</div>
             </div>
-            <div class="index_five_window"></div>
+            <div class="index_five_window">
+                <div class="activity_box">
+                    
+                    {% for title,start,end in records %}
+                        <a href="" class="activity_graph">
+                            <div class="activity_graph__point"></div>
+                            <div class="activity_graph__year">{{start|date:"Y"}}</div>
+                            <p class="activity_date">{{start|date:"M d일"}} ~ {{end|date:"M d일"}}</p>
+                            <p class="activity_name">{{title}}</p>
+                        </a>
+                        
+                    {% endfor %}
+                </div>
+            </div>
         </div>
         <div class="index_six">
             <div class="index_six_title">
