@@ -139,9 +139,10 @@
   align-items: center;
 }
 .index_four_real_one_window {
-  height: 75%;
-  width: 70%;
-  background-color: rgb(211, 211, 211);
+  height: 80%;
+  width: 90%;
+  /* background-color: rgb(211, 211, 211); */
+  background-color: #f8f8f8d7;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -150,9 +151,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: dotted;
-  border-width: 2px;
-  border-color: black;
+  border-top: lightgray 2px solid;
+  font-size: 25px;
+}
+.index_four_real_one_window_flexa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: lightgray 2px solid;
+  border-bottom: lightgray 2px solid;
+  font-size: 25px;
 }
 .index_four_window {
   display: flex;

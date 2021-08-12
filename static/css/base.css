@@ -18,13 +18,14 @@ ul {
 .top_button {
   width: 10vh;
   height: 6vh;
-  background-color: #c5cafe;
+  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   font-size: 20px;
   font-weight: bolder;
+  z-index: 500;
 }
 
 .normal_nav {
@@ -104,16 +105,16 @@ ul {
   height: 5vh;
   justify-content: space-between;
   padding: 20px;
-  z-index: 5;
-  background-color: black;
-  opacity: 0.7;
+  z-index: 1000;
+  background-color: white;
+  opacity: 0.9;
   margin-left: 4.7%;
 }
 .main_logo {
   margin-left: 50px;
   font-size: 35px;
   font-weight: 800;
-  color: white;
+  color: black;
 }
 .status-bar_sub {
   width: auto;
@@ -123,13 +124,11 @@ ul {
 }
 .text_button {
   border: none;
-  background-color: black;
-  color: white;
-  font-weight: bolder;
+  background-color: white;
 }
 .login_button {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 50px;
   width: 100px;
   height: 40px;
   font-size: 15px;
@@ -143,15 +142,15 @@ ul {
   align-items: center;
 }
 .hello {
-  margin-right: 30px;
+  margin-right: 20px;
   height: 40px;
   width: auto;
-  background-color: aqua;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: gray 1px solid;
+  font-size: larger;
+  font-weight: bolder;
 }
 .nav_profile_box {
   display: flex;
@@ -240,13 +239,17 @@ ul {
 }
 .green_smalls {
   margin-top: -2vh;
-  width: 1.2vh;
-  height: 1.2vh;
+  width: 2vh;
+  height: 2vh;
   border-radius: 100%;
-  background-color: rgb(0, 89, 255);
+  background-color: red;
   border-style: solid;
   border-width: 1px;
   border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .nav_under {
   margin-top: 35vh;
@@ -268,7 +271,8 @@ ul {
 }
 /*=================================================================*/
 #qchat-screen {
-  background-color: #abc1d1;
+  /* background-color: #abc1d1; */
+  background-color: #c5cafe;
   height: 60vh;
   margin-top: 12vh;
   width: 450px;
@@ -281,7 +285,8 @@ ul {
   position: fixed;
   width: 450px;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  /* background-color: #abc1d1; */
+  background-color: #c5cafe;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -354,7 +359,7 @@ ul {
   margin-right: 5px;
 }
 .qqmessage__bubble {
-  background-color: yellow;
+  background-color: rgb(202, 201, 201);
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
