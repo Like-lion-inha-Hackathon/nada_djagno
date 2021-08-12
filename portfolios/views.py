@@ -66,3 +66,17 @@ def portfolio_view(request):
 
 def portfolio_dohee_view(request):
     return render(request, "portfolio/portfolio_dohee.html")
+
+
+def portfolio_compare_view(request):
+    records = record_models.Record.objects.all()
+    year = []
+    for record in records:
+        year.append(record.start_date.year)
+
+    years = set(year)
+    return render(
+        request,
+        "portfolio/portfolio_compare.html",
+        {"years": years, "records": records},
+    )

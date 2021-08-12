@@ -11,4 +11,4 @@ class Record(core_models.TimeStampedModel):
     start_date = models.DateField(null=True)
     end_date = models.DateField(null=True)
     detail = models.TextField()
-    thumbnail = models.ImageField(default=True)
+    thumbnail = models.ImageField(default=True, blank=True)

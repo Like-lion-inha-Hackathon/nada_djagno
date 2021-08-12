@@ -1,0 +1,94 @@
+.cbody {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graphbox {
+  position: relative;
+  background-color: white;
+  width: 80vw;
+  height: 50vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+}
+.gradation_box {
+  width: 2000px;
+  min-width: 100px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gradation_box__top {
+  width: 1700px;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.gradation_box__bottom {
+  height: 50%;
+  display: flex;
+}
+.gradations {
+  width: 120px;
+  height: auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.gradations_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  width: 90%;
+}
+.gradations_top_detail {
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-size: 10px;
+}
+.graph_title {
+  position: absolute;
+  top: 15px;
+}
+.gradations_top_detail:first-child {
+  position: relative;
+  right: 1px;
+}
+.gradation_box__bottom > .gradations {
+  width: 120px;
+  display: flex;
+  align-items: ;
+}
+.gradations_bottom_detail {
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-size: 10px;
+  position: relative;
+  top: px;
+  right: 1px;
+  width: 90%;
+}
+.emp {
+  width: 10px;
+  height: 40px;
+}
+.age {
+  margin: 0;
+  font-size: 12px;
+}
+.agebox {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

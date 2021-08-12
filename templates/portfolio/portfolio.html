@@ -85,9 +85,11 @@
                 </div>
             </div>
             <div class="index_four_window">
-                <div class="compare_box">
+
+                <a href="{% url 'portfolios:compare' %}" class="compare_box">
                     <div class="compare">compare</div>
-                </div>
+                </a>
+
                 <div class="index_four_real_window">
                     <canvas id="line-chart" ></canvas>
                 </div>
@@ -153,12 +155,13 @@
                 <div class="activity_box">
                     
                     {% for record in records %}
-                        <a href="" class="activity_graph">
+                        <div href="" class="activity_graph">
                             <div class="activity_graph__point"></div>
                             <div class="activity_graph__year">{{record.start_date|date:"Y"}}</div>
+                            <div class="activity_graph__line"></div>
                             <p class="activity_date">{{record.start_date|date:"M d일"}} ~ {{record.end_date|date:"M d일"}}</p>
                             <p class="activity_name">{{record.title}}</p>
-                        </a>
+                        </div>
                         
                     {% endfor %}
                 </div>
@@ -230,7 +233,7 @@
             }, */
             { 
                 data: [{{data|safe}}.data[0].num1,{{data|safe}}.data[0].num2,{{data|safe}}.data[0].num3,{{data|safe}}.data[0].num4,{{data|safe}}.data[0].num5,{{data|safe}}.data[0].num6,{{data|safe}}.data[0].num7,{{data|safe}}.data[0].num8,{{data|safe}}.data[0].num9,{{data|safe}}.data[0].num10],
-                label: {{data|safe}}.data[0].username,
+                label: "{{request.user}}",
                 borderColor: "#8e5ea2",
                 fill: false
             }
@@ -239,7 +242,7 @@
         options: {
             title: {
             display: true,
-            text: 'Check your lifecycle graph with DooHee',
+            text: "{{request.user}}'s Lifecycle",
             fontSize: 50,
             
             
@@ -249,7 +252,6 @@
         })
         canvas = document.querySelector("canvas")
         canvas.style.cssText="display:block; width:100%; height:100%;"
-        console.log(chart)
         ;
     </script>
 <script src="{% static 'js/portfolio.js' %}" ></script>
