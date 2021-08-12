@@ -9,62 +9,64 @@
   />
   {% endblock css %} {% block content%}
   <body>
-    <div class="head_title">새로운 챌린지 작성란</div>
+    <!-- <div class="head_title">새로운 챌린지 작성란</div> -->
     <form
       id="write-challenge"
       action="{% url 'challenges:write' %}"
       method="POST"
     >
       {% csrf_token %}
-      <div class="title_div">
-        <label class="title" for="title">제목 : </label>
-        <input
-          class="title_box"
-          name="title"
-          type="text"
-          placeholder="제목을 입력하세오"
-        />
+      <div class="top">
+        <div class="method_category_div">
+          <label class="method" for="category">카테고리 : </label>
+          <select name="category" id="category">
+            <option value="study" selected>Study</option>
+            <option value="reading">Reading</option>
+            <option value="hobby">Hobby</option>
+            <option value="health">Health</option>
+            <option value="habbit">Habbit</option>
+            <option value="work">Work</option>
+          </select>
+        </div>
+        <div class="title_div">
+          <label class="title" for="title">제목 : </label>
+          <input
+            class="title_box"
+            name="title"
+            type="text"
+            placeholder="&nbsp;&nbsp; 제목을 입력하세오"
+          />
+        </div>
       </div>
       <div class="period_div">
-        <label class="period" for="start">시작 : </label>
-        <input
-          class="period_box"
-          name="start_date"
-          type="date"
-          placeholder="시작일을 입력하세오"
-        />
+          <label class="period" for="start">시작 : </label>
+          <input
+            class="period_box"
+            name="start_date"
+            type="date"
+            placeholder="&nbsp;&nbsp; 시작일을 입력하세오"
+          />
       </div>
       <div class="period_div">
-        <label class="period" for="end">끝  : </label>
-        <input
-          class="period_box"
-          name="end_date"
-          type="date"
-          placeholder="종료일을 입력하세오"
-        />
+          <label class="period" for="end">끝  :  &nbsp;&nbsp;</label>
+          <input
+            class="period_box"
+            name="end_date"
+            type="date"
+            placeholder="&nbsp;&nbsp; 종료일을 입력하세오"
+          />
       </div>
       <div class="method_div">
-        <label class="method" for="method">방법 : </label>
-        <input
-          class="method_box"
-          name="method"
-          type="text"
-          placeholder="방법을 입력하세요"
-        />
-      </div>
-      <div class="method_div">
-        <label class="method" for="category">카테고리 : </label>
-        <select name="category" id="category">
-          <option value="study" selected>Study</option>
-          <option value="reading">Reading</option>
-          <option value="hobby">Hobby</option>
-          <option value="health">Health</option>
-          <option value="habbit">Habbit</option>
-          <option value="work">Work</option>
-        </select>
+          <label class="method" for="method">방법 : </label>
+          <input
+            class="method_box"
+            name="method"
+            type="text"
+            placeholder="&nbsp;&nbsp; 방법을 입력하세요"
+          />
       </div>
 
-      <button class="button__submit" type="submit">등록하기</button>
+        <button class="button__submit" type="submit">등록하기</button>
 
     </form>
   </body>

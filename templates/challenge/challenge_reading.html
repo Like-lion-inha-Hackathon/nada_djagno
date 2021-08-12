@@ -5,20 +5,24 @@
         <link rel="stylesheet" href="{% static 'css/challenge/challenge_reading.css' %}">
     {% endblock css %}
 </head>
-{% block page_title %}독서 챌린지{% endblock page_title %}
+{% block page_title %}챌린지{% endblock page_title %}
 {% block content%}
 <div class="outer">
     <div class="text">
         <div class="block">
             <div class="box-type">
-                <div class="img"><img src="{% static 'image/share.svg' %}" alt="img"/></div>
+                <div class="icon_box">
+                    <div class="icon"><img src="{% static 'image/share.svg' %}" alt="img"/></img></div>
+                    <div class="icon"><a href="http://www.facebook.com/"><img src="{% static 'image/facebook.svg' %}" alt="facebook"></img></a></div>
+                    <div class="icon"><a href="http://www.instagram.com/"><img src="{% static 'image/instagram.svg' %}" alt="instagram"></img></a></div>
+                </div>
                 <div class="topic">독서 챌린지</div>
-                <div class="title">제목 :   {{challenge.title}}</div>
-                <div class="period">시작 :  {{challenge.start_date}}</div>
-                <div class="period">종료 :  {{challenge.end_date}}</div>
-                <div class="method">방법 :  {{challenge.detail}}</div>
+                <div class="title">제목 :   &nbsp;&nbsp;{{challenge.title}}</div>
+                <div class="period">시작 :  &nbsp;&nbsp;{{challenge.start_date}}</div>
+                <div class="period">종료 :  &nbsp;&nbsp;{{challenge.end_date}}</div>
+                <div class="method">방법 :  &nbsp;&nbsp;{{challenge.detail}}</div>
             </div>
-            <div class="bar"></div>
+            <!-- <div class="bar"></div> -->
         </div>
     </div>
     <div class="emoji-outer">
