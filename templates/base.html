@@ -80,10 +80,19 @@
             <div class="status-bar">
                 <a href="{% url 'users:main' %}"><span class="main_logo">N A D A</span></a>
                 <div class="status-bar_sub">
+                    <div>
+                        {% if request.user.is_authenticated %}
+                        {% block profile %}
+                        <div class="hello">
+                            <span>{{user.username}}님, 안녕하세요</span>
+                        </div>
+                        {% endblock profile %}
+                        {% endif %}
+                    </div>
                     <button class="text_button">
                         <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
                         <div class="green_small_boxs">
-                            <div class="green_smalls"></div>
+                            <div class="green_smalls">N</div>
                         </div>
                     </button>
                     <button class="login_button">
@@ -91,15 +100,7 @@
                         
                         {% endblock islogin %}
                     </button>
-                    <div>
-                        {% if request.user.is_authenticated %}
-                        {% block profile %}
-                        <div class="hello">
-                            <span>{{user.username}}님 안녕하세요</span>
-                        </div>
-                        {% endblock profile %}
-                        {% endif %}
-                    </div>
+                    
                 </div>
             </div>
             <div class="message_big">
@@ -141,7 +142,7 @@
                     
                         <from class="qreply">
                             <div class="qreply__column">
-                                <input type="qtext" placeholder="멘토에게 질문해보세요!" />
+                                <input type="qtext" placeholder="대화 내용을 입력하세요" />
                                 <i class="airplane far fa-paper-plane fa-lg"></i>
                             </div>
                         </from>

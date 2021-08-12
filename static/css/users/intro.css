@@ -270,7 +270,7 @@
   height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-columns: 5fr 8fr;
+  grid-template-columns: 5fr 6fr;
   grid-template-rows: 1fr;
 }
 .index_record_info {
@@ -328,12 +328,13 @@
   align-items: center;
 }
 .index_five_real_window {
-  width: auto;
+  width: 90%;
   height: auto;
   justify-content: center;
   align-items: center;
   font-size: 250px;
   position: relative;
+  margin-right: 10%;
 }
 .imagetqqq {
   width: 100%;
