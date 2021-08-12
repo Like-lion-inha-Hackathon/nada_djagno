@@ -14,7 +14,12 @@
     <span class="main_logo">N A D A</span>
     <div></div>
     <div></div>
-    <button class="login_button"><a href="{% url 'users:login' %}">Log-in</a></button>
+    {% if user.is_authenticated %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log out</a></button>
+    {% endif %}
+    {% if user.is_authenticated is False %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log In</a></button>
+    {% endif %}
 </div>
 <div class="video-title">
     <div></div>
