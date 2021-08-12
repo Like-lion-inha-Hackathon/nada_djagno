@@ -134,12 +134,12 @@
             <div class="index_five_window">
                 <div class="activity_box">
                     
-                    {% for title,start,end in records %}
+                    {% for record in records %}
                         <a href="" class="activity_graph">
                             <div class="activity_graph__point"></div>
-                            <div class="activity_graph__year">{{start|date:"Y"}}</div>
-                            <p class="activity_date">{{start|date:"M d일"}} ~ {{end|date:"M d일"}}</p>
-                            <p class="activity_name">{{title}}</p>
+                            <div class="activity_graph__year">{{record.start_date|date:"Y"}}</div>
+                            <p class="activity_date">{{record.start_date|date:"M d일"}} ~ {{record.end_date|date:"M d일"}}</p>
+                            <p class="activity_name">{{record.title}}</p>
                         </a>
                         
                     {% endfor %}

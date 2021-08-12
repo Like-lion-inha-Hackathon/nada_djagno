@@ -46,18 +46,17 @@ def portfolio_view(request):
     data = json.dumps({"data": [data]})
     text = json.dumps({"text": text})
 
-    records = (
-        record_models.Record.objects.all()
-        .values_list("title", "start_date", "end_date")
-        .union(
-            challenge_models.Challenge.objects.all().values_list(
-                "title", "start_date", "end_date"
-            )
-        )
-    )
-    print(records)
+    records = record_models.Record.objects.all().order_by("start_date")
+    # records = (
+    #     record_models.Record.objects.all()
+    #     .values_list("title", "start_date", "end_date")
+    #     .union(
+    #         challenge_models.Challenge.objects.all().values_list(
+    #             "title", "start_date", "end_date"
+    #         )
+    #     )
+    # )
 
-    records.order_by("start_date")
     return render(
         request,
         "portfolio/portfolio.html",
