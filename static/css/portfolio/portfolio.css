@@ -263,7 +263,7 @@
 .activity_add {
   width: 15vh;
   height: 5vh;
-  background-color: chartreuse;
+  background-color: rgb(202, 224, 223);
   display: flex;
   justify-content: center;
   align-items: center;
