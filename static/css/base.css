@@ -15,6 +15,18 @@ ol,
 ul {
   list-style: none;
 }
+.top_button {
+  width: 10vh;
+  height: 6vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .normal_nav {
   width: auto;
   height: auto;
