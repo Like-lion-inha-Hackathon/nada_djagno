@@ -30,6 +30,13 @@
                         </div>
                     </div>
                     <div class="empty"></div>
+                    <a class="nav_category" href="{% url 'users:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_four.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">메인</span>
+                    </a>
+                    <div class="empty"></div>
                     <a class="nav_category"  href="{% url 'portfolios:main' %}">
                         <div class="nav_boxbox">
                             <img class="imageaz" src="{% static 'image/logo_one.png'%}"></img>
@@ -45,19 +52,18 @@
                         <span class="nav_boxtitle">챌린지</span>
                     </a>
                     <div class="empty"></div>
-                    <a class="nav_category" href="{% url 'repositories:main' %}">
-                        <div class="nav_boxbox" >
-                            <img class="imageaz" src="{% static 'image/logo_seven.png'%}"></img>
-                        </div>
-                        <span class="nav_boxtitle">보관함</span>
-                        
-                    </a>
-                    <div class="empty"></div>
                     <a class="nav_category" href="{% url 'records:main' %}">
                         <div class="nav_boxbox" >
                             <img class="imageaz" src="{% static 'image/logo_six.png'%}"></img>
                         </div>
                         <span class="nav_boxtitle">기록</span>
+                    </a>
+                    <div class="empty"></div>
+                    <a class="nav_category" href="{% url 'repositories:main' %}">
+                        <div class="nav_boxbox" >
+                            <img class="imageaz" src="{% static 'image/logo_seven.png'%}"></img>
+                        </div>
+                        <span class="nav_boxtitle">보관함</span>
                     </a>
                     <div class="empty"></div>
                     <a class="nav_category" href="{% url 'connects:main' %}">
@@ -66,14 +72,7 @@
                         </div>
                         <span class="nav_boxtitle">커넥트</span>
                     </a>
-                    <div class="empty"></div>
-                    <a class="nav_category" href="{% url 'users:main' %}">
-                        <div class="nav_boxbox" >
-                            <img class="imageaz" src="{% static 'image/logo_four.png'%}"></img>
-                        </div>
-                        <span class="nav_boxtitle">메인</span>
-
-                    </a>
+                    
                     
                 </div>
             </div>
@@ -90,7 +89,7 @@
                         {% endif %}
                     </div>
                     <button class="text_button">
-                        <a href="{% url 'users:main' %}"><i class="far fa-comment-dots fa-3x"></i></a>
+                        <div class="z1001"> <i class="far fa-comment-dots fa-3x "></i></div>
                         <div class="green_small_boxs">
                             <div class="green_smalls">N</div>
                         </div>
@@ -176,7 +175,18 @@
                 title.style.display="none"
             })
         })
-
+        var comment = document.querySelector(".z1001")
+        var message = document.querySelector(".message_big")
+        var body = document.querySelector("body")
+        comment.addEventListener("click",function(e){
+            if (message.style.display==="none") {
+                message.style.display = "block"
+               
+            } else {
+                message.style.display = "none"
+            }
+            
+        })
     </script>
 </body>
 </html>

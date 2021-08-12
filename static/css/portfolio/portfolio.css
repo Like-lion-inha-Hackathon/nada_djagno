@@ -215,42 +215,52 @@
 }
 .activity_box {
   width: auto;
+  padding-top: 40px;
+  padding-left: 40px;
   height: 85%;
-  margin-top: 15px;
-  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   overflow-y: scroll;
 }
 .activity_graph {
-  margin-top: 25px;
-  margin-left: 12px;
-  width: 300px;
+  margin-top: px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 200px;
   height: 80px;
-  border-top: 4px solid gray;
-  border-left: 4px solid gray;
+
+  border-left: 2px solid gray;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .activity_graph__point {
-  width: 30px;
-  height: 30px;
-  background-color: black;
+  width: 20px;
+  height: 20px;
+  background-color: #c5cafe;
+  opacity: 0.7;
   border-radius: 100%;
   position: absolute;
-  left: -15px;
-  top: -15px;
+  left: -10px;
+  top: -10px;
 }
 .activity_graph__year {
   width: auto;
   height: auto;
   position: absolute;
-  left: 10px;
-  top: -30px;
+  left: 30px;
+  top: 0px;
+}
+.activity_graph__line {
+  width: 10px;
+  height: 2px;
+  background-color: gray;
 }
 .activity_date {
   font-size: 12px;
+  margin-right: 20px;
 }
 .activity_name {
   font-size: 20px;

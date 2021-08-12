@@ -42,35 +42,7 @@
         </ul>
     </div>
     
-    <div class="graphbox">
-        <div class="graph_title">이두희님과 비교 그래프</div>
-        <div class="gradation_box">
-            <div class="gradation_box__top">
-                <div class="gradations"><div class="gradations_detail"><p class="gradations_top_detail">나의 세부 정보가 입력됩니다.</p><p class="gradations_top_detail">20</p></div></div>
-                <div class="gradations"><div class="gradations_detail"><p class="gradations_top_detail">나의 세부 정보가 입력됩니다.</p><p class="gradations_top_detail">21</p></div></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-            </div>
-            <div class="gradation_box__bottom">
-                <div class="gradations"><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-                <div class="gradations"></div>
-            </div>
-        </div>
-    </div>
+    
     <form action="{% url 'core:try' %}" method="POST">
         {% csrf_token %}
         <label for="username">USERNAME</label>
