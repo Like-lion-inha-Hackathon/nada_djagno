@@ -24,6 +24,12 @@
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
+        <div class="index_two">
+            <div class="index_two_box">
+                <span class="index_two_box_title">PORTFOLIO</span>
+                <span class="index_two_box_title_sub">포트폴리오 간단한 설명</span>
+            </div>
+        </div>
         <div class="index_three">
             <div class="index_three_one_window">
                 <div class="index_three_one_window_flex">
@@ -39,7 +45,14 @@
                 </div>
             </div>
             <div class="index_three_window">
-                <div class="index_three_real_window"></div>
+                <div class="index_three_real_window">
+                    <img class="images" src="{% static 'image/it.png'%}"></img>
+                    <div class="index_three_text">
+                        <span class="index_three_text_one">LEE DOOHEE</span>
+                        <span class="index_three_text_two">doohee@likelion.org</span>
+                        <span class="index_three_text_three">서울대학교 컴퓨터공학과 학사, 석사, 박사과정 중퇴<br>멋쟁이사자처럼 창립멤버, CEO<br>광주 인공지능사관학교 개교 멤버<br>러블리즈 멤버 지숙 남편</span>
+                    </div>
+                </div>
                 <div class="profile_first_page_right_nav">
                     <div class="profile_first_page_right_nav_one">
                         <i class="fas fa-heart fa-2x heartclick"></i>
@@ -60,24 +73,26 @@
             <div class="index_four_one_window">
                 <div class="index_four_real_one_window">
                     <div class="index_four_real_one_window_flex">
-                        <div class="index_four_real_one_window_one">학점 : 4.43</div>
+                        <div class="index_four_real_one_window_ff">학점 : 4.43</div>
                     </div>
                     <div class="index_four_real_one_window_flex">    
-                        <div class="index_four_real_one_window_two">토익 : 990</div>
+                        <div class="index_four_real_one_window_ff">어학 : Toeic(990), Toefl(104)</div>
                     </div>
                     <div class="index_four_real_one_window_flex">
-                        <div class="index_four_real_one_window_three">자격증 : 정보처리기사, 컴퓨터활용능력 1급</div>
+                        <div class="index_four_real_one_window_ff">자격증 : 정보처리기사, 컴퓨터활용능력 1급</div>
                     </div>
                     <div class="index_four_real_one_window_flex">
-                        <div class="index_four_real_one_window_four">곤니찌와</div>
+                        <div class="index_four_real_one_window_ff">수상 : 창업 아이디어 발굴 해커톤 은상<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;전국 대학생 아이디어톤 금상</div>
                     </div>
                     <div class="index_four_real_one_window_flexa">
-                        <div class="index_four_real_one_window_five">경력 : 올림픽 금메달 2개, 25대 대통령</div>
+                        <div class="index_four_real_one_window_ff">경력 : 평창 올림픽 통역봉사, KOKOA인턴<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;백신 알리미 앱 제작, NADA 웹서비스 제작</div>
                     </div>
                 </div>
             </div>
             <div class="index_four_window">
-                <div class="compare">compare</div>
+                <div class="compare_box">
+                    <div class="compare">compare</div>
+                </div>
                 <div class="index_four_real_window">
                     <canvas id="line-chart" ></canvas>
                 </div>
@@ -131,8 +146,13 @@
         </div>
         <div class="index_five">
             <div class="index_five_title">
-                <div class="index_five_title_one">02. ACTIVITY&ensp;&ensp;</div>
-                <div class="index_five_title_two">그래프를 클릭하면 더 자세한 기록을 볼 수 있습니다.</div>
+                <div class="index_five_title_left">
+                    <div class="index_five_title_one">02. ACTIVITY&ensp;&ensp;</div>
+                    <div class="index_five_title_two">그래프를 클릭하면 더 자세한 기록을 볼 수 있습니다.</div>
+                </div>
+            <a href="{% url 'records:write' %}">
+                <div class="activity_add">활동 추가</div>
+            </a>
             </div>
             <div class="index_five_window">
                 <div class="activity_box">
@@ -172,7 +192,7 @@
                             </div>
                         </div>
                         <div class="index_six_real_window_grid_two_down">
-                            <div class="index_six_real_window_grid_two_down_text">컴퓨터활용능력 2급 자격증</div>
+                            <div class="index_six_real_window_grid_two_down_text">컴퓨터활용능력 1급 자격증</div>
                         </div>
                     </div>
                     <div class="index_six_real_window_grid_three">
