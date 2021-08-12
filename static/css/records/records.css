@@ -156,7 +156,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4fr 3fr;
+  grid-template-rows: 3fr 3fr;
 }
 .index_four_real_window_grid_one {
   display: grid;

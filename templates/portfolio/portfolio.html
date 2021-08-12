@@ -8,14 +8,17 @@
 {% block page_title %} 나다 : NADA {% endblock %}
 
 <!--User Profile-->
-<!-- {% if request.user.is_authenticated %}
 {% block islogin %}
-<a href="{% url 'users:logout' %}">Log out</a>
+{% if request.user.is_authenticated %}
+    <a href="{% url 'users:logout' %}">Log out</a>
+{% endif %} 
+{% if request.user.is_authenticated is False %}
+    <a href="{% url 'users:login' %}">Log In</a>
+{% endif %} 
 {% endblock islogin %}
-{% block profile %}
-<div class="hello">{{user.username}}님 안녕하세요</div>
-{% endblock profile %}
-{% endif %} -->
+
+
+    
 
 {% block content %}
 <div class="left_right_all_page">
@@ -134,12 +137,12 @@
             <div class="index_five_window">
                 <div class="activity_box">
                     
-                    {% for title,start,end in records %}
+                    {% for record in records %}
                         <a href="" class="activity_graph">
                             <div class="activity_graph__point"></div>
-                            <div class="activity_graph__year">{{start|date:"Y"}}</div>
-                            <p class="activity_date">{{start|date:"M d일"}} ~ {{end|date:"M d일"}}</p>
-                            <p class="activity_name">{{title}}</p>
+                            <div class="activity_graph__year">{{record.start_date|date:"Y"}}</div>
+                            <p class="activity_date">{{record.start_date|date:"M d일"}} ~ {{record.end_date|date:"M d일"}}</p>
+                            <p class="activity_name">{{record.title}}</p>
                         </a>
                         
                     {% endfor %}

@@ -12,7 +12,12 @@
   <a href="{% url 'core:intro' %}"><span class="main_logo">N A D A</span></a>
   <div></div>
   <div></div>
-  <button class="login_button"><a href="{% url 'users:login' %}">Log-out</a></button>
+  {% if user.is_authenticated %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log out</a></button>
+  {% endif %}
+  {% if user.is_authenticated is False %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log In</a></button>
+  {% endif %}
 </div>
 <div class="main_back">
   <img class="imagesqq" src="{% static 'image/mainback.png'%}"></img>

@@ -9,24 +9,28 @@
 </head>
 {% block page_title %} 나다 : NADA {% endblock %}
 {% block content %}
-<a href="#">
-<div class="top_button" style="position: fixed; bottom: 25px; right: 25px;">
-    TOP
-</div></a>
+
 <div class="status-bar">
     <span class="main_logo">N A D A</span>
     <div></div>
     <div></div>
-    <button class="login_button"><a href="{% url 'users:login' %}">Log-in</a></button>
+    {% if user.is_authenticated %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log out</a></button>
+    {% endif %}
+    {% if user.is_authenticated is False %}
+    <button class="login_button"><a href="{% url 'users:login' %}">Log In</a></button>
+    {% endif %}
 </div>
 <div class="video-title">
     <div></div>
     <div class="video-title-main">
         <div class="video-title-main-title">N A D A</div>
         <div>가장 NADA운 나의 기록</div>
-        <div class="page_down">
-            <i class="page_down_button fas fa-arrow-circle-down"></i>
-        </div>
+    </div>
+</div>
+<div class="video-titles">
+    <div class="page_down">
+        <i class="page_down_button fas fa-arrow-circle-down fa-2x"></i>
     </div>
 </div>
 <div class="videobox">
@@ -36,7 +40,7 @@
     loop
     muted
     preload="auto">
-    <source src="{% static 'image/NADA_Connect.mp4'%}" type="video/mp4"></source>
+    <source src="{% static 'image/main.mp4'%}" type="video/mp4"></source>
 </video>
 <div class="index_two">
         <div class="index_two_logo_box">
@@ -108,6 +112,16 @@
     <div class="index_five_window">
         <div class="index_five_real_window">
             <img class="imagetqqq" src="{% static 'image/computers.png'%}"></img>
+            <div class="inner_video">
+                <video
+    class="main_videozzz"
+    autoplay
+    loop
+    muted
+    preload="auto">
+    <source src="{% static 'image/record_video.mp4'%}" type="video/mp4"></source>
+</video>
+            </div>
         </div>
     </div>
 </div>
@@ -158,7 +172,7 @@
 </div>
 <div class="index_eight">
     <span class="index_eight_one">가장 나다운 순간들의 기록</span>
-    <span class="index_eight_two">가장 나다운 사이트</span>
+    <span class="index_eight_two">가장 나다운 서비스</span>
     <div class="index_eight_logo_box">
         <img class="imagez" src="{% static 'image/intro_two_logo.png'%}"></img>
     </div>
