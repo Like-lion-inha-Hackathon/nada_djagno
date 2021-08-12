@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from records import models as record_models
+from challenges import models as challenge_models
 import json
 
 # Create your views here.
@@ -41,9 +43,26 @@ def portfolio_view(request):
         }
         # for i in range(1, 10):
         #     data[f"{i}"] = "0"
-    data = json.dumps({"user": [data]})
+    data = json.dumps({"data": [data]})
     text = json.dumps({"text": text})
-    return render(request, "portfolio/portfolio.html", {"data": data, "text": text})
+
+    records = (
+        record_models.Record.objects.all()
+        .values_list("title", "start_date", "end_date")
+        .union(
+            challenge_models.Challenge.objects.all().values_list(
+                "title", "start_date", "end_date"
+            )
+        )
+    )
+    print(records)
+
+    records.order_by("start_date")
+    return render(
+        request,
+        "portfolio/portfolio.html",
+        {"data": data, "text": text, "records": records},
+    )
 
 
 def portfolio_dohee_view(request):

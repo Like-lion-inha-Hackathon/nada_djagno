@@ -6,8 +6,9 @@ from . import models as challenge_models
 class ChallegeAmdin(admin.ModelAdmin):
     list_display = [
         "title",
-        "period",
-        "method",
+        "start_date",
+        "end_date",
+        "detail",
         "category",
     ]
     pass
