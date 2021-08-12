@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
-{% block page_title %}Repository{% endblock page_title %}
+{% block page_title %}Repository - portfolio{% endblock page_title %}
 <head>
     {% block css %}
         <link rel="stylesheet" href="{% static 'css/repositoryportfolio/repositoryportfolio.css' %}">
     {% endblock css %}
 </head>
+{% block islogin %}
+{% if request.user.is_authenticated %}
+<a href="{% url 'users:logout' %}">Log out</a>
+{% endif %} 
+{% if request.user.is_authenticated is False %}
+<a href="{% url 'users:login' %}">Log In</a>
+{% endif %} 
+{% endblock islogin %}
