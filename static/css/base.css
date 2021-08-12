@@ -18,7 +18,7 @@ ul {
 .top_button {
   width: 10vh;
   height: 6vh;
-  background-color: aqua;
+  background-color: #c5cafe;
   display: flex;
   justify-content: center;
   align-items: center;

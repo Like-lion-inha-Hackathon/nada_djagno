@@ -19,9 +19,7 @@
     <button class="login_button"><a href="{% url 'users:login' %}">Log In</a></button>
   {% endif %}
 </div>
-<div class="main_back">
-  <img class="imagesqq" src="{% static 'image/mainback.png'%}"></img>
-</div>
+<div class="main_back"></div>
 <div class="circle">
   <div></div>
   <div class="circle_box_one">
@@ -30,16 +28,20 @@
     <div></div>
     <div></div>
     <a class="line" href="{% url 'portfolios:main' %}">
-      <div class="box box_one">
+      <div class="mother_one">
+        <span class="oneone">포트폴리오</span>
         <div class=" circle_one">
-          포트폴리오
+          <div class="box box_one">
+          </div>
         </div>
       </div>
     </a>
     <a class="line" href="{% url 'challenges:main' %}">
-      <div class="box box_two">
+      <div class="mother_two">
+        <span class="twotwo">CHALLENGE</span>
         <div class=" circle_two">
-          CHALLENGE
+          <div class="box box_two">
+          </div>
         </div>
       </div>
     </a>
@@ -52,23 +54,29 @@
     <div></div>
     <div></div>
     <a class="line" href="{% url 'repositories:main' %}">
-      <div class="box box_three">
+      <div class="mother_three">
+        <span class="threethree">보관함</span>
         <div class=" circle_three">
-          보관함
+          <div class="box box_three">
+          </div>
         </div>
       </div>
     </a>
     <a class="line" href="{% url 'records:main' %}">
-      <div class="box box_four">
+      <div class="mother_four">
+        <span class="fourfour">기록</span>
         <div class=" circle_four">
-          기록
+          <div class="box box_four">
+          </div>
         </div>
       </div>
     </a>
     <a class="line" href="{% url 'connects:main' %}">
-      <div class="box box_five">
+      <div class="mother_five">
+        <span class="fivefive">CONNECT</span>
         <div class=" circle_five">
-          CONNECT
+          <div class="box box_five">
+          </div>
         </div>
       </div>
     </a>

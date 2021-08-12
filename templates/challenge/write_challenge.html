@@ -17,7 +17,7 @@
 {% endif %} 
 {% endblock islogin %}
   <body>
-    <!-- <div class="head_title">새로운 챌린지 작성란</div> -->
+    <!-- <div class="head_title">새로운 챌린지 작성란</div>
     <form
       id="write-challenge"
       action="{% url 'challenges:write' %}"
@@ -47,16 +47,14 @@
         </div>
       </div>
       <div class="period_div">
-          <label class="period" for="start">시작 : </label>
+          <label class="period" for="start">시작/끝 : </label>
           <input
             class="period_box"
             name="start_date"
             type="date"
             placeholder="&nbsp;&nbsp; 시작일을 입력하세오"
           />
-      </div>
-      <div class="period_div">
-          <label class="period" for="end">끝  :  &nbsp;&nbsp;</label>
+          <label class="period" for="end">끝  :  &nbsp;&nbsp;</label> 
           <input
             class="period_box"
             name="end_date"
@@ -64,6 +62,15 @@
             placeholder="&nbsp;&nbsp; 종료일을 입력하세오"
           />
       </div>
+    <div class="period_div">
+          <label class="period" for="end">끝  :  &nbsp;&nbsp;</label>
+          <input
+            class="period_box"
+            name="end_date"
+            type="date"
+            placeholder="&nbsp;&nbsp; 종료일을 입력하세오"
+          />
+      </div> 
       <div class="method_div">
           <label class="method" for="method">방법 : </label>
           <input
@@ -76,7 +83,60 @@
 
         <button class="button__submit" type="submit">등록하기</button>
 
-    </form>
+    </form> -->
+
+    <div class="left_right_all_page">
+      <div></div>
+      <div class="portfolio_main">
+          <form class="index_three" method="POST" action="{% url 'challenges:write' %}">
+              {% csrf_token %}
+              <div class="index_three_window">
+                  <label class="grid_one">
+                      <span>카테고리:&nbsp;</span>
+                  </label>
+                  <div class="grid_two">
+                      <select name="category" id="category">
+                              <optgroup label="챌린지">
+                                  <option value="study">공부</option>
+                                  <option value="health">건강</option>
+                                  <option value="habbit">습관</option>
+                                  <option value="reading">독서</option>
+                                  <option value="hobby">취미</option>
+                                  <option value="work">업무</option>
+                              </optgroup>
+                      </select>
+                  </div>
+                  <label class="grid_three">
+                      <span>시작/종료:&nbsp;</span>
+                  </label>
+                  <div class="grid_four">
+                      <input class="grid_four_box" type="date" name="start_date" placeholder="시작일을 선택하세요">
+                      <input class="grid_four_box" type="date" name="end_date" placeholder="종료일을 선택하세요">
+                  </div>
+                  <label class="grid_five">
+                      <span>제목:&nbsp;</span>
+                  </label>
+                  <div class="grid_six">
+                      <input class="grid_six_box" name="title" type="text">
+                  </div>
+                  <label class="grid_seven">
+                      <span>글:&nbsp;</span>
+                  </label>
+                  <div class="grid_eight">
+                      <input class="grid_eight_box" name="detail" type="text">
+                  </div>
+                  <div class="grid_nine">                
+                      <button class="grid_nine_box" type="submit">
+                          
+                              <span>등록하기</span>
+                          
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+  
   </body>
   {% endblock content%}
 </head>

@@ -58,12 +58,14 @@
             <div class="index_three_sub_two_title">한 공간에서 모아볼 수 있는</div>
             <div class="index_three_sub_two_title"></div>
         </div>
-        <div class="intro_portfolio_button">
-            <span>Portfolio</span>
-            <div class="arrowhome">
-                <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+        <a href="{% url 'users:login' %}">
+            <div class="intro_portfolio_button">
+                <span>Portfolio</span>
+                <div class="arrowhome">
+                    <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
     <div class="index_three_window">
         <div class="index_three_real_window">
@@ -85,12 +87,14 @@
                 <div class="index_four_sub_two_title">주저하지 말고, 나다에서 도전해보세요</div>
             </div>
         </div>
-        <div class="intro_challenge_button">
-            <span>Challenge</span>
-            <div class="arrowhome">
-                <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+        <a href="{% url 'users:login' %}">
+            <div class="intro_challenge_button">
+                <span>Challenge</span>
+                <div class="arrowhome">
+                    <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 <div class="index_five">
@@ -102,12 +106,14 @@
             <div class="index_five_sub_two_title">기간 내에 이루고 싶은 목표가 있나요?</div>
             <div class="index_five_sub_two_title">주저하지 말고, 나다에서 도전해 보세요</div>
         </div>
-        <div class="intro_record_button">
-            <span>Record</span>
-            <div class="arrowhome">
-                <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+        <a href="{% url 'users:login' %}">
+            <div class="intro_record_button">
+                <span>Record</span>
+                <div class="arrowhome">
+                    <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
     <div class="index_five_window">
         <div class="index_five_real_window">
@@ -136,23 +142,27 @@
         <div class="index_six_fight_text">그 외에 저장하고 싶은 정보라면</div>
         <div class="index_six_fight_text">무엇이든 Repository에 넣어놓고</div>
         <div class="index_six_fight_text">원하는 순간 언제든 꺼내보세요.</div>
-        <div class="intro_repo_button">
-            <span>Repository</span>
-            <div class="arrowhome">
-                <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+        <a href="{% url 'users:login' %}">
+            <div class="intro_repo_button">
+                <span>Repository</span>
+                <div class="arrowhome">
+                    <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 <div class="index_seven">
     <div class="index_seven_title">
         <span class="index_seven_real_title">Connect</span>
-        <div class="intro_connect_button">
-            <span>Connect</span>
-            <div class="arrowhome">
-                <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+        <a href="{% url 'users:login' %}">
+            <div class="intro_connect_button">
+                <span>Connect</span>
+                <div class="arrowhome">
+                    <img class="imaget" src="{% static 'image/arrow.png'%}"></img>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
     <div class="videoboxz">
         <video
@@ -165,8 +175,8 @@
         </video>
     </div>
     <div class="index_seven_text">
-        <span class="index_seven_textdowna">내가 가고자 하는 직무에 속한 현직자들의 포트폴리오를 참고해 봐요</span>
-        <span class="index_seven_textdownb">또, 때론 다른 이들이 행한 챌린지를 참고해 봐도 좋아요!</span>
+        <span class="index_seven_textdowna">내가 가고자 하는 직무에 속한 현직자들의 포트폴리오를 참고해 봐요. 또, 때론 다른 이들이 행한 챌린지를 참고해 봐도 좋아요!</span>
+        <span class="index_seven_textdownb"></span>
         <span class="index_seven_textdownc">그 다음엔, 나의 목표를 위한 활동을 찾고, 함께 할 스터디원을 모집해 보세요.</span>
     </div>
 </div>
@@ -181,10 +191,18 @@
     <div class="footer_logo_box">
         <span class="footer_logo">NADA</span>
         <div class="footer_tag">
-            <i class="fab fa-facebook-square fa-xs"></i>
-            <i class="fab fa-instagram fa-xs"></i>
-            <i class="fab fa-twitter fa-xs"></i>
-            <i class="fab fa-google-play fa-xs"></i>
+            <a href="http://www.facebook.com/">
+                <i class="fab fa-facebook-square fa-xs"></i>
+            </a>
+            <a href="http://www.instagram.com/">
+                <i class="fab fa-instagram fa-xs"></i>
+            </a>
+            <a href="http://www.twitter.com/">
+                <i class="fab fa-twitter fa-xs"></i>
+            </a>
+            <a href="http://google.com/">
+                <i class="fab fa-google-play fa-xs"></i>
+            </a>
         </div>
     </div>
     <div class="footer_text">
