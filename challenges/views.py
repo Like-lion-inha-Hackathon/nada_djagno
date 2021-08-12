@@ -63,7 +63,7 @@ def write_challenge_view(request):
         title = request.POST.get("title")
         start_date = request.POST.get("start_date")
         end_date = request.POST.get("end_date")
-        detail = request.POST.get("method")
+        detail = request.POST.get("detail")
         category = request.POST.get("category")
         random_number = random.randint(1, 3)
         thumbnail = f"challenge/{category}/{category}_{random_number}.png"
@@ -80,6 +80,7 @@ def write_challenge_view(request):
         )
         end_date = datetime.date(endyear, endmonth, endday)
         period = end_date - start_date
+        print(title,start_date,end_date,detail,category)
         challenge = challenge_models.Challenge.objects.create(
             title=title,
             start_date=start_date,

@@ -1,4 +1,27 @@
+@font-face {
+  font-family: 'SLEIGothicTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SDSamliphopangche_Basic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .outer{
+    font-family: 'Pretendard-Regular';
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
@@ -10,18 +33,50 @@
     display:flex;
     justify-content:center;
     align-content:center;
-    width:40vw;
+    width:46vw;
     height:100%;
 }
 
+.emoji-outer-box{
+  /* margin-left:6vw; */
+  margin-top:20vh;
+  width:54vw;;
+  height:80vh;
+}
+
+.emoji-explain{
+  margin-left:-6vw;
+  width:54vw;;
+  height:5vh;
+  font-family: 'Pretendard-Regular';
+  text-align:center;
+  font-size:25px;
+  margin-bottom:2vh;
+  animation: color 1s;
+  animation-iteration-count: 100;
+  }
+
+
+
+@keyframes color {
+0% {
+  color:black;
+}
+/* 95% {
+  color:red;
+} */
+to {
+  color:#c5cafe;
+} 
+}
+
+
 .emoji-outer{
-    margin-left:6vw;
-    margin-top:20vh;
     display:flex;
     justify-content:flex-start;
     flex-wrap:wrap;
     width:54vw;;
-    height:80vh;
+    height:73vh;
     overflow:scroll;
 }
 
@@ -74,7 +129,7 @@
     justify-content:center;
     margin-left:6vw;
     margin-top:10vh;
-    width:34vw;
+    width:40vw;
     height:80%;
     font-family: 'EliceDigitalBaeum_Bold';
 }
@@ -114,31 +169,54 @@
 
 .box-type{
     margin-left:10vw;
-    width:80%;
+    width:36vw;
     height:100%;
     display:flex;
     justify-content:center;
     flex-direction:column;
 }
 
-@font-face {
-    font-family: 'EliceDigitalBaeum_Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.expl{
+  margin-left:-3vw;
+  margin-top:5vh;
+  width:100%;
+  height:15vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+}
+
+.emo{
+  width:6vw;
+  height:5vh;
+  margin-right:1vw;
+  font-family: 'Pretendard-Regular';
+}
+
+.emo1>img{
+  margin-right:1vw;
+  width:5vh;
+  height:5vh;
 }
 
 .topic{
-    font-family: 'EliceDigitalBaeum_Bold';
+    font-family: 'SDSamliphopangche_Basic';
+    margin-top:5vh;
     font-size:80px;
     margin-bottom:30px;
 }
 .title{
-    margin-bottom:20px;
+  font-family: 'Pretendard-Regular';
+  margin-bottom:20px;
 }
 
 .period{
-    margin-bottom:20px;
+  font-family: 'Pretendard-Regular';
+  margin-bottom:20px;
+}
+.method{
+  font-family: 'Pretendard-Regular';
+  margin-bottom:20px;
 }
 
 

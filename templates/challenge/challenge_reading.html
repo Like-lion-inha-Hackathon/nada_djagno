@@ -30,43 +30,54 @@
                 <div class="period">시작 :  &nbsp;&nbsp;{{challenge.start_date}}</div>
                 <div class="period">종료 :  &nbsp;&nbsp;{{challenge.end_date}}</div>
                 <div class="method">방법 :  &nbsp;&nbsp;{{challenge.detail}}</div>
+                <div class="expl">
+                    <div class="emo1"><img src="{% static 'image/good.png' %}"></img></div>
+                    <div class="emo">챌린지 성공!!</div>
+                    <div class="emo1"><img src="{% static 'image/soso.png' %}"></img></div>
+                    <div class="emo">반만 성공..(?)</div>
+                    <div class="emo1"><img src="{% static 'image/bad.png' %}"></img></div>
+                    <div class="emo">내일은 꼭 성공하자!!</div>
+                </div>
             </div>
             <!-- <div class="bar"></div> -->
         </div>
     </div>
-    <div class="emoji-outer">
-        {% for _ in period  %}
-            <div class="emojy"><i class="far fa-smile icon fa-3x"></i></div>
-            <ul class="menu">
-                <li>
-                    <div class="emoji emoji--like">
-                        <div class="emoji__hand">
-                            <div class="emoji__thumb">
+    <div class="emoji-outer-box">
+        <div class="emoji-explain">이모티콘을 클릭해보세요!</div>
+        <div class="emoji-outer">
+            {% for _ in period  %}
+                <div class="emojy"><i class="far fa-smile icon fa-3x"></i></div>
+                <ul class="menu">
+                    <li>
+                        <div class="emoji emoji--like">
+                            <div class="emoji__hand">
+                                <div class="emoji__thumb">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="emoji emoji--love">
-                        <div class="emoji__heart">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="emoji emoji--wow">
-                        <div class="emoji__face">
-                            <div
-                                class="emoji__eyebrows">
-                            </div>
-                            <div class="emoji__eyes">
-                            </div>
-                            <div class="emoji__mouth">
+                    </li>
+                    <li>
+                        <div class="emoji emoji--love">
+                            <div class="emoji__heart">
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            {% endfor %}
+                    </li>
+                    <li>
+                        <div class="emoji emoji--wow">
+                            <div class="emoji__face">
+                                <div
+                                    class="emoji__eyebrows">
+                                </div>
+                                <div class="emoji__eyes">
+                                </div>
+                                <div class="emoji__mouth">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                {% endfor %}
+        </div>
     </div>
 </div>
 <script
