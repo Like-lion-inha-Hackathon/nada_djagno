@@ -13,9 +13,30 @@
 .empty {
   height: 30px;
 }
+.index_two {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.index_two_box {
+  width: 80%;
+  height: 20vh;
+  border-bottom: black 2px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.index_two_box_title {
+  font-size: 70px;
+}
+.index_two_box_title_sub {
+  margin-left: 3vh;
+  margin-bottom: 1vh;
+}
 .index_three {
   width: 100%;
-  height: 110vh;
+  height: 80vh;
   background-color: white;
   display: grid;
   grid-template-columns: 5fr 9fr;
@@ -36,7 +57,7 @@
 }
 .profile_edit_main {
   width: 50%;
-  height: 100%;
+  height: auto;
   background-color: beige;
   display: flex;
   justify-content: center;
@@ -48,7 +69,7 @@
 }
 .index_three_one_window_flex {
   flex-direction: row;
-  margin-top: 19.5vh;
+  margin-top: 5vh;
 }
 .name_doohee {
   height: 3vh;
@@ -69,20 +90,42 @@
 .image {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 .index_three_window {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 26.5vh;
+  margin-top: 11.5vh;
   margin-left: 5vh;
 }
 .index_three_real_window {
-  width: 50vh;
-  height: 30vh;
-  background-color: rgb(236, 236, 236);
-  border-radius: 10px;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.images {
+  width: 30vh;
+  height: 15vh;
+}
+.index_three_text {
+  width: 70vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vh;
+  padding-top: 2vh;
+}
+.index_three_text_one {
+  font-size: 50px;
+}
+.index_three_text_two {
+  margin-top: 2vh;
+  font-size: 25px;
+}
+.index_three_text_three {
+  margin-top: 2vh;
+  font-size: 25px;
 }
 .profile_first_page_right_nav {
   margin-right: 10vh;
@@ -129,9 +172,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  border-top-style: dotted;
-  border-top-width: 2px;
-  border-top-color: black;
 }
 .index_four_one_window {
   display: flex;
@@ -149,18 +189,20 @@
 }
 .index_four_real_one_window_flex {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-top: lightgray 2px solid;
   font-size: 25px;
+  margin-left: 2vh;
 }
 .index_four_real_one_window_flexa {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-top: lightgray 2px solid;
   border-bottom: lightgray 2px solid;
   font-size: 25px;
+  margin-left: 2vh;
 }
 .index_four_window {
   display: flex;
@@ -169,15 +211,21 @@
   align-items: flex-start;
   margin-left: 5vh;
 }
+.compare_box {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-end;
+}
 .compare {
-  width: 20%;
-  height: 7vh;
-  background-color: gray;
-  border-radius: 10px;
+  width: 13%;
+  height: 6vh;
+  background-color: rgb(202, 224, 223);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  margin-right: 10vh;
 }
 .index_four_real_window {
   width: 80%;
@@ -194,23 +242,42 @@
   align-items: center;
 }
 .index_five_title {
+  width: 90%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.index_five_title_left {
+  display: flex;
+  flex-direction: row;
 }
 .index_five_title_one {
   font-size: 37px;
   font-weight: bold;
+  margin-bottom: 1vh;
 }
 .index_five_title_two {
   font-size: 32px;
+  margin-top: 0.7vh;
+}
+.activity_add {
+  width: 15vh;
+  height: 5vh;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
 }
 .index_five_window {
   width: 90%;
   height: 80vh;
   background-color: white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: black;
 }
 .activity_box {
@@ -368,7 +435,7 @@
   align-items: center;
   color: white;
   font-size: 13vh;
-  font-weight: 600;
+  font-weight: 300;
 }
 .index_six_real_window_grid_three_down {
   display: flex;
