@@ -75,6 +75,10 @@
   height: 3vh;
   font-size: 50px;
 }
+.name_dooheeqq {
+  height: 6.4vh;
+  font-size: 50px;
+}
 .index_three_real_one_window {
   display: flex;
   justify-content: center;
@@ -216,6 +220,7 @@
   height: 6vh;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 5vh;
 }
 .compare {
   width: 13%;
@@ -228,9 +233,9 @@
   margin-right: 10vh;
 }
 .index_four_real_window {
-  width: 80%;
-  height: 50%;
-  background-color: ;
+  width: 90%;
+  height: 70%;
+  background-color: burlywood;
 }
 .index_five {
   width: 100%;
@@ -264,6 +269,16 @@
   width: 15vh;
   height: 5vh;
   background-color: rgb(202, 224, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+.activity_addqq {
+  width: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
