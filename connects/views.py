@@ -4,7 +4,11 @@ from django.shortcuts import render
 
 
 def connect_view(request):
-    return render(request, "connect/connect.html")
+    cld = {}
+    cloud = request.GET.get("cloud", "health")
+    cld["cloud"] = cloud
+    print(cloud)
+    return render(request, "connect/connect.html", cld)
 
 
 def connect_dream_view(request):
