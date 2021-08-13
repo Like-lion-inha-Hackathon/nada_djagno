@@ -260,11 +260,13 @@
 .compare {
   width: 13%;
   height: 6vh;
-  background-color: rgb(202, 224, 223);
+  border-radius:10px;
+  background-color: #c5cafe;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
+  color:white;
   margin-right: 10vh;
 }
 .index_four_real_window {
