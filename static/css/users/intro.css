@@ -521,7 +521,7 @@
 .index_eight_two {
   font-size: 60px;
   font-weight: bolder;
-  color: black;
+  color: #c5cafe;
   margin-bottom: 5vh;
   font-family: "Pretendard-Regular";
 }
@@ -533,10 +533,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3vh;
 }
 .eight_text {
   font-size: 8vh;
   margin-right: 5vh;
+  color: #7f7f7f;
 }
 .footer {
   background-color: black;
