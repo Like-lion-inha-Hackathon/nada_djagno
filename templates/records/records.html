@@ -18,9 +18,15 @@
 <div class="left_right_all_page">
     <div></div>
     <div class="portfolio_main">
+        <div class="index_two">
+            <div class="index_two_box">
+                <span class="index_two_box_title">RECORD</span>
+                <span class="index_two_box_title_sub">Record에 당신의 모든 기록을 저장해보세요</span>
+            </div>
+        </div>
         <div class="index_three">
             <div class="index_three_title">
-                <div class="index_three_title_one">사진들어가는 곳</div>
+                <div class="index_three_title_one">전체보기</div>
             </div>
             <div class="index_three_window">
                 <span class="index_three_window_sixmother_title">2021년 8월</span>
@@ -58,7 +64,7 @@
         </div>
         <div class="index_four">
             <div class="index_four_title">
-                <div class="index_four_title_text">PORTFOLIO</div>
+                <div class="index_four_title_text">당신이 작성한 포트폴리오</div>
                 <div class="index_four_title_date">2021년 8월</div>
             </div>
             <div class="index_four_window">
@@ -108,7 +114,7 @@
                         <div class="empty"></div>
                         <a class="index_four_button" href="{% url 'records:write' %}">
                             <div class="index_four_real_window_grid_six_plus_box_plus">
-                                <i class="fas fa-plus"></i>
+                                <span>기록하기</span>
                             </div>
                         </a>
                     </a>    
@@ -117,12 +123,14 @@
         </div>
         <div class="index_five">
             <div class="index_five_title">
-                <div class="index_five_title_text">CHALLENGE</div>
+                <div class="index_five_title_text">완료한 챌린지</div>
                 <div class="index_five_title_date">2021년 8월</div>
             </div>
             <div class="index_five_window">
                 <div class="index_five_window_flex">
-                <div class="index_five_window_boxa"># 공부</div>
+                <div class="index_five_window_box"># 전체</div>
+                <div class="emptyq"></div>
+                <div class="index_five_window_box"># 공부</div>
                 <div class="emptyq"></div>
                 <div class="index_five_window_box"># 건강</div>
                 <div class="emptyq"></div>
@@ -138,37 +146,60 @@
             </div>
             <div class="under_bar"></div>
             <div class="under_box">
-                <div class="under_box_one">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
+                <div class="under_box_boxa">
+                    <div class="under_box_one">
+                        <div class="under_box_one_pic"></div>
+                        <span class="complete">
+                            <span>Completed</span>
+                        </span>
                     </div>
                 </div>
-                <div class="under_box_two">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
+                <div class="under_box_boxa">
+                    <div class="under_box_two">
+                        <div class="under_box_one_pic">
+                        </div>
+                        <span class="complete">
+                            <span>Completed</span>
+                        </span>
                     </div>
                 </div>
-                <div class="under_box_three">
-                    <div class="under_box_one_pic">
-                        <img class="imagesp" src="{% static 'image/booksss.jpeg'%}"></img>
+                <div class="under_box_boxa">
+                    <div class="under_box_three">
+                        <div class="under_box_one_pic">
+                        </div>
+                        <span class="complete">
+                            <span>Completed</span>
+                        </span>
                     </div>
                 </div>
                 <div class="under_box_four"></div>
                 <div class="under_box_five">
                     <span>30일 독서</span>
+                    <div class="level_box">
+                        <div class="levela"></div>
+                    </div>
+                    <span>달성률: 60%</span>
                 </div>
                 <div class="under_box_six">
                     <span>30일 독서</span>
+                    <div class="level_box">
+                        <div class="levelb"></div>
+                    </div>
+                    <span>달성률: 52%</span>
                 </div>
                 <div class="under_box_seven">
                     <span>30일 독서</span>
+                    <div class="level_box">
+                        <div class="levelc"></div>
+                    </div>
+                    <span>달성률: 31%</span>
                 </div>
                 <div class="under_box_eight"></div>
             </div>
         </div>
         <div class="index_six">
             <div class="index_six_title">
-                <div class="index_six_title_text">SCRAP</div>
+                <div class="index_six_title_text">스크랩</div>
                 <div class="index_six_title_date">2021년 8월</div>
             </div>
             <div class="index_six_window">
@@ -203,17 +234,11 @@
                     </div>
                     <div class="index_six_real_window_grid_four"></div>
                     <div class="index_six_real_window_grid_five"></div>
-                    <a class="index_four_button" href="{% url 'records:scrap' %}">
-                        <div class="index_four_real_window_grid_six">
-                            <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                            <div class="empty"></div>
-                            <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                            <div class="empty"></div>
-                            <div class="index_four_real_window_grid_six_plus_box_plus">
-                                <i class="fas fa-plus"></i>
-                            </div>
+                    <a class="index_six_button" href="{% url 'records:scrap' %}">
+                        <div class="index_six_real_window_grid_six_plus_box_plus">
+                            <span>스크랩 작성하기</span>
                         </div>
-                    </a>    
+                    </a>  
                 </div>
             </div>
         </div>

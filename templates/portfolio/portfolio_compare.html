@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/portfolio/portfolio_compare.css' %}">
+    {% endblock css %}
+</head>
+{% block page_title %} 나다 : NADA {% endblock %}
+
+<!--User Profile-->
+{% block islogin %}
+{% if request.user.is_authenticated %}
+    <a href="{% url 'users:logout' %}">Log out</a>
+{% endif %} 
+{% if request.user.is_authenticated is False %}
+    <a href="{% url 'users:login' %}">Log In</a>
+{% endif %} 
+{% endblock islogin %}
+{% block content %}
+<div class="cbody">
+    <div class="graphbox">
+        <div class="graph_title">이두희님과 비교 그래프</div>
+        <div class="gradation_box">
+            <div class="gradation_box__top">
+                {% for year in years %}
+                <div class="gradations">
+                    <div class="gradations_detail">
+                        {% for record in records %}
+                        {% if record.start_date.year == year %}
+                        <p class="gradations_top_detail">{{record.title}}</p>
+                        {% endif %}
+                        {% endfor %}
+                        <div class="emp"></div>
+                        </div>
+                    </div>
+            
+                
+                {% endfor %}
+             
+            </div>
+            <div class="gradation_box__bottom">
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">19</p><p class="gradations_bottom_detail">.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">20</p><p class="gradations_bottom_detail">하버드 대학교 컴퓨터공학과 중퇴</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">21</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">22</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">23</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">24</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">25</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">26</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">27</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">28</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">29</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                <div class="gradations">
+                    <div class="agebox">
+                        <p class="age">30</p><p class="gradations_bottom_detail">비교 대상의 세부 정보입니다.</p>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

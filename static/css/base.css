@@ -18,7 +18,7 @@ ul {
 .top_button {
   width: 10vh;
   height: 6vh;
-  background-color: aqua;
+  background-color: #c5cafe;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +222,7 @@ ul {
   width: 45.3%;
   display: flex;
   margin-top: 5vh;
-  margin-left: 54.7%;
+  margin-left: 64%;
   justify-content: flex-end;
   display: none;
 }
@@ -430,6 +430,7 @@ ul {
 }
 .qreply__column {
   display: flex;
+  width: 350px;
 }
 .qreply__column:last-child > i,
 .qreply__column:last-child button {
@@ -514,4 +515,7 @@ input {
 }
 textarea {
   outline-style: none;
+}
+.z1001 {
+  z-index: 1001;
 }
