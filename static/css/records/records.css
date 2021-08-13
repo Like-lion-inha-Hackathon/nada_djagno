@@ -14,24 +14,28 @@
   display: flex;
   justify-content: center;
   margin-top: 15vh;
-  margin-bottom: 20vh;
+  margin-bottom: 5vh;
 }
 .index_two_box {
-  width: 80%;
+  width: 80vw;
   height: 100%;
-  border-bottom: black 2px solid;
+  border-bottom: lightgray 5px solid;
+  border-radius: 2px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+
+  align-items: center;
 }
 .index_two_box_title {
+  display: block;
   font-family: "SDSamliphopangche_Basic";
   font-size: 70px;
+  margin-left: 6vh;
+  margin-bottom: 1vh;
 }
 .index_two_box_title_sub {
   margin-left: 3vh;
   margin-bottom: 1vh;
-  font-size: 20px;
+  font-size: 25px;
 }
 .image {
   width: 100%;
@@ -152,6 +156,7 @@
   margin-left: 10vh;
   font-size: 37px;
   font-weight: bold;
+  font-family: "SDSamliphopangche_Basic";
 }
 .index_four_title_date {
   margin-right: 10vh;
@@ -287,12 +292,12 @@
 
 .index_four_real_window_grid_six_plus_box_plus {
   width: 15vh;
-  height: 8vh;
+  height: 5vh;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 2vh;
   color: rgb(112, 112, 112);
   border-style: solid;
   border-width: 2px;
@@ -334,6 +339,7 @@
   margin-left: 10vh;
   font-size: 37px;
   font-weight: bold;
+  font-family: "SDSamliphopangche_Basic";
 }
 .index_five_title_date {
   margin-right: 10vh;
@@ -521,6 +527,7 @@
   margin-left: 10vh;
   font-size: 37px;
   font-weight: bold;
+  font-family: "SDSamliphopangche_Basic";
 }
 .index_six_title_date {
   margin-right: 10vh;
@@ -641,19 +648,19 @@
 }
 .index_six_button {
   margin-top: 10vh;
-  height: auto;
+  height: 5vh;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  font-size: 2vh;
 }
 .index_six_real_window_grid_six_plus_box_plus {
   width: 15vh;
-  height: 8vh;
+  height: 5vh;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
   color: rgb(112, 112, 112);
   border-style: solid;
   border-width: 2px;
