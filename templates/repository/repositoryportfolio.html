@@ -3,7 +3,7 @@
 {% block page_title %}Repository - portfolio{% endblock page_title %}
 <head>
     {% block css %}
-        <link rel="stylesheet" href="{% static 'css/repositoryportfolio/repositoryportfolio.css' %}">
+        <link rel="stylesheet" href="{% static 'css/repository/repositoryportfolio.css' %}">
     {% endblock css %}
 </head>
 {% block islogin %}
@@ -14,3 +14,21 @@
 <a href="{% url 'users:login' %}">Log In</a>
 {% endif %} 
 {% endblock islogin %}
+{% block content%}
+
+<div class="allrepo">
+    <div class="title_repo">Repository</div>
+    <div class="repository_bar"></div>
+    <div class="repo_files">
+        <div class="repo_files_detail">
+            <div class="repo1"><img src="{% static 'image/connect_profile_doohee.jpeg' %}" class="detail_box_photo"></img></div>
+            <div class="texty2"><strong>IT개발</strong><br>내 아이디어를 내 손으로 실현한다</div>
+        </div>
+        <div class="repo_files_detail">
+            <div class="repo1"><img src="{% static 'image/connect_portfolio4.png' %}" class="detail_box_photo"></img></div>
+            <div class="texty2"><strong>IT개발</strong><br>한계는 없다: limitless</div>
+        </div>
+    </div>
+</div>
+
+{% endblock content%}
