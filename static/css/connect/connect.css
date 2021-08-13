@@ -6,6 +6,8 @@
   width: 100vw;
   height: 500vh;
   margin-bottom:600px;
+  margin-left:-5vw;
+  /* margin-right:-5vw; */
 }
 
 @font-face {
@@ -30,10 +32,10 @@
 }
 
 .search {
-  margin-left: 4vw;
+  margin-left: 8vw;
   opacity: 0.8;
-  width: 96vw;
-  height: 100%;
+  width: 92vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +46,7 @@
   margin-top: 10%;
   height: 25vh;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .search_bar {
@@ -63,16 +65,17 @@
 
 .portfolio {
   font-family: 'Pretendard-Regular';
-  margin-left: 7vw;
+  margin-left: 12vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 93vw;
+  width: 88vw;
   height: 35%;
 }
 
 .challenge {
-  width: 100%;
+  margin-left:12vw;
+  width: 88vw;
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -82,7 +85,7 @@
 .challenge_title {
   font-family: 'Pretendard-Regular';
   margin-top: 15vh;
-  margin-left: 6vw;
+  /* margin-left: 6vw; */
   width: 90vw;
   height: 14vh;
   font-size: 60px;
@@ -91,7 +94,7 @@
 
 .challenge_smalltitle{
   font-family: 'Pretendard-Regular';
-  margin-left: 6vw;
+  /* margin-left: 6vw; */
   width: 90vw;
   height: 14vh;
   font-size: 30px;
@@ -130,7 +133,7 @@
   justify-content:center;
   width: 80vw;
   height: 75vh;
-  margin-left: 10vw;
+  margin-left: 3vw;
   margin-right:10vw;
   margin-top: 5vh;
 
@@ -150,11 +153,11 @@
 }
 
 .contest_exhibit {
-  width: 90vw;
+  width: 88vw;
   height: 200vh;
   display: flex;
   flex-direction: column;
-  margin-left: 10vw;
+  margin-left: 12vw;
   margin-top: 10vh;
   /* justify-content:center; */
 }
@@ -171,7 +174,7 @@
   margin-top: 5vh;
   width: 100%;
   height: 15vh;
-  margin-left:-3vw
+  /* margin-left:-3vw */
 }
 
 .contest_exhibit_title>p{
@@ -198,7 +201,7 @@
   width: 94vw;
   height: 10vh;
   margin-right:6vw;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
   margin-top:2vh;
   padding-left:1rem;
   padding-bottom: 1rem;
@@ -208,10 +211,8 @@
 .contest_exhibit_categories > ul {
   font-size:22px;
   font-family: 'Pretendard-Regular';
-  padding: 1rem;
-  margin:1rem;
-  font-size: 22px;
-  border: unset;
+  padding: 0.5rem;
+  /* margin:1rem; */
 }
 
 .contest_exhibit_categories > ul:hover{
@@ -295,6 +296,7 @@
 
 .border_categories {
   font-family: 'Pretendard-Regular';
+  margin-left:4vw;
   border-left: 30vw;
   border-top: -5vh;
   display: flex;
