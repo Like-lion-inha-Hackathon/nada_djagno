@@ -403,10 +403,12 @@ ul {
   box-sizing: border-box;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  border: solid 1px gray;
+  border: solid 1px lightgray;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 /* .qreply .qreply__column:first-child {
   width: 2%;
