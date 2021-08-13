@@ -139,12 +139,12 @@
 }
 
 .contents_detail{
-    line-height:150%;
+    line-height:110%;
     font-family: 'Pretendard-Regular';
     padding:1rem;
     width:30vw;
     height:100%;
-    font-size:30px;
+    font-size:26px;
 }
 
 .others_portfolio{
