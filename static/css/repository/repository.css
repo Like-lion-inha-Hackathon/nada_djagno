@@ -1,27 +1,68 @@
+@font-face {
+    font-family: 'SLEIGothicTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .allrepo{
+    height:80vh;
+    width:80vh;
     display:flex;
-    justify-content:flex-start;
+    flex-direction:column;
     margin-left: 15vh;
     margin-top: 20vh;
 }
 .repofile1{
     width: 25vh;
-    height: 25vh;
+    height: 20vh;
     margin-left: 3vh;
     margin-right: 3vh;
 }
-.repofile2{
+a>.repofile2{
     width: 25vh;
-    height: 25vh;
+    height: 20vh;
     margin-left: 3vh;
     margin-right: 3vh;
 }
 .repofile3{
     width: 25vh;
-    height: 25vh;
+    height: 20vh;
     margin-left: 3vh;
     margin-right: 3vh;
 }
 figcaption{
     text-align: center;
+}
+
+.repository_bar{
+    /* margin-top :8vh; */
+    width:90vw;
+    height:10vh;
+    background-color:black;
+}
+
+.title_repo{
+    height:10vh;
+    width:100%;
+    font-size:50px;
+    font-family: 'SDSamliphopangche_Basic';
+}
+
+.repo_files{
+
 }

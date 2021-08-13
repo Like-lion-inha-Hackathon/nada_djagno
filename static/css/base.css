@@ -181,6 +181,7 @@ ul {
   border-style: solid;
   border-width: 2px;
   border-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
 }
 .green_small_box {
   display: flex;

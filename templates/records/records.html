@@ -21,7 +21,7 @@
         <div class="index_two">
             <div class="index_two_box">
                 <span class="index_two_box_title">RECORD</span>
-                <span class="index_two_box_title_sub">Record에 당신의 모든 기록을 저장해보세요</span>
+                <div class="index_two_box_title_sub">Record에 당신의 모든 기록을 저장해보세요</div>
             </div>
         </div>
         <div class="index_three">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         -->
-                    {% for title,thumbnail,start in all %}
+                    {% for title,thumbnail,start,updated in all %}
                     <div class="index_three_window_box">
                         <div class="index_three_window_one">
                             <img class="index_three_window_one" src="{% get_media_prefix %}/{{thumbnail}}"></img>
@@ -76,7 +76,7 @@
             </div>
             <div class="index_four_window">
                 <div class="portbox">
-                    {% for record in queryset %}
+                    {% for record in records %}
                     <div class="port">
                         <img class="port_img" src="{% get_media_prefix %}/{{record.thumbnail}}"/>
                         <div class="port_title">{{record.title}}</div>
