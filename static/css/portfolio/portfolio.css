@@ -34,6 +34,8 @@
 .index_two_box_title_sub {
   margin-left: 3vh;
   margin-bottom: 1vh;
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
 }
 .index_three {
   width: 100%;
@@ -123,14 +125,17 @@
 }
 .index_three_text_one {
   font-size: 50px;
+  font-family: "Pretendard-Regular";
 }
 .index_three_text_two {
   margin-top: 2vh;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: "Pretendard-Regular";
 }
 .index_three_text_three {
   margin-top: 2vh;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: "Pretendard-Regular";
 }
 .profile_first_page_right_nav {
   margin-right: 10vh;
@@ -177,6 +182,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  font-family: "Pretendard-Regular";
 }
 .index_four_one_window {
   display: flex;
@@ -250,6 +256,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Pretendard-Regular";
 }
 .index_five_title {
   width: 90%;
@@ -264,11 +271,10 @@
 .index_five_title_one {
   font-size: 37px;
   font-weight: bold;
-  margin-bottom: 1vh;
+  font-family: "SDSamliphopangche_Basic";
 }
 .index_five_title_two {
   font-size: 32px;
-  margin-top: 0.7vh;
 }
 .activity_add {
   width: 15vh;
@@ -356,6 +362,7 @@
   width: 100%;
   height: 80vh;
   background-color: white;
+  font-family: "Pretendard-Regular";
 }
 .index_six_title {
   width: 100%;
@@ -373,6 +380,7 @@
   align-items: center;
   font-size: 37px;
   font-weight: bold;
+  font-family: "SDSamliphopangche_Basic";
 }
 .index_six_window {
   height: 100%;
@@ -510,4 +518,27 @@ input[type="number"] {
 }
 label[for="num2"] {
   margin-right: 3px;
+}
+@font-face {
+  font-family: "SLEIGothicTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SDSamliphopangche_Basic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
