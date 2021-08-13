@@ -35,16 +35,16 @@
   align-items: center;
 }
 .main_back {
-  margin-top: 3vh;
-  margin-left: -5%;
+  margin-top: -1vh;
   position: fixed;
+  margin-left: -5%;
   z-index: -1;
   height: 100vh;
   width: 110%;
   background-image: url("/static/image/mainback.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 10% 10%;
+  background-position: 5% 5%;
 }
 .circe {
   width: 100%;
@@ -56,7 +56,7 @@
 
 .circle_box_one {
   /* margin-top: 86.8px; */
-  margin-top: 15vh;
+  margin-top: 10vh;
   height: 50%;
   display: flex;
   justify-content: space-evenly;
