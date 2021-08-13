@@ -132,35 +132,53 @@
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
-  opacity: 0.8;
+  opacity: 1;
+}
+.box_one_text {
+  font-size: 25px;
+  color: white;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box_one_texta {
+  font-size: 25px;
+  color: white;
+  margin-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .box_two {
   background-image: url("/static/image/nav_profile.jpeg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
-  opacity: 0.8;
+  opacity: 1;
 }
 .box_three {
   background-image: url("/static/image/nav_profile.jpeg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
-  opacity: 0.8;
+  opacity: 1;
 }
 .box_four {
   background-image: url("/static/image/nav_profile.jpeg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
-  opacity: 0.8;
+  opacity: 1;
 }
 .box_five {
   background-image: url("/static/image/nav_profile.jpeg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .mother_two {

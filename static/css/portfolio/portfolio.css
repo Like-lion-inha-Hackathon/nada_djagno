@@ -246,7 +246,10 @@
 .index_four_real_windowqq {
   width: 90%;
   height: 70%;
-  background-color: burlywood;
+  background-image: url("/static/image/muskgraph.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .index_five {
   width: 100%;
