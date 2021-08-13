@@ -282,6 +282,7 @@
   padding-left: 5vh;
   font-size: x-large;
   border-radius: 5px;
+  margin-top: 7vh;
 }
 .intro_challenge_button:hover {
   opacity: 0.5;
@@ -313,7 +314,7 @@
   padding-left: 5vh;
   font-size: x-large;
   border-radius: 5px;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 .intro_record_button:hover {
   opacity: 0.5;
@@ -339,10 +340,11 @@
   display: flex;
   justify-content: center;
   font-family: "SDSamliphopangche_Basic";
+  margin-bottom: 4vh;
 }
 .index_five_sub_two_title {
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 3vh;
+  font-weight: bolder;
   color: black;
   margin-top: 3vh;
   font-family: "Pretendard-Regular";
@@ -428,7 +430,7 @@
   padding-left: 5vh;
   font-size: x-large;
   border-radius: 5px;
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 .intro_repo_button:hover {
   opacity: 0.5;
