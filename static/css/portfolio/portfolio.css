@@ -30,14 +30,14 @@
   border-radius: 1px;
 }
 .index_two_box_title {
-  font-size: 70px;
+  font-size: 6.8vh;
   font-family: "SDSamliphopangche_Basic";
   margin-left: 2vw;
   margin-bottom: 1vh;
 }
 .index_two_box_title_sub {
   margin-left: 3vh;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   font-size: 20px;
   font-family: "Pretendard-Regular";
 }
@@ -134,14 +134,14 @@
 }
 .index_three_text_two {
   margin-top: 2vh;
-  font-size: 35px;
+  font-size: 3.5vh;
   font-weight: bolder;
   color: darkgray;
   font-family: "Pretendard-Regular";
 }
 .index_three_text_three {
   margin-top: 2vh;
-  font-size: 30px;
+  font-size: 3vh;
   color: rgb(161, 161, 161);
   font-family: "Pretendard-Regular";
 }
@@ -207,22 +207,22 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 .big {
-  font-size: 40px;
+  font-size: 3.9vh;
 }
 .biga {
-  font-size: 35px;
+  font-size: 3.4vh;
   font-weight: bold;
 }
 .bigb {
-  font-size: 30px;
+  font-size: 2.9vh;
   font-weight: bold;
 }
 .bigc {
-  font-size: 30px;
+  font-size: 2.8vh;
   font-weight: bold;
 }
 .bigd {
-  font-size: 30px;
+  font-size: 2.8vh;
   font-weight: bold;
 }
 .index_four_real_one_window_flex {
