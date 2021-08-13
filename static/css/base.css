@@ -64,7 +64,7 @@ ul {
 }
 .nav_boxtitle {
   margin-left: 10px;
-  width: 90px;
+  width: 100px;
   display: none;
   animation-name: navtitle-start;
   animation-direction: normal;

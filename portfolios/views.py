@@ -74,7 +74,7 @@ def portfolio_compare_view(request):
     for record in records:
         year.append(record.start_date.year)
 
-    years = set(year)
+    years = sorted(list(set(year)))
     return render(
         request,
         "portfolio/portfolio_compare.html",
