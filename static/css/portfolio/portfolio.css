@@ -289,7 +289,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .index_five_title_left {
   display: flex;
@@ -299,6 +299,7 @@
   font-size: 37px;
   font-weight: bold;
   font-family: "SDSamliphopangche_Basic";
+  margin-bottom: 15px;
 }
 .index_five_title_two {
   font-size: 32px;
@@ -313,7 +314,7 @@
   margin-bottom: 1vh;
   font-size: 20px;
   font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 10px;ㄹ
 }
 .activity_addqq {
   width: 15vh;
@@ -569,4 +570,23 @@ label[for="num2"] {
     format("woff");
   font-weight: 400;
   font-style: normal;
+}
+.bling {
+  font-family: "Pretendard-Regular";
+  font-size: 25px;
+  animation: color 1s;
+  animation-iteration-count: 100;
+  margin: 0;
+}
+
+@keyframes color {
+  0% {
+    color: black;
+  }
+  /* 95% {
+    color:red;
+  } */
+  to {
+    color: #c5cafe;
+  }
 }
