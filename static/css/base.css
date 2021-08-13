@@ -134,7 +134,8 @@ ul {
   font-size: 15px;
   font-family: unset;
   font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: #7f7f7f;
+  color: #c5cafe;
   border-radius: 10px;
   border: thin;
   display: flex;
