@@ -43,11 +43,12 @@
 }
 
 .emoji{
-    margin-top:10vh;
-    width:30%;
-    height:20vh;
+    /* margin-top:10vh; */
+    width:10vw;
+    height:100%;
     display:flex;
-    justify-content: flex-end;
+    flex-direction:column;
+    /* justify-content: flex-end; */
 }
 
 
@@ -56,100 +57,148 @@
     justify-content: center;
     align-items: center;
     height:3vh;
-    width:3vw;
+    width:3vh;
     margin-left:0.2vw;
     margin-bottom:1vh;
-    padding:0.5em;
+    padding:0.3em;
     border:2px solid gray;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-a{
+.emoji_box>a{
     height:3vh;
-    width:3vw;
+    width:3vh;
     /* margin-left:0.2vw;
     margin-bottom:1vh; */
-    padding:0.3rem;
+    /* padding:0.3rem; */
 }
 
 .box{
     display:flex;
-    margin-left:5vw;
-    margin-right:5vw;
-    width:100%;
+    margin-right:2vw;
+    width:78vw;
     height:100%;
 }
 
 .poster{
+    border-right:2px dotted gray;
     height:100%;
-    width:40%;
+    width:40vw;
+    margin-right:2vw;
 }
 
-img{
+.poster>img{
+    height:100%;
+    width:90%;
+}
+.emoji_box>a>img{
     height:100%;
     width:100%;
 }
 
 .others{
-    margin-left:3vw;
-    height:100%;
-    width:60%;
+    border-radius:20px;
+    height:90%;
+    width:36vw;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    background-color:ghostwhite;
+    border:3px solid lightgray;
+    padding:1em;
 }
 
-.contents{
-    height:80vh;
+.contents_all{
+    display:flex;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top:10vh;
+    height:75vh;
     width:90vw;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
 .buttonyy{
     margin-left:35vw;
-    margin-top:5vh;
-    margin-bottom:5vh;
-    height:10vh;
+    margin-right:35vw;
+    margin-top:4vh;
+    /* margin-bottom:2.5vh; */
+    height:6vh;
     width: 30vw;
     background-color:#c5cafe;
     font-size:30px;
-    border-radius:20px;
+    border-radius:10px;
     border:3px solid white;
     color:white;
     font-family: 'Pretendard-Regular';
 }
-.others_portfolio{
-    margin-top:1vh;
-    height:9vh;
-    width:80%;
+
+.buttonyy:hover{
+    background-color: plum;
+    color:white;
+}
+
+.contents_detail{
+    line-height:150%;
+    font-family: 'Pretendard-Regular';
+    padding:1rem;
+    width:30vw;
+    height:100%;
     font-size:30px;
 }
 
-.my_portfolio {
+.others_portfolio{
+    font-family: 'Pretendard-Regular';
+    margin-left:16vw;
+    margin-bottom:2vh;
+    border-radius:10px;
+    border:3px solid lightgray;
+    background-color:#cae0df;
+    height:7vh;
+    width:20vw;
+    font-size:20px;
+} 
+
+.others_portfolio:hover{
+    background-color:lightgray;
+    color:white;
+}
+
+ .my_portfolio {
     margin-top:1vh;
-    height:9vh;
-    width:80%;
-    font-size:30px;
+    height:5vh;
+    width:10vw;
+    font-size:20px;
 }
 
 .other_team{
-    margin-top:1vh;
-    height:9vh;
-    width:80%;
-    font-size:30px;
+    font-family: 'Pretendard-Regular';
+    margin-left:16vw;
+    margin-bottom:2vh;
+    border-radius:10px;
+    border:3px solid #cae0df;
+    background-color:unset;
+    height:7vh;
+    width:20vw;
+    font-size:20px;
+} 
+
+.other_team:hover{
+    background-color:#cae0df;
 }
 
 .fa-heart {
-    color: rgba(0, 0, 0, 0.1);
+    color: lightgray;
   }
+
   .fa-heart:hover {
-    color: red;
+    color: tomato;
   }
   .fa-heart:active {
-    color: red;
+    color: tomato;
   }
   .hearttored {
-    color: red;
+    color: tomato;
   }
 i {
     margin:auto;
