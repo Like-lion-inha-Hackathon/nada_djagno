@@ -88,7 +88,7 @@
 .challenge_title {
   font-family: 'Pretendard-Regular';
   margin-top: 15vh;
-  margin-bottom:5vh;
+  margin-bottom:2vh;
   /* margin-left:1vw; */
   /* margin-left: 6vw; */
   width: 90vw;
@@ -100,7 +100,7 @@
 .challenge_smalltitle{
   font-family: 'Pretendard-Regular';
   width: 90vw;
-  margin-bottom:5vh
+  margin-bottom:8vh
   /* margin-left:2vw; */
   height: 14vh;
   font-size: 30px;
@@ -209,18 +209,18 @@
 .contest_exhibit_categories {
   display: flex;
   justify-content:space-evenly;
+  align-items:center;
   width: 94vw;
   height: 10vh;
   margin-right:6vw;
   margin-bottom: 8vh;
-  margin-top:2vh;
-  padding-left:1rem;
-  padding-bottom: 1rem;
+  margin-top:2vh; 
+  padding:1rem;
   background-color: lightgray;
 }
 
 .contest_exhibit_categories > ul {
-  font-size:22px;
+  font-size:26px;
   font-family: 'Pretendard-Regular';
   padding: 0.5rem;
   /* margin:1rem; */}
@@ -435,6 +435,14 @@ p {
   padding:1rem;
 }
 
+.detail_box_texta {
+  font-family: 'Pretendard-Regular';
+  font-size:3vh;
+  width: 300px;
+  height: 30%;
+  padding:1rem;
+}
+
 .tag {
   height: 20%;
   display: flex;
@@ -450,6 +458,6 @@ p {
 }
 
 .detail_box_text>p2{
-  font-size:20px;
+  font-size:25px;
   font-family: 'Pretendard-Regular';
 }
