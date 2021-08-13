@@ -29,7 +29,12 @@
                 <div class="index_three_title_one">전체보기</div>
             </div>
             <div class="index_three_window">
-                <span class="index_three_window_sixmother_title">2021년 8월</span>
+                <div class="topbar">
+                    <p></p>
+                    <p class="index_three_window_sixmother_title">2021년 8월</p>
+                    <div class="listbox" ><i class="fas fa-th-list "></i><i class="fas fa-list "></i><i class="fas fa-th "></i></div>
+                    
+                </div>
                 <div class="index_three_window_sixmother">
                     <!--
                             <div class="index_three_window_box">
@@ -39,24 +44,26 @@
                             </div>
                         </div>
                         -->
-                    {% for record in records.object_list %}
+                    {% for title,thumbnail,start in all %}
                     <div class="index_three_window_box">
                         <div class="index_three_window_one">
-                            <img class="index_three_window_one" src="{% get_media_prefix %}/{{record.thumbnail}}"></img>
+                            <img class="index_three_window_one" src="{% get_media_prefix %}/{{thumbnail}}"></img>
 
                         </div>
+                        <p class="picture_title">{{title}}</p>
                     </div>
                     {% endfor %}
                     
+                    
                 </div>
                 <div class="index_three_window_under">
-                    {% if records.has_previous %}
-                        <a href="?page={{records.previous_page_number}}"> <i class="fas fa-arrow-circle-left fa-2x"></i> </a>
+                    {% if all.has_previous %}
+                        <a href="?page={{all.previous_page_number}}"> <i class="fas fa-arrow-circle-left fa-2x"></i> </a>
                     {% endif %}
                     
-                    <span>&ensp;&ensp;{{records.number}}/{{records.paginator.num_pages}}&ensp;&ensp;</span>
-                    {% if records.has_next %}
-                        <a href="?page={{records.next_page_number}}"> <i class="fas fa-arrow-circle-right fa-2x"></i> </a>
+                    <span>&ensp;&ensp;{{all.number}}/{{all.paginator.num_pages}}&ensp;&ensp;</span>
+                    {% if all.has_next %}
+                        <a href="?page={{all.next_page_number}}"> <i class="fas fa-arrow-circle-right fa-2x"></i> </a>
                     {% endif %}
                     
                 </div>
@@ -68,59 +75,16 @@
                 <div class="index_four_title_date">2021년 8월</div>
             </div>
             <div class="index_four_window">
-                <div class="index_four_real_window">
-                    <div class="index_four_real_window_grid_one">
-                        <div class="index_four_real_window_grid_one_up">
-                            <div class="index_four_real_window_grid_one_up_image">
-                                <img class="images" src="{% static 'image/like_lion.png'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_one_down">
-                                <span>&ensp;-&ensp;멋쟁이사자처럼 9기</span>
-                            </div>
-                        </div>
+                <div class="portbox">
+                    {% for record in queryset %}
+                    <div class="port">
+                        <img class="port_img" src="{% get_media_prefix %}/{{record.thumbnail}}"/>
+                        <div class="port_title">{{record.title}}</div>
+
                     </div>
-                    <div class="index_four_real_window_grid_two">
-                        <div class="index_four_real_window_grid_two_up">
-                            <div class="index_four_real_window_grid_two_up_image">
-                                <img class="images" src="{% static 'image/bongsa.jpg'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_two_down">
-                                <span>&ensp;-&ensp;대외활동</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index_four_real_window_grid_three">
-                        <div class="index_four_real_window_grid_three_up">
-                            <div class="index_four_real_window_grid_three_up_image">
-                                <img class="images" src="{% static 'image/hack.jpeg'%}"></img>
-                            </div>
-                        </div>
-                        <div class="index_four_real_window_grid_box">
-                            <div class="index_four_real_window_grid_three_down">  
-                                <span>&ensp;-&ensp;공모전</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index_four_real_window_grid_four"></div>
-                    <div class="index_four_real_window_grid_five"></div>            
-                    <div class="index_four_real_window_grid_six">
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <div class="index_four_real_window_grid_six_plus_box_plus_a"></div>
-                        <div class="empty"></div>
-                        <a class="index_four_button" href="{% url 'records:write' %}">
-                            <div class="index_four_real_window_grid_six_plus_box_plus">
-                                <span>기록하기</span>
-                            </div>
-                        </a>
-                    </a>    
+                    {% endfor %}
                 </div>
             </div>
-        </div>
         <div class="index_five">
             <div class="index_five_title">
                 <div class="index_five_title_text">완료한 챌린지</div>
