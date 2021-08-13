@@ -15,20 +15,20 @@
 {% endif %} 
 {% endblock islogin %}
 {% block content%}
+
 <div class="allrepo">
-<figure>
-<img class="repofile1" src = "{% static 'image/repositoryfile.png'%}">
-<figcaption>모두 보기</figcaption>
-</figure>
-<figure>
-    <a href="{% url 'repositories:portfolio' %}">
-        <img class="repofile2" src = "{% static 'image/repositoryfile.png'%}">
-    </a>
-<figcaption>PORTFOLIO</figcaption>
-</figure>
-<figure>
-<img class="repofile3" src = "{% static 'image/repositoryfile.png'%}">
-<figcaption></figcaption>
-</figure>
+    <div class="title_repo">Repository</div>
+    <div class="repository_bar"></div>
+    <div class="repo_files">
+        <img class="repofile1" src = "{% static 'image/repositoryyellow2.png'%}"></img>
+            <figcaption>모두 보기</figcaption>
+        <a href="{% url 'repositories:portfolio' %}">
+            <img class="repofile2" src = "{% static 'image/repositoryyellow2.png'%}"></img>
+        </a>
+            <figcaption>PORTFOLIO</figcaption>
+        <img class="repofile3" src = "{% static 'image/repositoryyellowplus.png'%}"></img>
+            <figcaption>추가하기</figcaption>
+    </div>
 </div>
+
 {% endblock content%}
