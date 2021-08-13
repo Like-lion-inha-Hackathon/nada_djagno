@@ -4,15 +4,21 @@
     font-weight: normal;
     font-style: normal;
   }
-  
-  @font-face {
+
+.p22{
+    font-size:28px;
+    color:blue;
+    font-family: 'SDSamliphopangche_Basic';
+}
+
+@font-face {
     font-family: 'SDSamliphopangche_Basic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
-  
-  @font-face {
+
+@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -88,6 +94,7 @@
 }
 
 .poster>img{
+    border:2px solid lightgray;
     height:100%;
     width:90%;
 }
@@ -98,13 +105,13 @@
 
 .others{
     border-radius:20px;
-    height:90%;
+    height:94%;
     width:36vw;
     display:flex;
     flex-direction:column;
     justify-content:center;
     background-color:ghostwhite;
-    border:3px solid lightgray;
+    border:2px solid lightgray;
     padding:1em;
 }
 
@@ -119,7 +126,7 @@
 }
 
 .buttonyy{
-    margin-left:35vw;
+    margin-left:33vw;
     margin-right:35vw;
     margin-top:4vh;
     /* margin-bottom:2.5vh; */
