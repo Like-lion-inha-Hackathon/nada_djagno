@@ -295,16 +295,15 @@
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  font-weight: bold;
   color: rgb(112, 112, 112);
   border-style: solid;
-  border-width: 4px;
+  border-width: 2px;
   border-color: gray;
   background-color: white;
-  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
 }
 .index_four_real_window_grid_six_plus_box_plus:hover {
-  background-color: beige;
+  box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
+  opacity: 0.7;
 }
 .recbtn {
   margin-top: 30px;
@@ -385,8 +384,9 @@
 .under_bar {
   width: 85%;
   height: 10px;
-  background-color: black;
-  margin-top: 10px;
+  background-color: gray;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 .under_box {
   margin-top: 8vh;
@@ -485,6 +485,7 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   opacity: 0.7;
 }
 .under_box_one:hover {
@@ -654,14 +655,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
   color: rgb(112, 112, 112);
   border-style: solid;
-  border-width: 4px;
+  border-width: 2px;
   border-color: gray;
   background-color: white;
+}
+.index_six_real_window_grid_six_plus_box_plus:hover {
   box-shadow: 0.5vh 0.5vh 5px rgba(109, 109, 109, 0.5);
+  opacity: 0.7;
 }
 .fa-heart {
   color: rgba(0, 0, 0, 0.1);
