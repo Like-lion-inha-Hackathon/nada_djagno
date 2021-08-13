@@ -79,14 +79,14 @@
         <div class="challenge_title">챌린지 함께하기</div>
         <div class="challenge_smalltitle">함께 하면 성공할 확률이 높아져요</div>
         <div class="challenge_categories">
-            <div class="challenge_category_boxes"># 건강</div>
-            <div class="challenge_category_boxes"># 공부</div>
-            <div class="challenge_category_boxes"># 업무</div>
-            <div class="challenge_category_boxes"># 독서</div>
-            <div class="challenge_category_boxes"># 습관</div>
-            <div class="challenge_category_boxes"># 취미</div>
+            <a href="?cloud=health" class="challenge_category_boxes"># 건강</a>
+            <a href="?cloud=study" class="challenge_category_boxes"># 공부</a>
+            <a href="?cloud=work" class="challenge_category_boxes"># 업무</a>
+            <a href="?cloud=reading" class="challenge_category_boxes"># 독서</a>
+            <a href="?cloud=habbit" class="challenge_category_boxes"># 습관</a>
+            <a href="?cloud=hobby" class="challenge_category_boxes"># 취미</a>
         </div>
-        <div class="cloud"><img src="{% static 'image/cloud1.png' %}"></img></div>
+        <div class="cloud"><img src="/static/image/cloud_{{cloud}}.png"></img></div>
     </div>
     <div class="contest_exhibit">
         <div class="contest_exhibit_title">활동 함께하기<br><p>관심 분야의 공모전/스터디를 함께할 사람을 찾아보세요</p></div>
