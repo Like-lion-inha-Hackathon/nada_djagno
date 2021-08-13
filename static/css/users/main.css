@@ -1,5 +1,5 @@
 .status-bar {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%; /*위에 줄은 status-bar를 위에 고정시키기 위한 것이다.*/
   display: flex;
@@ -7,15 +7,17 @@
   justify-content: space-around;
   padding: 20px;
   z-index: 5;
-  background-color: rgb(232, 234, 237);
+  /* background-color: rgb(232, 234, 237); */
+  background-color: white;
   opacity: 0.9;
   margin: 0;
 }
 
 .main_logo {
-  font-size: 30px;
-  font-weight: 800;
-  color: yellowgreen;
+  font-size: 40px;
+  font-weight: 1000;
+  color: black;
+  font-family: "Pretendard-Regular";
 }
 
 .login_button {
@@ -24,7 +26,7 @@
   height: 40px;
   font-size: 15px;
   font-family: unset;
-  font-weight: bold;
+  font-weight: bolder;
   background-color: rgba(128, 128, 128, 0.7);
   border-radius: 10px;
   border: thin;
@@ -33,14 +35,16 @@
   align-items: center;
 }
 .main_back {
-  margin-top: 2vh;
+  margin-top: -1vh;
   position: fixed;
+  margin-left: -5%;
   z-index: -1;
   height: 100vh;
-  width: 100%;
+  width: 110%;
   background-image: url("/static/image/mainback.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: 5% 5%;
 }
 .circe {
   width: 100%;
@@ -52,7 +56,7 @@
 
 .circle_box_one {
   /* margin-top: 86.8px; */
-  margin-top: 15vh;
+  margin-top: 10vh;
   height: 50%;
   display: flex;
   justify-content: space-evenly;

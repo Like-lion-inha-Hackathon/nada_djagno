@@ -90,7 +90,8 @@
   justify-content: ;
   align-items: center;
   position: relative;
-  padding-top: 60px;
+  padding-top: 50px;
+  min-height: 750px;
 }
 .index_three_window_sixmother_title {
   font-size: 30px;
@@ -158,10 +159,6 @@
 .index_four_window {
   height: 80%;
   background-color: white;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
   overflow-x: scroll;
 }
 .index_four_real_window {
@@ -685,7 +682,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: ;
+  height: 80%;
+  min-height: 200px;
 }
 .port_img {
   margin-left: 20px;
@@ -695,10 +693,14 @@
 .topbar {
   width: 90%;
   display: flex;
+  height: 60px;
 }
 .topbar > p {
   width: 33%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .listbox {
   width: 33%;

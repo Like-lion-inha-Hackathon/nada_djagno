@@ -13,7 +13,7 @@
   <div></div>
   <div></div>
   {% if user.is_authenticated %}
-    <button class="login_button"><a href="{% url 'users:login' %}">Log out</a></button>
+    <button class="login_button"><a href="{% url 'users:logout' %}">Log out</a></button>
   {% endif %}
   {% if user.is_authenticated is False %}
     <button class="login_button"><a href="{% url 'users:login' %}">Log In</a></button>

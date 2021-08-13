@@ -64,7 +64,7 @@ ul {
 }
 .nav_boxtitle {
   margin-left: 10px;
-  width: 80px;
+  width: 90px;
   display: none;
   animation-name: navtitle-start;
   animation-direction: normal;
@@ -112,9 +112,10 @@ ul {
 }
 .main_logo {
   margin-left: 50px;
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 1000;
   color: black;
+  font-family: "Pretendard-Regular";
 }
 .status-bar_sub {
   width: auto;
@@ -134,7 +135,8 @@ ul {
   font-size: 15px;
   font-family: unset;
   font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: #7f7f7f;
+  color: #c5cafe;
   border-radius: 10px;
   border: thin;
   display: flex;
