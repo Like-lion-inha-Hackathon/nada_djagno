@@ -14,9 +14,10 @@
 }
 
 .main_logo {
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 1000;
   color: white;
+  font-family: "Pretendard-Regular";
 }
 
 .login_button {
@@ -433,6 +434,7 @@
   font-size: 70px;
   font-weight: bolder;
   margin-left: 20vh;
+  font-family: "SDSamliphopangche_Basic";
 }
 .intro_connect_button {
   width: 35vh;
@@ -530,6 +532,7 @@
 .footer_logo {
   margin-left: 10vh;
   font-size: 50px;
+  font-family: "Pretendard-Regular";
 }
 .footer_tag {
   margin-right: 10vh;
