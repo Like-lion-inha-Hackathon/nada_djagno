@@ -41,7 +41,6 @@
   z-index: -1;
   height: 100vh;
   width: 110%;
-  background-image: url("/static/image/mainback.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 5% 5%;
@@ -128,7 +127,7 @@
   border-radius: 100%;
 }
 .box_one {
-  background-image: url("/static/image/nav_profile.jpeg");
+  background-image: url("/static/image/main_one.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
@@ -136,16 +135,18 @@
 }
 .box_one_text {
   font-size: 25px;
-  color: white;
-  margin-top: 10vh;
+  color: black;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10vh;
 }
 .box_one_texta {
   font-size: 25px;
-  color: white;
+  color: black;
   margin-top: 13vh;
   display: flex;
   flex-direction: column;
@@ -153,28 +154,28 @@
   align-items: center;
 }
 .box_two {
-  background-image: url("/static/image/nav_profile.jpeg");
+  background-image: url("/static/image/main_two.png");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
   opacity: 1;
 }
 .box_three {
-  background-image: url("/static/image/nav_profile.jpeg");
+  background-image: url("/static/image/main_three.png");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
   opacity: 1;
 }
 .box_four {
-  background-image: url("/static/image/nav_profile.jpeg");
+  background-image: url("/static/image/main_four.png");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
   opacity: 1;
 }
 .box_five {
-  background-image: url("/static/image/nav_profile.jpeg");
+  background-image: url("/static/image/main_five.png");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 52% 48%;
