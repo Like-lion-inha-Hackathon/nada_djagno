@@ -399,7 +399,7 @@ p {
   height:20%;
   text-align:center;
   animation:hove 1s;
-  margin-top:-31vh;
+  margin-top:-3vh;
   margin-bottom:20vh;
   animation-iteration-count: 100;
 }
@@ -423,9 +423,9 @@ p {
 .detail_box_text {
   font-family: 'Pretendard-Regular';
   font-size:24px;
-  width: 100%;
+  width: 3px;
   height: 30%;
-  padding: 0.5rem;
+   
 }
 
 .tag {
@@ -444,5 +444,6 @@ p {
 
 .detail_box_text>p2{
   font-size:20px;
+  font-family: 'Pretendard-Regular';
 }
 
