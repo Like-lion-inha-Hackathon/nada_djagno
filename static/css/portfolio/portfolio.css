@@ -20,16 +20,20 @@
   justify-content: center;
 }
 .index_two_box {
-  width: 80%;
+  width: 80vw;
   height: 20vh;
-  border-bottom: black 2px solid;
+  border-bottom: lightgray 5px solid;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  margin-top: 6vh;
+  border-radius: 1px;
 }
 .index_two_box_title {
   font-size: 70px;
   font-family: "SDSamliphopangche_Basic";
+  margin-left: 2vw;
+  margin-bottom: 1vh;
 }
 .index_two_box_title_sub {
   margin-left: 3vh;
