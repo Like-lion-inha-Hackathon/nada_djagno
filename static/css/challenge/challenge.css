@@ -1,3 +1,10 @@
+
+@font-face {
+  font-family: '777Balsamtint';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -123,6 +130,7 @@ body {
   /* margin-top: 1vh; */
   width: 76vw;
   height: 10vh;
+  max-height:62px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -186,7 +194,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   padding: 3em;
-  margin-left: 10vw;
+  margin-left: 12vw;
   margin-right: 5vw;
 }
 

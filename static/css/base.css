@@ -58,10 +58,12 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav_boxbox > img {
   width: 3vh;
   height: 3vh;
 }
+
 .nav_boxtitle {
   margin-left: 10px;
   width: 100px;
