@@ -1,6 +1,8 @@
+from django.db.models.query import QuerySet
 from django.shortcuts import redirect, render
 from django.core.paginator import Paginator
 from . import models as record_models
+from challenges import models as challenge_models
 import random
 import datetime
 
@@ -18,11 +20,26 @@ def records_view(request):
         | record_models.Record.objects.filter(category="work")
     )
     queryset.order_by("created")
-    records = record_models.Record.objects.get_queryset().order_by("id")
-    paginator = Paginator(records, 6)
-    records = paginator.get_page(page)
+    records = record_models.Record.objects.all().order_by("start_date")
+    reco = record_models.Record.objects.all().filter(
+        end_date__lte=datetime.datetime.now()
+    )
+    all = (
+        challenge_models.Challenge.objects.all()
+        .values_list("title", "thumbnail", "start_date")
+        .union(reco.values_list("title", "thumbnail", "start_date"))
+    )
+    all = (
+        all.values_list("title", "thumbnail", "start_date")
+        .union(queryset.values_list("title", "thumbnail", "start_date"))
+        .order_by("start_date")
+    )
+    p = Paginator(all, 6)
+    all = p.get_page(page)
     return render(
-        request, "records/records.html", {"queryset": queryset, "records": records}
+        request,
+        "records/records.html",
+        {"queryset": queryset, "records": records, "all": all},
     )
 
 
