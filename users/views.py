@@ -37,7 +37,7 @@ def login_view(request):
                 avatar="avatars/doohee.jpeg",
             )
             login(request, user)
-            return redirect("portfolios:main")
+            return redirect("users:main")
 
     return render(request, "users/login.html", res_data)
 
