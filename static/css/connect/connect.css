@@ -92,7 +92,7 @@
   /* margin-left:1vw; */
   /* margin-left: 6vw; */
   width: 90vw;
-  height: 15%;
+  height: 209.94px;
   font-size: 60px;
   text-align: center;
 }
@@ -123,7 +123,7 @@
   border: 2px solid gray;
   border-radius: 20px;
   width: 15vw;
-  height: 2.5vh;
+  height: 2vh;
   text-align: center;
   padding: 1rem 1rem;
   margin-left:1vw;
@@ -141,7 +141,7 @@
   height: 75vh;
   margin-left: 3vw;
   /* margin-right:7vw; */
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .cloud>img{
@@ -177,7 +177,7 @@
   font-family: 'Pretendard-Regular';
   font-size:60px;
   text-align:center;
-  margin-top: 15vh;
+  margin-top: 12vh;
   width: 100%;
   height: 15%;
   /* margin-left:-3vw */
@@ -199,7 +199,7 @@
   display: flex;
   flex-direction: column;
   margin-left:-30vw;
-  width: 90vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -217,7 +217,7 @@
 }
 
 .contest_exhibit_categories > ul {
-  font-size:26px;
+  font-size:30px;
   font-family: 'Pretendard-Regular';
   padding: 0.5rem;
   /* margin:1rem; */}
@@ -256,8 +256,8 @@
 
 .fa-chalkboard-teacher{
   margin-left:2vw;
-  margin-top:3vh;
-  width:8%;
+  margin-top:1.5vh;
+  width:5%;
   height:100%;
 }
 
@@ -270,9 +270,9 @@
 }
 
 .fa-bullhorn{
-  margin-top:3vh;
+  margin-top:1vh; 
   margin-left:2vw;
-  width:8%;
+  width:5%;
   height:100%;
 }
 
@@ -313,7 +313,7 @@
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 0.5vw;
-  height: 15%;
+  height: 209.96px;
   font-size: 60px;
 }
 
@@ -407,7 +407,7 @@ p {
   height:20%;
   text-align:center;
   animation:hove 1s;
-  margin-top:-3vh;
+  margin-top:-2vh;
   position:absolute;
   animation-iteration-count: 100;
   top:-3vh
@@ -431,18 +431,18 @@ p {
 
 .detail_box_text {
   font-family: 'Pretendard-Regular';
-  font-size:large;
+  font-size:26px;
   width: 300px;
   height: 30%;
-  padding:1rem;
+  padding:1.5rem;
 }
 
 .detail_box_texta {
   font-family: 'Pretendard-Regular';
-  font-size:large;
+  font-size:30px;
   width: 300px;
   height: 30%;
-  padding:1rem;
+  padding:1.5rem;
 }
 
 .tag {
@@ -454,12 +454,17 @@ p {
 
 
 .detail_box_text>p1{
-  font-size:larger;
+  font-size:40px;
   font-family: 'SDSamliphopangche_Basic';
   color:gray;
+  padding-bottom:1rem;
 }
 
 .detail_box_text>p2{
-  font-size: large;
+  font-size: 26px;
   font-family: 'Pretendard-Regular';
+}
+
+.gap{
+  height:1vh;
 }
