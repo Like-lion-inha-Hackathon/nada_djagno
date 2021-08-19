@@ -17,17 +17,25 @@
 {% block content%}
 
 <div class="allrepo">
-    <div class="title_repo">Repository</div>
+    <div class="title_repo">REPOSITORY</div>
     <div class="repository_bar"></div>
     <div class="repo_files">
-        <img class="repofile1" src = "{% static 'image/repositoryyellow2.png'%}"></img>
-            <figcaption>모두 보기</figcaption>
-        <a href="{% url 'repositories:portfolio' %}">
-            <img class="repofile2" src = "{% static 'image/repositoryyellow2.png'%}"></img>
-        </a>
-            <figcaption>PORTFOLIO</figcaption>
-        <img class="repofile3" src = "{% static 'image/repositoryyellowplus.png'%}"></img>
-            <figcaption>추가하기</figcaption>
+        <div class="repo_files_detail">
+            <a href="{% url 'repositories:portfolio' %}">
+                <img class="repofile1" src = "{% static 'image/repositoryyellow2.png'%}">
+                </a>
+            <div class="texty2">모두 보기</div>
+        </div>
+        <div class="repo_files_detail">
+            <a href="{% url 'repositories:portfolio' %}">
+                <img class="repofile2" src = "{% static 'image/repositoryyellow2.png'%}">
+            </a>
+            <div class="texty2">포트폴리오</div>
+        </div>
+        <div class="repo_files_detail">
+            <img class="repofile3" src = "{% static 'image/repositoryyellowplus.png'%}">
+            <div class="texty">추가하기</div>
+        </div>
     </div>
 </div>
 

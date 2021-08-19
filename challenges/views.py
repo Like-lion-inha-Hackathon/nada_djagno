@@ -47,7 +47,7 @@ def challenge_study_view(request):
 def challenge_reading_view(request, id):
     challenge = challenge_models.Challenge.objects.get(pk=id)
     period = challenge.end_date - challenge.start_date
-    period = range(period.days)
+    period = range(period.days + 1)
     return render(
         request,
         "challenge/challenge_reading.html",
@@ -80,7 +80,6 @@ def write_challenge_view(request):
         )
         end_date = datetime.date(endyear, endmonth, endday)
         period = end_date - start_date
-        print(title,start_date,end_date,detail,category)
         challenge = challenge_models.Challenge.objects.create(
             title=title,
             start_date=start_date,

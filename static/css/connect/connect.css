@@ -88,31 +88,33 @@
 .challenge_title {
   font-family: 'Pretendard-Regular';
   margin-top: 15vh;
+  margin-bottom:0.5vh;
   /* margin-left:1vw; */
   /* margin-left: 6vw; */
   width: 90vw;
-  height: 8vh;
+  height: 15%;
   font-size: 60px;
   text-align: center;
 }
 
-.challenge_smalltitle{
+/* .challenge_smalltitle{
   font-family: 'Pretendard-Regular';
   width: 90vw;
-  /* margin-left:2vw; */
+  margin-bottom:8vh
+  /* margin-left:2vw; 
   height: 14vh;
   font-size: 30px;
   text-align: center;
-}
+} */
 
 .challenge_categories {
   /* margin-left:6vw; */
-  margin-top: -5vh;
+  /* margin-top: 5vh; */
   margin-left:3vw;
   display: flex;
   justify-content:center;
   padding: 0 10vw;
-  margin-top:1vh;
+  /* margin-top:1vh; */
 }
 
 .challenge_category_boxes {
@@ -175,18 +177,15 @@
   font-family: 'Pretendard-Regular';
   font-size:60px;
   text-align:center;
-  margin-top: 5vh;
+  margin-top: 15vh;
   width: 100%;
-  height: 15vh;
+  height: 15%;
   /* margin-left:-3vw */
 }
 
 .contest_exhibit_title>p{
   margin-left:3vw;
-}
-
-.contest_exhibit_title>p{
-  margin-left:3vw;
+  margin-bottom:-2vh;
 }
 
 .contest_exhibit_search {
@@ -206,19 +205,19 @@
 
 .contest_exhibit_categories {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
+  align-items:center;
   width: 94vw;
   height: 10vh;
   margin-right:6vw;
-  margin-bottom: 8vh;
-  margin-top:2vh;
-  padding-left:1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 7vh;
+  margin-top:2vh; 
+  padding:1rem;
   background-color: lightgray;
 }
 
 .contest_exhibit_categories > ul {
-  font-size:22px;
+  font-size:26px;
   font-family: 'Pretendard-Regular';
   padding: 0.5rem;
   /* margin:1rem; */}
@@ -230,9 +229,9 @@
   display: flex;
   font-family: 'Pretendard-Regular';
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   font-size: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .contest_exhibit_boxes {
@@ -250,9 +249,9 @@
   display: flex;
   font-family: 'Pretendard-Regular';
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   font-size: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .fa-chalkboard-teacher{
@@ -265,6 +264,9 @@
 .study_title>p{
   width:92%;
   height:100%;
+  /* padding:0.2rem;
+  font-size:large; */
+
 }
 
 .fa-bullhorn{
@@ -285,11 +287,12 @@
 
 }
 .study_boxes {
+  margin-top:-3vh;
   width: 100%;
   height: 50vh;
   padding: 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content:flex-start;
   flex-wrap: wrap;
 }
 
@@ -361,23 +364,28 @@ p {
   display: flex;
   flex-direction: column;
   width: 20vw;
-  height: 40vh;
+  height: 50vh;
   margin-right:2vw;
+  margin-bottom:3vh;
   border: 2px solid lightgray;
   border-radius: 20px;
+  position: relative;
 }
 
 .detail_box_study {
-  width: 20vw;
+  /* width: 18vw; */
   height: 22vh;
-  margin-left:-1vw;
-  margin-right: 2vw;
-  margin-bottom: 41h;
+  /* margin-left:-2vw; */
+  margin-right: 3vw;
+  margin-bottom: 3vh;
   border: 4px solid lightgray;
   border-radius: 20px;
+  padding:0.2rem;
 }
 
 .detail_box_photo{
+  width:100%;
+  height:30%;
   display:flex;
   justify-content:center;
 } 
@@ -400,13 +408,14 @@ p {
   text-align:center;
   animation:hove 1s;
   margin-top:-3vh;
-  margin-bottom:20vh;
+  position:absolute;
   animation-iteration-count: 100;
+  top:-3vh
 }
 
 @keyframes hove{
   from{
-    color:lightgray;}
+    color:black;}
   to{
     color:#c5cafe;
   }
@@ -422,10 +431,18 @@ p {
 
 .detail_box_text {
   font-family: 'Pretendard-Regular';
-  font-size:24px;
-  width: 3px;
+  font-size:large;
+  width: 300px;
   height: 30%;
-   
+  padding:1rem;
+}
+
+.detail_box_texta {
+  font-family: 'Pretendard-Regular';
+  font-size:large;
+  width: 300px;
+  height: 30%;
+  padding:1rem;
 }
 
 .tag {
@@ -437,13 +454,12 @@ p {
 
 
 .detail_box_text>p1{
-  font-size:40px;
+  font-size:larger;
   font-family: 'SDSamliphopangche_Basic';
   color:gray;
 }
 
 .detail_box_text>p2{
-  font-size:20px;
+  font-size: large;
   font-family: 'Pretendard-Regular';
 }
-

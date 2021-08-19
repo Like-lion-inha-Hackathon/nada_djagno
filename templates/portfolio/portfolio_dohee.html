@@ -27,7 +27,7 @@
         <div class="index_two">
             <div class="index_two_box">
                 <span class="index_two_box_title">PORTFOLIO</span>
-                <span class="index_two_box_title_sub">포트폴리오 간단한 설명</span>
+                <span class="index_two_box_title_sub">Elon Musk의 포트폴리오</span>
             </div>
         </div>
         <div class="index_three">
@@ -91,31 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="index_five">
-            <div class="index_five_title">
-                <div class="index_five_title_left">
-                    <div class="index_five_title_one">02. ACTIVITY&ensp;&ensp;</div>
-                    <div class="index_five_title_two">그래프를 클릭하면 더 자세한 기록을 볼 수 있습니다.</div>
-                </div>
-            <a href="{% url 'records:write' %}">
-                <div class="activity_addqq"></div>
-            </a>
-            </div>
-            <div class="index_five_window">
-                <div class="activity_box">
-                    
-                    {% for record in records %}
-                        <a href="" class="activity_graph">
-                            <div class="activity_graph__point"></div>
-                            <div class="activity_graph__year">{{record.start_date|date:"Y"}}</div>
-                            <p class="activity_date">{{record.start_date|date:"M d일"}} ~ {{record.end_date|date:"M d일"}}</p>
-                            <p class="activity_name">{{record.title}}</p>
-                        </a>
-                        
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 <script

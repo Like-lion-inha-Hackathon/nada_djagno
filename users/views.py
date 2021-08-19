@@ -34,7 +34,7 @@ def login_view(request):
                 username=request.POST["username"],
                 email="guest@gamil.com",
                 password="123",
-                avatar="avatars/doohee.jpeg",
+                avatar="avatars/lsc.jpg",
             )
             login(request, user)
             return redirect("users:main")
