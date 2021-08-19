@@ -7,23 +7,7 @@ import json
 
 
 def portfolio_view(request):
-    age = 22
-    ages = [
-        "17",
-        "18",
-        "19",
-        "20",
-        "21",
-        "22",
-    ]
-    data = [
-        "3",
-        "-1",
-        "5",
-        "7",
-        "-4",
-        "-1",
-    ]
+    data = {}
     text = [
         "인생 친구를 만남",
         "지리 올림피아드 은상",
@@ -31,16 +15,36 @@ def portfolio_view(request):
         "고교 멘토링 활동",
         "군 입대",
         "군 전역",
+        "",
+        "",
+        "",
+        "",
     ]
     if request.POST:
-        age += 1
-        ages.append(str(age))
-        text.append(str(request.POST.get("text1", "")))
-        data.append(str(request.POST.get("number1", "0")))
-    print(ages, data, text)
-    data = json.dumps({"data": data})
+        text = []
+        data = {}
+        data["username"] = request.POST.get("username", "김연경")
+        for i in range(1, 11):
+            data[f"num{i}"] = request.POST.get(f"number{i}", "0")
+            text.append(request.POST.get(f"text{i}", ""))
+    else:
+        data = {
+            "username": "김연경",
+            "num1": "3",
+            "num2": "-1",
+            "num3": "5",
+            "num4": "7",
+            "num5": "-4",
+            "num6": "-1",
+            "num7": "",
+            "num8": "",
+            "num9": "",
+            "num10": "",
+        }
+        # for i in range(1, 10):
+        #     data[f"{i}"] = "0"
+    data = json.dumps({"data": [data]})
     text = json.dumps({"text": text})
-    ages = json.dumps({"ages": ages})
 
     records = record_models.Record.objects.all().order_by("start_date")
     # records = (
@@ -56,7 +60,7 @@ def portfolio_view(request):
     return render(
         request,
         "portfolio/portfolio.html",
-        {"data": data, "text": text, "records": records, "ages": ages, "age": age},
+        {"data": data, "text": text, "records": records},
     )
 
 
