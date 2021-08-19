@@ -31,10 +31,10 @@
 .repo_files_detail{
     display:flex;
     flex-direction:column;
-    width: 30vw;
+    width: 24vw;
     height: 40vh;
     margin-left: 2vh;
-    margin-right: 4vh;
+    /* margin-right: 4vh; */
 }
 
 .repo1{
