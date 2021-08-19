@@ -39,9 +39,10 @@
 
 .repo1{
     width:100%;
+    height:80%;
 }
 
-.detail_box_photo{
+.repo1>img{
     border:3px solid lightgray;
     border-radius:20px;
     width:330px;
@@ -49,7 +50,6 @@
 }
 
 .texty2{
-    line-height:120%;
     border-top:3px solid lightgray;
     margin-top:1vh;
     margin-bottom:3vh;
@@ -86,8 +86,4 @@
     margin-top:8vh;
     height:60vh;
     width:100%;
-}
-
-strong{
-    font-size:30px;
 }
