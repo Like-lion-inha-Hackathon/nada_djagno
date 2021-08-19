@@ -61,6 +61,7 @@ def records_write_view(request):
         )
         end_date = datetime.date(endyear, endmonth, endday)
         period = end_date - start_date
+        print(period)
         detail = request.POST.get("detail")
         random_number = random.randint(1, 6)
         thumbnail = f"records/record_{random_number}.png"
@@ -72,7 +73,7 @@ def records_write_view(request):
             detail=detail,
             thumbnail=thumbnail,
         )
-        return redirect("records:main")
+        return redirect("portfolios:main")
 
     return render(request, "records/records_write.html")
 

@@ -8,8 +8,8 @@
   position: relative;
   background-color: white;
   width: 80vw;
-  height: 50vh;
-  border: 1px solid black;
+  height: 70vh;
+  border: 2px solid lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,6 @@
 .gradation_box {
   width: 2000px;
   min-width: 100px;
-  height: 200px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -54,12 +53,13 @@
 .gradations_top_detail {
   margin-bottom: 0px;
   margin-top: 0;
-  font-size: 10px;
+  font-size: 20px;
 }
 .graph_title {
   position: absolute;
   top: 15px;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: "SDSamliphopangche_Basic";
 }
 .gradations_top_detail:first-child {
   position: relative;
@@ -73,7 +73,7 @@
 .gradations_bottom_detail {
   margin-bottom: 0px;
   margin-top: 0;
-  font-size: 10px;
+  font-size: 20px;
   position: relative;
   top: px;
   right: 1px;
