@@ -104,46 +104,11 @@
                     {% csrf_token %}
                     <label for="username">사용자 이름</label>
                     <input id="username"  name="username" value="{{user.username}}" placeholder="이름을 입력하세요"><br>
-                    <label for="num1">17</label>
+                    <label for="num1">{{age|add:"1"}}살</label>
                     <input id="num1" type="number" name="number1">
                     <label for="text1">설명</label>
-                    <input id="text1" type="text" name="text1" placeholder="설명을 입력하세요"><br>
-                    <label for="num2">18</label>
-                    <input id="num2" type="number" name="number2">
-                    <label for="text2">설명</label>
-                    <input id="text2" type="text" name="text2" placeholder="설명을 입력하세요"><br>
-                    <label for="num3">19</label>
-                    <input id="num3" type="number" name="number3">
-                    <label for="text3">설명</label>
-                    <input id="text3" type="text" name="text3" placeholder="설명을 입력하세요"><br>
-                    <label for="num4">20</label>
-                    <input id="num4" type="number" name="number4">
-                    <label for="text4">설명</label>
-                    <input id="text4" type="text" name="text4" placeholder="설명을 입력하세요"><br>
-                    <label for="num5">21</label>
-                    <input id="num5" type="number" name="number5">
-                    <label for="text5">설명</label>
-                    <input id="text5" type="text" name="text5" placeholder="설명을 입력하세요"><br>
-                    <label for="num6">22</label>
-                    <input id="num6" type="number" name="number6">
-                    <label for="text6">설명</label>
-                    <input id="text6" type="text" name="text6" placeholder="설명을 입력하세요"><br>
-                    <label for="num7">23</label>
-                    <input id="num7" type="number" name="number7">
-                    <label for="text7">설명</label>
-                    <input id="text7" type="text" name="text7" placeholder="설명을 입력하세요"><br>
-                    <label for="num8">24</label>
-                    <input id="num8" type="number" name="number8">
-                    <label for="text8">설명</label>
-                    <input id="text8" type="text" name="text8" placeholder="설명을 입력하세요"><br>
-                    <label for="num9">25</label>
-                    <input id="num9" type="number" name="number9">
-                    <label for="text9">설명</label>
-                    <input id="text9" type="text" name="text9" placeholder="설명을 입력하세요"><br>
-                    <label for="num10">26</label>
-                    <input id="num10" type="number" name="number10">
-                    <label for="text10">설명</label>
-                    <input id="text10" type="text" name="text10" placeholder="설명을 입력하세요">
+                    <input id="text1" type="text" name="text1" placeholder="설명을 입력하세요">
+                    
                     <button type="submit" >확인하기</button>
                 </form>
             </div>
@@ -226,9 +191,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script>
         var text = {{text|safe}}.text
-        var labels =   [[17],[18],[19],[20],[21],[22],[23],[],[],[]]
+        var ages = {{ages|safe}}.ages
+        var data = {{data|safe}}.data
+        var labels =   []
+        var score =   []
         for (var i = 0; i < text.length; i++) { 
-            labels[i].push(text[i])
+            age = Number(ages[i])
+            labels.push([age,text[i]])
+            score.push(Number(data[i]))
     }
         var chart = new Chart(document.getElementById("line-chart"), {
         type: 'line',
@@ -242,7 +212,7 @@
                 fill: false
             }, */
             { 
-                data: [{{data|safe}}.data[0].num1,{{data|safe}}.data[0].num2,{{data|safe}}.data[0].num3,{{data|safe}}.data[0].num4,{{data|safe}}.data[0].num5,{{data|safe}}.data[0].num6,{{data|safe}}.data[0].num7,{{data|safe}}.data[0].num8,{{data|safe}}.data[0].num9,{{data|safe}}.data[0].num10],
+                data: score,
                 label: "{{request.user}}",
                 borderColor: "#8e5ea2",
                 fill: false
