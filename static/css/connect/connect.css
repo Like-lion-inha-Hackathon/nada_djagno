@@ -159,11 +159,11 @@
 }
 
 .contest_exhibit {
-  width: 88vw;
+  width: 86vw;
   height: 200vh;
   display: flex;
   flex-direction: column;
-  margin-left: 12vw;
+  margin-left: 14vw;
   margin-top: 10vh;
   /* justify-content:center; */
 }
@@ -236,11 +236,11 @@
 
 .contest_exhibit_boxes {
   /* margin-left:-2vw; */
-  margin-right:6vw;
+  margin-right:7vw;
   margin-bottom:5vh;
   display: flex;
   justify-content: space-between;
-  width: 84vw;
+  width: 83vw;
   height: 50vh;
   /* padding: 1rem; */
 }
@@ -363,7 +363,7 @@ p {
   z-index: 133;
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 19vw;
   height: 50vh;
   margin-right:2vw;
   margin-bottom:3vh;

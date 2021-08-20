@@ -471,10 +471,18 @@
   border-style: solid;
   border-width: 2px;
   border-color: gray;
-  background-image: url("/static/image/booksss.jpeg");
   background-size: 170%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+.under_box_one {
+  background-image: url("/static/image/30coding.jpeg");
+}
+.under_box_two {
+  background-image: url("/static/image/30reading.jpeg");
+}
+.under_box_three {
+  background-image: url("/static/image/30exercise.jpeg");
 }
 .complete {
   width: 100%;
